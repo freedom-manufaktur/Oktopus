@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" version="1.1" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+ <g fill="#9cc8f8" stroke="#9cc8f8" stroke-width="1.0204">
+  <circle cx="23.98" cy="276.02" r="23.469"/>
+  <circle cx="89.286" cy="23.98" r="23.469"/>
+  <circle cx="89.286" cy="210.71" r="23.469"/>
+  <circle cx="276.02" cy="210.71" r="23.469"/>
+  <rect x="81.122" y="23.98" width="16.327" height="183.67"/>
+  <rect x="89.286" y="202.55" width="183.67" height="16.327"/>
+  <rect transform="rotate(45)" x="203.97" y="77.7" width="16.327" height="91.837"/>
+ </g>
+ <g fill="#1685fc" stroke="#1685fc" stroke-width="1.0204">
+  <circle cx="276.02" cy="23.98" r="23.469"/>
+  <circle cx="23.98" cy="89.286" r="23.469"/>
+  <circle cx="210.71" cy="89.286" r="23.469"/>
+  <circle cx="210.71" cy="276.02" r="23.469"/>
+  <rect x="23.98" y="81.122" width="183.67" height="16.327"/>
+  <rect x="202.55" y="89.286" width="16.327" height="183.67"/>
+  <rect transform="rotate(225)" x="-220.3" y="77.7" width="16.327" height="91.837"/>
+ </g>
+</svg>

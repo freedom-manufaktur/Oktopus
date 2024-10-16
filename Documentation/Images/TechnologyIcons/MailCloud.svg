@@ -1,0 +1,39 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+    <title>mail cloud icon</title>
+    <desc>mail cloud icon from the IconExperience.com G-Collection. Copyright by INCORS GmbH (www.incors.com).</desc>
+    <defs>
+        <linearGradient x1="128" y1="0" x2="315.534" y2="288.00009" gradientUnits="userSpaceOnUse" id="color-1">
+            <stop offset="0" stop-color="#f9fafc"/>
+            <stop offset="0.6902" stop-color="#d8e0e8"/>
+            <stop offset="1" stop-color="#ccd6df"/>
+        </linearGradient>
+        <linearGradient x1="134.5" y1="224" x2="175.2275" y2="287.9995" gradientUnits="userSpaceOnUse" id="color-2">
+            <stop offset="0" stop-color="#c4ced9"/>
+            <stop offset="1" stop-color="#bdc8d4"/>
+        </linearGradient>
+        <linearGradient x1="0" y1="208" x2="317.401" y2="480.0005" gradientUnits="userSpaceOnUse" id="color-3">
+            <stop offset="0" stop-color="#eaf6fe"/>
+            <stop offset="1" stop-color="#c8e8fb"/>
+        </linearGradient>
+        <linearGradient x1="0" y1="321.25" x2="63.0825" y2="480.125" gradientUnits="userSpaceOnUse" id="color-4">
+            <stop offset="0" stop-color="#c7e8fb"/>
+            <stop offset="1" stop-color="#a3d9f9"/>
+        </linearGradient>
+        <linearGradient x1="0" y1="208" x2="244.541" y2="366.875" gradientUnits="userSpaceOnUse" id="color-5">
+            <stop offset="0" stop-color="#edf8fe"/>
+            <stop offset="1" stop-color="#c5e7fb"/>
+        </linearGradient>
+        <linearGradient x1="368" y1="390.25" x2="367.9125" y2="219.432" gradientUnits="userSpaceOnUse" id="color-6">
+            <stop offset="0" stop-color="#89cff7"/>
+            <stop offset="1" stop-color="#b0dffa"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+        <path d="M128,192c0,-46.5 25,-75 60,-89c0,-0.5 0,-0.5 0,-1c0,-56.5 45.5,-102 102,-102c40,0 75,23 91.5,57c10,-6 22,-9 34.5,-9c40,0 72,32 72,72c0,13 -3.5,25 -9,35.5c19.5,12.5 33,28 33,60.5c0,36 -35.5,72 -72,72l-216,0c-50,0 -96,-46 -96,-96z" id="curve5" fill="url(#color-1)"/>
+        <path d="M384,288l-160,0c-39,0 -75.5,-28 -89.5,-64l238,0c6.5,0 11.5,5 11.5,11.5z" id="curve4" fill="url(#color-2)"/>
+        <path d="M11.5,208l345,0c6.5,0 11.5,5 11.5,11.5l0,249c0,6.5 -5,11.5 -11.5,11.5l-345,0c-6.5,0 -11.5,-5 -11.5,-11.5l0,-249c0,-6.5 5,-11.5 11.5,-11.5z" id="curve3" fill="url(#color-3)"/>
+        <path d="M11.5,480l345,0c6.5,0 11.5,-5 11.5,-11.5l-161.5,-139c-13,-11 -32,-11 -45,0l-161.5,139c0,6.5 5,11.5 11.5,11.5z" id="curve2" fill="url(#color-4)"/>
+        <path d="M11.5,208l345,0c6.5,0 11.5,5 11.5,11.5l-161.5,139c-13,11 -32,11 -45,0l-161.5,-139c0,-6.5 5,-11.5 11.5,-11.5z" id="curve1" fill="url(#color-5)"/>
+        <path d="M0,219.5l161.5,139c13,11 32,11 45,0l161.5,-139l0,9.5l-145,145.5c-21,21 -57,21 -78,0l-145,-145.5z" id="curve0" fill="url(#color-6)"/>
+    </g>
+</svg>

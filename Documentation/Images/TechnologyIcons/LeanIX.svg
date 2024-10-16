@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="160" version="1.1" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<ellipse id="path-1" cx="42.626" cy="42.292" rx="42.626" ry="42.292"/>
+<filter id="filter-3" x="-.24898" y="-.25094" width="1.498" height="1.5019">
+<feGaussianBlur in="SourceGraphic" stdDeviation="9.09673832"/>
+</filter>
+<mask id="mask-2" fill="#ffffff">
+<use width="100%" height="100%" xlink:href="#path-1"/>
+</mask>
+</defs>
+<rect x="5e-7" y="5e-7" width="160" height="160" fill="#fff" stroke-miterlimit="14.5" stroke-width="0" style="paint-order:markers fill stroke"/>
+<g fill-rule="evenodd">
+<use id="Mask" transform="translate(59.296 37.708)" width="100%" height="100%" fill="#166bff" xlink:href="#path-1"/>
+<polygon transform="translate(59.296 37.708)" points="-29.838 50.75 14.006 7.25 57.849 50.75 14.006 94.25" fill="#039" fill-opacity=".65" filter="url(#filter-3)" mask="url(#mask-2)"/>
+<polygon id="Raute" points="103.14 80 59.296 123.5 15.452 80 59.296 36.5" fill="#166bff"/>
+<path d="m72.181 49.791 30.959 30.209-30.959 30.209c-7.9485-7.66-12.885-18.364-12.885-30.209s4.9363-22.549 12.885-30.209z" fill="#fff"/>
+</g>
+</svg>
