@@ -14,7 +14,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [File System](#-file-system)
 - [HTTP](#-http)
 - [IGEL Technology](#-igel-technology)
-- [Image](#image)
+- [Image](#-image)
 - [IMAP](#-imap)
 - [Ivanti Service Manager](#-ivanti-neurons-for-itsm--ivanti-service-manager-ism)
 - [Jira](#-jira)
