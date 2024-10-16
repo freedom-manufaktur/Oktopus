@@ -524,7 +524,7 @@ Executes a user specified query.
 ## <img src="Images/TechnologyIcons/Microsoft%20Teams.svg" width="32"> Microsoft Teams
 ### Actions
 - [Create Team](#create-team)
-- [Get 1:1 chat](#get-1:1-chat)
+- [Get 1:1 chat](#get-11-chat)
 - [Get channel messages](#get-channel-messages)
 - [Get chat messages](#get-chat-messages)
 - [Get User](#get-user)
