@@ -4,1596 +4,1596 @@ Version: `5.18.0` - `2024-10-15` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/main/Oktopus%20Actions.md)
 
 # Technologies
-- [`Active Directory`](#-active-Directory)
-- [`Azure DevOps`](#-azure-devops)
-- [`CSV`](#-csv)
-- [`Debug`](#-debug)
-- [`DocuSign`](#-docusign)
-- [`Exchange Server`](#-exchange-server)
-- [`File compression`](#-file-compression)
-- [`File System`](#-file-system)
-- [`HTTP`](#-http)
-- [`IGEL Technology`](#-igel-technology)
-- [`Image`](#image)
-- [`IMAP`](#-imap)
-- [`Ivanti Service Manager`](#-ivanti-service-manager)
-- [`Jira`](#-jira)
-- [`JSON`](#-json)
-- [`LeanIX`](#-leanix)
+- [Active Directory](#-active-Directory)
+- [Azure DevOps](#-azure-devops)
+- [CSV](#-csv)
+- [Debug](#-debug)
+- [DocuSign](#-docusign)
+- [Exchange Server](#-exchange-server)
+- [File compression](#-file-compression)
+- [File System](#-file-system)
+- [HTTP](#-http)
+- [IGEL Technology](#-igel-technology)
+- [Image](#image)
+- [IMAP](#-imap)
+- [Ivanti Service Manager](#-ivanti-service-manager)
+- [Jira](#-jira)
+- [JSON](#-json)
+- [LeanIX](#-leanix)
 - [LexOffice](#) *** *In Progress*
-- [`Mail`](#-mail)
-- [`Microsoft 365`](#-microsoft-365)
-- [`Microsoft 365 Contacts`](#-microsoft-365-contacts)
-- [`Microsoft SharePoint`](#-microsoft-sharepoint)
-- [`Microsoft SQL Server`](#-microsoft-sql-server)
-- [`Microsoft Teams`](#-microsoft-teams)
-- [`Microsoft Word`](#-microsoft-word)
-- [`NetBox`](#-netbox)
-- [`Ninox`](#-ninox)
-- [`Oktopus`](#-oktopus)
-- [`PDF`](#-pdf)
-- [`Power BI`](#-power-bi)
-- [`ReyVentory Data Hub`](#-reyventory-data-hub)
-- [`Shopware`](#-shopware)
-- [`SMAX`](#-smax)
-- [`Text`](#-text)
-- [`Timer`](#-timer)
+- [Mail](#-mail)
+- [Microsoft 365](#-microsoft-365)
+- [Microsoft 365 Contacts](#-microsoft-365-contacts)
+- [Microsoft SharePoint](#-microsoft-sharepoint)
+- [Microsoft SQL Server](#-microsoft-sql-server)
+- [Microsoft Teams](#-microsoft-teams)
+- [Microsoft Word](#-microsoft-word)
+- [NetBox](#-netbox)
+- [Ninox](#-ninox)
+- [Oktopus](#-oktopus)
+- [PDF](#-pdf)
+- [Power BI](#-power-bi)
+- [ReyVentory Data Hub](#-reyventory-data-hub)
+- [Shopware](#-shopware)
+- [SMAX](#-smax)
+- [Text](#-text)
+- [Timer](#-timer)
 - [Timewax](#) *** *In Progress*
-- [`USM (Preview)`](#-usm)
-- [`Webhook`](#-webhook)
+- [USM (Preview)](#-usm-preview)
+- [Webhook](#-webhook)
 
 [:top:](#technologies)
 
-## <img src="Images/TechnologyIcons/Active%20Directory.svg" width=32px> `Active Directory`
+## <img src="Images/TechnologyIcons/Active%20Directory.svg" width=32px> Active Directory
 ### actions
-- [`Add a principal to groups`](#add-a-principal-to-groups)
-- [`Create User`](#create-user)
-- [`Delete principal`](#delete-principal)
-- [`Find User`](#find-user)
-- [`Remove a pricipal from groups`](#remove-a-pricipal-from-groups)
-- [`Reset user password`](#reset-user-password)
-- [`Update User`](#update-user)
+- [Add a principal to groups](#add-a-principal-to-groups)
+- [Create User](#create-user)
+- [Delete principal](#delete-principal)
+- [Find User](#find-user)
+- [Remove a pricipal from groups](#remove-a-pricipal-from-groups)
+- [Reset user password](#reset-user-password)
+- [Update User](#update-user)
 
-#### `Add a principal to groups`
+#### Add a principal to groups
 
-#### Description
+##### Description
 Add a User, Group or Computer to any number of groups.
 
-#### Example
+##### Example
 
-#### `Create User`
+#### Create User
 
-#### Description
+##### Description
 Create a new user account
 
-#### Example
+##### Example
 
-#### `Delete principal`
+#### Delete principal
 
-#### Description
+##### Description
 Delete a User, Group or Computer.
 
-#### Example
+##### Example
 
-#### `Find User`
+#### Find User
 
-#### Description
+##### Description
 Finds a user by name.
 
-#### Example
+##### Example
 
-#### `Remove a principal from groups`
+#### Remove a principal from groups
 
-#### Description
+##### Description
 Remove a User, Group or Computer from any number of groups.
 
-#### Example
+##### Example
 
-#### `Reset user password`
+#### Reset user password
 
-#### Description
+##### Description
 Resets a users password.
 
-#### Example
+##### Example
 
-#### `Update User`
+#### Update User
 
-#### Description
+##### Description
 Update a User With a selection of properties.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Azure%20DevOps.svg" width=32px> `Azure DevOps`
+## <img src="Images/TechnologyIcons/Azure%20DevOps.svg" width=32px> Azure DevOps
 
 ### actions
-- [`Add attachments to Work Item`](#add-attachments-to-work-item)
-- [`Create Work Item`](#create-work-item)
-- [`Delete build(s)`](#delete-builds)
-- [`Get Work Item`](#get-work-item)
-- [`List builds`](#list-builds)
-- [`Update Work Item`](#update-work-item)
-- [`Users: Add User`](#users-add-user)
-- [`Users: List Users`](#users-list-users)
-- [`Users: Remove User`](#users-remove-user)
+- [Add attachments to Work Item](#add-attachments-to-work-item)
+- [Create Work Item](#create-work-item)
+- [Delete build(s)](#delete-builds)
+- [Get Work Item](#get-work-item)
+- [List builds](#list-builds)
+- [Update Work Item](#update-work-item)
+- [Users: Add User](#users-add-user)
+- [Users: List Users](#users-list-users)
+- [Users: Remove User](#users-remove-user)
 
-#### `Add attachments to Work Item`
+#### Add attachments to Work Item
 
-#### Description
+##### Description
 Adds any number of attachments to a Work Item.
 
-#### Example
+##### Example
 
-#### `Create Work Item`
+#### Create Work Item
 
-#### Description
+##### Description
 Create a new work item.
 
-#### Example
+##### Example
 
-#### `Delete build(s)`
+#### Delete build(s)
 
-#### Description
+##### Description
 Delete one or more builds by ID.
 
-#### Example
+##### Example
 
-#### `Get Work Item`
+#### Get Work Item
 
-#### Description
+##### Description
 Get work item by ID.
 
-#### Example
+##### Example
 
-#### `List builds`
+#### List builds
 
-#### Description
+##### Description
 List all builds.
 
-#### Example
+##### Example
 
-#### `Update Work Item`
+#### Update Work Item
 
-#### Description
+##### Description
 Update a work item.
 
-#### Example
+##### Example
 
-#### `IJsers: Add User`
+#### IJsers: Add User
 
-#### Description
+##### Description
 Adds a user to an organization.
 
-#### Example
+##### Example
 
-#### `Users: List Users`
+#### Users: List Users
 
-#### Description
+##### Description
 Lists all users in an organization.
 
-#### Example
+##### Example
 
-#### `Users: Remove User`
+#### Users: Remove User
 
-#### Description
+##### Description
 Removes a user from an organization.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Text.svg" width=32px> `CSV`
+## <img src="Images/TechnologyIcons/Text.svg" width=32px> CSV
 
 ### actions
-- [`Parse CSV text`](#parse-csv-text)
+- [Parse CSV text](#parse-csv-text)
 
-#### `Parse CSV text`
+#### Parse CSV text
 
-#### Description
+##### Description
 Parses the given CSV text and stores the object result.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Debug.svg" width=32px> `Debug`
+## <img src="Images/TechnologyIcons/Debug.svg" width=32px> Debug
 
 ### actions
-- [`Print Expression`](#print-expression)
+- [Print Expression](#print-expression)
 
-#### `Print Expression`
+#### Print Expression
 
-#### Description
+##### Description
 Prints the expression to the log file.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/DocuSign.svg" width=32px> `DocuSign`
+## <img src="Images/TechnologyIcons/DocuSign.svg" width=32px> DocuSign
 
 ### actions
-- [`Get envelope`](#get-envelope)
-- [`Get envelope audit events`](#get-envelope-audit-events)
-- [`Sign Document`](#sign-document)
+- [Get envelope](#get-envelope)
+- [Get envelope audit events](#get-envelope-audit-events)
+- [Sign Document](#sign-document)
 
-#### `Get envelope`
+#### Get envelope
 
-#### Description
+##### Description
 Get information about a document signing request (envelope).
 
-#### Example
+##### Example
 
-#### `Get envelope audit events`
+#### Get envelope audit events
 
-#### Description
+##### Description
 Get the audit events of a document signing request (envelope).
 
-#### Example
+##### Example
 
-#### `Sign Document`
+#### Sign Document
 
-#### Description
+##### Description
 Notify People about a document signing request.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/ServerMail.svg" width=32px> `Exchange Server`
+## <img src="Images/TechnologyIcons/ServerMail.svg" width=32px> Exchange Server
 
 ### actions
-- [`Cancel Meeting`](#cancel-meeting)
-- [`Create Meeting`](#create-meeting)
-- [`Delete item`](#delete-item)
-- [`Mark email as read`](#mark-email-as-read)
-- [`Move item`](#move-item)
-- [`Send Email`](#send-email)
-- [`Update Meeting`](#update-meeting)
+- [Cancel Meeting](#cancel-meeting)
+- [Create Meeting](#create-meeting)
+- [Delete item](#delete-item)
+- [Mark email as read](#mark-email-as-read)
+- [Move item](#move-item)
+- [Send Email](#send-email)
+- [Update Meeting](#update-meeting)
 
-#### `Cancel Meeting`
+#### Cancel Meeting
 
-#### Description
+##### Description
 Cancel an existing meeting.
 
-#### Example
+##### Example
 
-#### `Create Meeting`
+#### Create Meeting
 
-#### Description
+##### Description
 Send a meeting invitation.
 
-#### Example
+##### Example
 
-#### `Delete item`
+#### Delete item
 
-#### Description
+##### Description
 Deletes an item (mail, appointment, meeting).
 
-#### Example
+##### Example
 
-#### `Mark email as read`
+#### Mark email as read
 
-#### Description
+##### Description
 Marks an email as read.
 
-#### Example
+##### Example
 
-#### `Move item`
+#### Move item
 
-#### Description
+##### Description
 Moves an item (mail, appointment, meeting) to a different folder.
 
-#### Example
+##### Example
 
-#### `Send Email`
+#### Send Email
 
-#### Description
+##### Description
 Sends an email.
 
-#### Example
+##### Example
 
-#### `Update Meeting`
+#### Update Meeting
 
-#### Description
+##### Description
 Update an existing meeting.
 
-#### Example
+##### Example
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Compress.svg" width=32px> `File compression`
+## <img src="Images/TechnologyIcons/Compress.svg" width=32px> File compression
 
 ### actions
-- [`Create archive`](#create-archive)
+- [Create archive](#create-archive)
 
-#### `Create archive`
+#### Create archive
 
-#### Description
+##### Description
 Creates an archive file (typically .zip).
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/FolderDocument.svg" width=32px> `File System`
+## <img src="Images/TechnologyIcons/FolderDocument.svg" width=32px> File System
 
 ### actions
-- [`Copy file`](#copy-file)
-- [`Delete file`](#delete-file)
-- [`Move file`](#move-file)
-- [`Read file`](#read-file)
-- [`Save file`](#save-file)
+- [Copy file](#copy-file)
+- [Delete file](#delete-file)
+- [Move file](#move-file)
+- [Read file](#read-file)
+- [Save file](#save-file)
 
-#### `Copy file`
+#### Copy file
 
-#### Description
+##### Description
 Copies a file from one location to another.
 
-#### Example
+##### Example
 
-#### `Delete file`
+#### Delete file
 
-#### Description
+##### Description
 Delete a file.
 
-#### Example
+##### Example
 
-#### `Move file`
+#### Move file
 
-#### Description
+##### Description
 Moves a file from one location to another.
 
-#### Example
+##### Example
 
-#### `Read file`
+#### Read file
 
-#### Description
+##### Description
 Reads the content of a file to a variable.
 
-#### Example
+##### Example
 
-#### `Save file`
+#### Save file
 
-#### Description
+##### Description
 Writes the given file variable or data to a file.
 
-#### Example
+##### Example
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Http.svg" width=32px> `HTTP`
+## <img src="Images/TechnologyIcons/Http.svg" width=32px> HTTP
 
 ### actions
-- [`Send HTTP request`](#send-http-request)
-- [`Send HTTP request (preview)`](#send-http-request-preview)
+- [Send HTTP request](#send-http-request)
+- [Send HTTP request (preview)](#send-http-request-preview)
 
-#### `Send HTTP request`
+#### Send HTTP request
 
-#### Description
+##### Description
 Call any HTTP endpoint.
 
-#### Example
+##### Example
 
-#### `Send HTTP request (preview)`
+#### Send HTTP request (preview)
 
-#### Description
+##### Description
 Call any HTTP endpoint multiple times.
 Note: This is a preview step, wich is not production ready and will change in th efuture.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Igel.svg" width=32px> `IGEL Technology`
+## <img src="Images/TechnologyIcons/Igel.svg" width=32px> IGEL Technology
 
 ### actions
-- [`Get firmwares`](#get-firmwares)
-- [`Get thin clients`](#get-thin-clients)
+- [Get firmwares](#get-firmwares)
+- [Get thin clients](#get-thin-clients)
 
-#### `Get firmwares`
+#### Get firmwares
 
-#### Description
+##### Description
 Get all firmwares.
 
-#### Example
+##### Example
 
-#### `Get thin clients`
+#### Get thin clients
 
-#### Description
+##### Description
 Get all thin clients.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## `Image`
+## Image
 
 ### actions
-- [`Convert image`](#convert-image)
+- [Convert image](#convert-image)
 
-#### `Convert image`
+#### Convert image
 
-#### Description
+##### Description
 Converts a number of images to a target format.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/MailCloud.svg" width=32px> `IMAP`
+## <img src="Images/TechnologyIcons/MailCloud.svg" width=32px> IMAP
 
 ### actions
-- [`Delete mail`](#delete-mail)
-- [`Move mail`](#move-mail)
+- [Delete mail](#delete-mail)
+- [Move mail](#move-mail)
 
-#### `Delete mail`
+#### Delete mail
 
-#### Description
+##### Description
 Delete an email.
 
-#### Example
+##### Example
 
-#### `Move mail`
+#### Move mail
 
-#### Description
+##### Description
 Move an email to a different folder.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Ivanti.svg" width=32px> `Ivanti Service Manager`
+## <img src="Images/TechnologyIcons/Ivanti.svg" width=32px> Ivanti Service Manager
 
 ### actions
-- [`Add attachment`](#add-attachment)
-- [`Create Business Object`](#create-business-object)
-- [`Create or update Business Obejct(s)`](#create-or-update-business-obejcts)
-- [`Delete Busines Object`](#delete-busines-object)
-- [`Find Business Objects (by field)`](#find-business-objects-by-field)
-- [`Find Business Objects (by query)`](#find-business-objects-by-query)
-- [`Find Employees`](#find-employees)
-- [`Get attachment`](#get-attachment)
-- [`Get Business Object (by field)`](#get-business-object-by-field)
-- [`Get Business Object (by query)`](#get-business-object-by-query)
-- [`Get Business Object (by field values)`](#get-business-object-by-field-values)
-- [`Get request offering`](#get-request-offering)
-- [`Update Business Object`](#update-business-object)
+- [Add attachment](#add-attachment)
+- [Create Business Object](#create-business-object)
+- [Create or update Business Obejct(s)](#create-or-update-business-obejcts)
+- [Delete Busines Object](#delete-busines-object)
+- [Find Business Objects (by field)](#find-business-objects-by-field)
+- [Find Business Objects (by query)](#find-business-objects-by-query)
+- [Find Employees](#find-employees)
+- [Get attachment](#get-attachment)
+- [Get Business Object (by field)](#get-business-object-by-field)
+- [Get Business Object (by query)](#get-business-object-by-query)
+- [Get Business Object (by field values)](#get-business-object-by-field-values)
+- [Get request offering](#get-request-offering)
+- [Update Business Object](#update-business-object)
 
-#### `Add attachment`
+#### Add attachment
 
-#### Description
+##### Description
 Adds an attachment to a specific Business Object.
 
-#### Example
+##### Example
 
-#### `Create Business Object`
+#### Create Business Object
 
-#### Description
+##### Description
 Creates a new Business Object.
 
-#### Example
+##### Example
 
-#### `Create or update Business Obejct(s)`
+#### Create or update Business Obejct(s)
 
-#### Description
+##### Description
 Create or update (upsert) a Single Business Object or many at once.
 
-#### Example
+##### Example
 
-#### `Delete Busines Object`
+#### Delete Busines Object
 
-#### Description
+##### Description
 Deletes a Business Object.
 
-#### Example
+##### Example
 
-#### `Find Business Objects (by field)`
+#### Find Business Objects (by field)
 
-#### Description
+##### Description
 Finds Business Objects With a specific field value.
 
-#### Example
+##### Example
 
-#### `Find Business Objects (by query)`
+#### Find Business Objects (by query)
 
-#### Description
+##### Description
 Finds Business Objects With a combination of conditions.
 
-#### Example
+##### Example
 
-#### `Find Employees`
+#### Find Employees
 
-#### Description
+##### Description
 Finds employee objects (Employee#) by ID. This is a handy shortcut when transforming LoginlD to ReclD or ice versa.
 
-#### Example
+##### Example
 
-#### `Get attachment`
+#### Get attachment
 
-#### Description
+##### Description
 Gets an attachment Object and downloads the content.
 
-#### Example
+##### Example
 
-#### `Get Business Object (by field)`
+#### Get Business Object (by field)
 
-#### Description
+##### Description
 Gets the oldest Business Object With a specific field value.
 
-#### Example
+##### Example
 
-#### `Get Business Object (by query)`
+#### Get Business Object (by query)
 
-#### Description
+##### Description
 Gets the oldest Business Object With a combination of conditions.
 
-#### Example
+##### Example
 
-#### `Get Business Object (by field values)`
+#### Get Business Object (by field values)
 
-#### Description
+##### Description
 Gets the oldest Business Objects for each specific field value.
 
-#### Example
+##### Example
 
-#### `Get request offering`
+#### Get request offering
 
-#### Description
+##### Description
 Get the request data - including parameters - associated with a service request (ServiceReq).
 
-#### Example
+##### Example
 
-#### `Update Business Object`
+#### Update Business Object
 
-#### Description
+##### Description
 Updates a Business Object.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Jira%20Software.svg" width=32px> `Jira`
+## <img src="Images/TechnologyIcons/Jira%20Software.svg" width=32px> Jira
 
 ### actions
-- [`Add Attachment`](#add-attachment)
-- [`Add Comment`](#add-comment)
-- [`Add web link`](#add-web-link)
-- [`Create Issue`](#create-issue)
-- [`Delete Issue`](#delete-issue)
-- [`Do Transition`](#do-transition)
-- [`Find Issue (JQL)`](#find-issue-jql)
-- [`Find User`](#find-user)
-- [`Get Attachment`](#get-attachment)
-- [`Get Issue`](#get-issue)
-- [`Get Issues`](#get-issues)
-- [`Get Project Roles`](#get-project-roles)
-- [`Set Project Role users`](#set-project-role-users)
-- [`Trigger issue update`](#trigger-issue-update)
-- [`Update Comment`](#update-comment)
-- [`Update Issue`](#update-issue)
+- [Add Attachment](#add-attachment)
+- [Add Comment](#add-comment)
+- [Add web link](#add-web-link)
+- [Create Issue](#create-issue)
+- [Delete Issue](#delete-issue)
+- [Do Transition](#do-transition)
+- [Find Issue (JQL)](#find-issue-jql)
+- [Find User](#find-user)
+- [Get Attachment](#get-attachment)
+- [Get Issue](#get-issue)
+- [Get Issues](#get-issues)
+- [Get Project Roles](#get-project-roles)
+- [Set Project Role users](#set-project-role-users)
+- [Trigger issue update](#trigger-issue-update)
+- [Update Comment](#update-comment)
+- [Update Issue](#update-issue)
 
-#### `Add Attachment`
+#### Add Attachment
 
-#### Description
+##### Description
 Adds a new attachment to an issue. 
 
-#### Example
+##### Example
 
-#### `Add Comment` 
+#### Add Comment 
 
-#### Description
+##### Description
 Adds a new comment to an issue. 
 
-#### Example
+##### Example
 
-#### `Add web link` 
+#### Add web link 
 
-#### Description
+##### Description
 Adds a new link to a specified URL. 
 
-#### Example
+##### Example
 
-#### `Create Issue`
+#### Create Issue
 
-#### Description
+##### Description
 Creates a new issue. 
 
-#### Example
+##### Example
 
-#### `Delete Issue` 
+#### Delete Issue 
 
-#### Description
+##### Description
 Deletes an existing issue. 
 
-#### Example
+##### Example
 
-#### `Do Transition` 
+#### Do Transition 
 
-#### Description
+##### Description
 Transition an issue from one State to the next. Also allows multiple transitions 
 at once. 
 
-#### Example
+##### Example
 
-#### `Find Issue (JQL)` 
+#### Find Issue (JQL) 
 
-#### Description
+##### Description
 Get the first issue that matches the specified Jira query (JQL). 
 
-#### Example
+##### Example
 
-#### `Find LJser` 
+#### Find LJser 
 
-#### Description
+##### Description
 Finds a user by ID, email or name. 
 
-#### Example
+##### Example
 
-#### `Get Attachment` 
+#### Get Attachment 
 
-#### Description
+##### Description
 Get a specific attachment. 
 
-#### Example
+##### Example
 
-#### `Get Issue` 
+#### Get Issue 
 
-#### Description
+##### Description
 Get a specific issue. 
 
-#### Example
+##### Example
 
-#### `Get Issues` 
+#### Get Issues 
 
-#### Description
+##### Description
 Get specific issues. 
 
-#### Example
+##### Example
 
-#### `Get Project Roles` 
+#### Get Project Roles 
 
-#### Description
+##### Description
 Gets all available project roles and their users. 
 
-#### Example
+##### Example
 
-#### `Set Project Role users` 
+#### Set Project Role users 
 
-#### Description
+##### Description
 Replaces all assigned users and groups With a new set of users/groups. 
 
-#### Example
+##### Example
 
-#### `Trigger issue updated` 
+#### Trigger issue updated 
 
-#### Description
+##### Description
 Triggers an Oktopus workflow With 'Issue created/updated (Webhook)l trigger.
 
-#### Example
+##### Example
  
-#### `Update Comment` 
+#### Update Comment 
 
-#### Description
+##### Description
 Updates an existing comment. 
 
-#### Example
+##### Example
 
-#### `Update Issue` 
+#### Update Issue 
 
-#### Description
+##### Description
 Updates an existing issue. 
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width=32px> `JSON`
+## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width=32px> JSON
 
 ### actions
-- [`Parse JSON text`](#parse-json-text)
+- [Parse JSON text](#parse-json-text)
 
-#### `Parse JSON text`
+#### Parse JSON text
 
-#### Description
+##### Description
 Parses the given JSON text and stores the object result.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/LeanIX.svg" width=32px> `LeanIX`
+## <img src="Images/TechnologyIcons/LeanIX.svg" width=32px> LeanIX
 
 ### actions
-- [`Get fact sheets`](#get-fact-sheets)
-- [`Get metadata (language)`](#get-metadata-language)
-- [`GraphQL query`](#graphql-query)
+- [Get fact sheets](#get-fact-sheets)
+- [Get metadata (language)](#get-metadata-language)
+- [GraphQL query](#graphql-query)
 
-#### `Get fact sheets`
+#### Get fact sheets
 
-#### Description
+##### Description
 Gets all fact sheets. You may choose specific types like 'Applicationl.
 
-#### Example
+##### Example
 
-### `Get metadata (language)`
+### Get metadata (language)
 
-#### Description
+##### Description
 Gets the metadata (e.g. about fact sheets) for a specific language. This is handy to translate field values. 
 
-#### Example
+##### Example
 
-### `GraphQL query`
+### GraphQL query
 
-#### Description
+##### Description
 Executes an arbitrary query With any result.
 
-#### Example
+##### Example
 
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Mail.svg" width=32px> `Mail`
+## <img src="Images/TechnologyIcons/Mail.svg" width=32px> Mail
 
 ### actions
-- [`Parse EML`](#parse-eml)
+- [Parse EML](#parse-eml)
 
-#### `Parse EML`
+#### Parse EML
 
-#### Description
+##### Description
 Parses an EML file into its individual parts.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width=32px> `Microsoft 365`
+## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width=32px> Microsoft 365
 
 ### actions
-- [`Delete mail`](#delete-mail)
-- [`Move mail`](#move-mail)
-- [`Send mail`](#send-mail)
+- [Delete mail](#delete-mail)
+- [Move mail](#move-mail)
+- [Send mail](#send-mail)
 
 ### Entra App
-Click [here for help](How%20to%20registrations%20an%20app%20in%20ms%20entra.md)
+Click [here for help](How%20to%20register%20an%20App%20within%20MS%20Entra%20ID.md)
 
-#### `Delete mail`
+#### Delete mail
 
-#### Description
+##### Description
 Delete an email.
 
-#### Example
+##### Example
 
-#### `Move mail`
+#### Move mail
 
-#### Description
+##### Description
 Move an email to a different folder.
 
-#### Example
+##### Example
 
-#### `Send mail`
+#### Send mail
 
-#### Description
+##### Description
 Send a mail.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Google%20Contacts.svg" width=32px> `Microsoft 365 Contacts`
+## <img src="Images/TechnologyIcons/Google%20Contacts.svg" width=32px> Microsoft 365 Contacts
 
 ### actions
-- [`Create contact`](#create-contact)
-- [`Create or update (upsert) contacts`](#create-or-update-upsert-contacts)
-- [`Get contact`](#get-contact)
-- [`Get contact folders`](#get-contact-folders)
-- [`Update contact`](#update-contact)
+- [Create contact](#create-contact)
+- [Create or update (upsert) contacts](#create-or-update-upsert-contacts)
+- [Get contact](#get-contact)
+- [Get contact folders](#get-contact-folders)
+- [Update contact](#update-contact)
 
-#### `Create contact`
+#### Create contact
 
-#### Description
+##### Description
 Create contact for the current or a specific user. 
 
-#### Example
+##### Example
 
-#### `Create or update (upsert) contacts`
+#### Create or update (upsert) contacts
 
-#### Description
+##### Description
 Create or update (upsert) multiple contacts of the current or specific users.
 
-#### Example
+##### Example
 
-#### `Get contact`
+#### Get contact
 
-#### Description
+##### Description
 Get contact for the current or a specific user.
 
-#### Example
+##### Example
 
-#### `CGet contact folders`
+#### CGet contact folders
 
-#### Description
+##### Description
 Get all contact folders for the current or a specific user.
 
-#### Example
+##### Example
 
-#### `Update contact`
+#### Update contact
 
-#### Description
+##### Description
 Update a contact of the current or a specific user.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="" width=32px> `Microsoft Sharepoint`
+## <img src="" width=32px> Microsoft Sharepoint
 
 ### actions
-- [`Delete file`](#delete-file)
-- [`Download file`](#download-file)
-- [`Upload file`](#upload-file)
+- [Delete file](#delete-file)
+- [Download file](#download-file)
+- [Upload file](#upload-file)
 
-#### `Delete file`
+#### Delete file
 
-#### Description
+##### Description
 Deletes a file from OneDrive.
 
-#### Example
+##### Example
 
 
-#### `Download file`
+#### Download file
 Downloads a file from OneDrive.
 
-#### Description
+##### Description
 
-#### Example
+##### Example
 
 
-#### `Upload file`
+#### Upload file
 Uploads a file to OneDrive.
 
-#### Description
+##### Description
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Microsoft%20SQL%20Server.svg" width=32px> `Microsoft SQL Server`
+## <img src="Images/TechnologyIcons/Microsoft%20SQL%20Server.svg" width=32px> Microsoft SQL Server
 
 ### actions
-- [`Query`](#query)
+- [Query](#query)
 
-#### `Query`
+#### Query
 
-#### Description
+##### Description
 Executes a user specified query.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Microsoft%20Teams.svg" width=32px> `Microsoft Teams`
+## <img src="Images/TechnologyIcons/Microsoft%20Teams.svg" width=32px> Microsoft Teams
 
 ### actions
-- [`Create Team`](#create-team)
-- [`Get 1:1 chat`](#get-1:1-chat)
-- [`Get channel messages`](#get-channel-messages)
-- [`Get chat messages`](#get-chat-messages)
-- [`Get User`](#get-user)
-- [`Send channel message`](#send-channel-message)
-- [`Send chat message`](#send-chat-message)
+- [Create Team](#create-team)
+- [Get 1:1 chat](#get-1:1-chat)
+- [Get channel messages](#get-channel-messages)
+- [Get chat messages](#get-chat-messages)
+- [Get User](#get-user)
+- [Send channel message](#send-channel-message)
+- [Send chat message](#send-chat-message)
 
-#### `Create Team`
+#### Create Team
 
-#### Description
+##### Description
 Creates a team (including the Microsoft 365 Group).
-[`How do you create a app in Entra ID`](How%20to%20register%20an%20App%20within%20MS%20Entra%20ID.md)
-#### Example
+[How do you create a app in Entra ID](How%20to%20register%20an%20App%20within%20MS%20Entra%20ID.md)
+##### Example
 
-#### `Get 1:1 chat`
+#### Get 1:1 chat
 
-#### Description
+##### Description
 Starts or resumes a chat from the service account With another person.
 
-#### Example
+##### Example
 
-#### `Get channel messages`
+#### Get channel messages
 
-#### Description
+##### Description
 Gets the most recent 50 messages in a channel.
 
-#### Example
+##### Example
 
-#### `Get chat messages`
+#### Get chat messages
 
-#### Description
+##### Description
 Gets the most recent 50 messages in a Chat.
 
-#### Example
+##### Example
 
-#### `Get User`
+#### Get User
 
-#### Description
+##### Description
 Gets the information about a certain user.
 
-#### Example
+##### Example
 
-#### `Send channel message`
+#### Send channel message
 
-#### Description
+##### Description
 Sends a message to a channel inside a team.
 
-#### Example
+##### Example
 
-#### `Send chat message`
+#### Send chat message
 
-#### Description
+##### Description
 Sends a message to a Chat.
 
-#### Example
+##### Example
 
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Microsoft%20Word.svg" width=32px> `Microsoft Word`
+## <img src="Images/TechnologyIcons/Microsoft%20Word.svg" width=32px> Microsoft Word
 
 ### actions
-- [`Convert documents to PDF`](#convert-documents-to-pd)
-- [`Convert to PDF`](#convert-to-pdf)
-- [`Mail Merge`](#mail-merge)
-- [`Modify document`](#modify-document)
+- [Convert documents to PDF](#convert-documents-to-pd)
+- [Convert to PDF](#convert-to-pdf)
+- [Mail Merge](#mail-merge)
+- [Modify document](#modify-document)
 
-#### `Convert documents to PDF`
+#### Convert documents to PDF
 
-#### Description
+##### Description
 Convert multiple documents to PDF.
 
-#### Example
+##### Example
 
-#### `Convert to PDF`
+#### Convert to PDF
 
-#### Description
+##### Description
 Convert a single documents to PDF.
 
-#### Example
+##### Example
 
-#### `mail Merge`
+#### mail Merge
 
-#### Description
+##### Description
 Fil a document that contains placeholders with an actual value.
 
-#### Example
+##### Example
 
-#### `Modify document`
+#### Modify document
 
-#### Description
+##### Description
 Modify a document by removing certain paragraphs .
 
-#### Example
+##### Example
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Netbox.svg" width=32px> `NetBox`
+## <img src="Images/TechnologyIcons/Netbox.svg" width=32px> NetBox
 
 ### actions
-- [`Get devices`](#get-devices)
-- [`Get IP prefixes`](#get-ip-prefixes)
-- [`Get sites`](#get-sites)
-- [`Get support contracts`](#get-support-contracts)
-- [`Get tenants`](#get-tenants)
-- [`Get virtual machines`](#get-virtual-machines)
-- [`Get VLANs`](#get-vlans)
+- [Get devices](#get-devices)
+- [Get IP prefixes](#get-ip-prefixes)
+- [Get sites](#get-sites)
+- [Get support contracts](#get-support-contracts)
+- [Get tenants](#get-tenants)
+- [Get virtual machines](#get-virtual-machines)
+- [Get VLANs](#get-vlans)
 
-#### `Get devices`
+#### Get devices
 
-#### Description
+##### Description
 Get all devices.
 
-#### Example
+##### Example
 
-#### `Get IP prefixes`
+#### Get IP prefixes
 
-#### Description
+##### Description
 Get all IP prefixes.
 
-#### Example
+##### Example
 
-#### `Get Sites`
+#### Get Sites
 
-#### Description
+##### Description
 Get all Sites.
 
-#### Example
+##### Example
 
-#### `Get support contacts`
+#### Get support contacts
 
-#### Description
+##### Description
 Get all support contracts. This requires a NetBox plugin.
 
-#### Example
+##### Example
 
-#### `Get tenants`
+#### Get tenants
 
-#### Description
+##### Description
 Get all tenants.
 
-#### Example
+##### Example
 
-#### `Get virtual machines`
+#### Get virtual machines
 
-#### Description
+##### Description
 Get all virtual machines.
 
-#### Example
+##### Example
 
-#### `Get VLANs`
+#### Get VLANs
 
-#### Description
+##### Description
 Get all VLANs.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Ninox.svg" width=32px> `Ninox`
+## <img src="Images/TechnologyIcons/Ninox.svg" width=32px> Ninox
 
 ### actions
-- [`Create or update record(s)`](#create-or-update-records)
-- [`Create record`](#create-record)
-- [`Delete attachment`](#delete-attachment)
-- [`Delete record`](#delete-record)
-- [`Download attechment`](#download-attechment)
-- [`Download attechments`](#download-attechments)
-- [`Download various attechments`](#download-various-attechments)
-- [`Find record`](#find-record)
-- [`Find records`](#find-records)
-- [`Get record`](#get-record)
-- [`Get records`](#get-records)
-- [`Update record`](#update-record)
-- [`Update attachment`](#update-attachment)
-- [`Update attachments`](#update-attachments)
+- [Create or update record(s)](#create-or-update-records)
+- [Create record](#create-record)
+- [Delete attachment](#delete-attachment)
+- [Delete record](#delete-record)
+- [Download attechment](#download-attechment)
+- [Download attechments](#download-attechments)
+- [Download various attechments](#download-various-attechments)
+- [Find record](#find-record)
+- [Find records](#find-records)
+- [Get record](#get-record)
+- [Get records](#get-records)
+- [Update record](#update-record)
+- [Update attachment](#update-attachment)
+- [Update attachments](#update-attachments)
 
 ### Help
 In following link u have information about the filters in get requests:
 https://docs.ninox.com/en/api/introduction/tables-fields-records
 
-#### `Create or update record(s)`
+#### Create or update record(s)
 
-#### Description
+##### Description
 Create or update (upsert) a Single record or many at once. 
 
-#### Example
+##### Example
 
 
-#### `Create record`
+#### Create record
 
-#### Description
+##### Description
 Create a new record within a table.
 
-#### Example
+##### Example
 
 
-#### `Delete attachment`
+#### Delete attachment
 
-#### Description
+##### Description
 Deletes a specific attachment from a record.
 
-#### Example
+##### Example
 
 
-#### `Delete record`
+#### Delete record
 
-#### Description
+##### Description
 Delete a record.
 
-#### Example
+##### Example
 
-#### `Download attechment`
+#### Download attechment
 
-#### Description
+##### Description
 Downloads a specific attachment from a record.
 
-#### Example
+##### Example
 
-#### `Download attechments`
+#### Download attechments
 
-#### Description
+##### Description
 Downloads all attachments from a record.
 
-#### Example
+##### Example
 
-#### `Download various attechments`
+#### Download various attechments
 
-#### Description
+##### Description
 Downloads specific attachments from specific records.
 
-#### Example
+##### Example
 
-#### `Find record`
+#### Find record
 
-#### Description
+##### Description
 Finds a specific record within a table.
 
-#### Example
+##### Example
 
-#### `Find records`
+#### Find records
 
-#### Description
+##### Description
 Finds records within a table.
 
-#### Example
+##### Example
 
-#### `Get record`
+#### Get record
 
-#### Description
+##### Description
 Gets a specific record by ID.
 
-#### Example
+##### Example
 
-#### `Get records`
+#### Get records
 
-#### Description
+##### Description
 Gets specific records by ID.
 
-#### Example
+##### Example
 
-#### `Update record`
+#### Update record
 
-#### Description
+##### Description
 Update certain fields of a record.
 
-#### Example
+##### Example
 
-#### `Update attachment`
+#### Update attachment
 
-#### Description
+##### Description
 Uploads an attachment to a record.
 
-#### Example
+##### Example
 
-#### `Update attachments`
+#### Update attachments
 
-#### Description
+##### Description
 Uploads attachments to a record.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Oktopus%20Icon%20Orange.svg" width=32px> `Oktopus`
+## <img src="Images/TechnologyIcons/Oktopus%20Icon%20Orange.svg" width=32px> Oktopus
 
 ### actions
-- [`Evaluate script`](#evaluate-script)
+- [Evaluate script](#evaluate-script)
 
-#### `Evaluate script`
+#### Evaluate script
 
-#### Description
+##### Description
 Evaluate a more or less comples script which generates variables or influences the workflow state.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/PDF.svg" width=32px> `PDF`
+## <img src="Images/TechnologyIcons/PDF.svg" width=32px> PDF
 
 ### actions
-- [`Merge PDFs`](#merge-pdfs)
+- [Merge PDFs](#merge-pdfs)
 
-#### `Merge PDFs`
+#### Merge PDFs
 
-#### Description
+##### Description
 Merge multiple PDF files into one PDF file.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Microsoft%20Power%20BI.svg" width=32px> `Power BI`
+## <img src="Images/TechnologyIcons/Microsoft%20Power%20BI.svg" width=32px> Power BI
 
 ### actions
-- [`Add rows to push dataset`](#add-rows-to-push-dataset)
-- [`Create push dataset`](#create-push-dataset)
-- [`Delete rows from push dataset`](#delete-rows-from-push-dataset)
-- [`Execute Data Analysis Expression`](#execute-data-analysis-expression)
-- [`Get dataset`](#get-dataset)
-- [`Get datasets`](#get-datasets)
-- [`Get push dataset tables`](#get-push-dataset-tables)
-- [`Refresh dataset`](#refresh-dataset)
+- [Add rows to push dataset](#add-rows-to-push-dataset)
+- [Create push dataset](#create-push-dataset)
+- [Delete rows from push dataset](#delete-rows-from-push-dataset)
+- [Execute Data Analysis Expression](#execute-data-analysis-expression)
+- [Get dataset](#get-dataset)
+- [Get datasets](#get-datasets)
+- [Get push dataset tables](#get-push-dataset-tables)
+- [Refresh dataset](#refresh-dataset)
 
-#### `Add rows to push dataset`
+#### Add rows to push dataset
 
-#### Description
+##### Description
 Adds any number of new rows to a push dataset.
 
-#### Example
+##### Example
 
 
-#### `Create push dataset`
+#### Create push dataset
 
-#### Description
+##### Description
 Creates a new push dataset.
 
-#### Example
+##### Example
 
 
-#### `Delete rows from push dataset`
+#### Delete rows from push dataset
 
-#### Description
+##### Description
 Deletes all rows from a pusgh dataset.
 
-#### Example
+##### Example
 
 
-#### `Execute Data Analysis Expression`
+#### Execute Data Analysis Expression
 
-#### Description
+##### Description
 Executes a Data Analysis Expression (DAX).
 
-#### Example
+##### Example
 
 
-#### `Get dataset`
+#### Get dataset
 
-#### Description
+##### Description
 Gets a specific dataset.
 
-#### Example
+##### Example
 
 
-#### `Get datasets`
+#### Get datasets
 
-#### Description
+##### Description
 Gets all available datasets (available to the connection account).
 
-#### Example
+##### Example
 
 
-#### `Get push dataset tables`
+#### Get push dataset tables
 
-#### Description
+##### Description
 Gets all tables inside a oush dataset. Push dataset are very limited in ther functionality.
 
-#### Example
+##### Example
 
 
-#### `Refresh dataset`
+#### Refresh dataset
 
-#### Description
+##### Description
 Refreshes a dataset.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/RayVentory.svg" width=32px> `ReyVentory Data Hub`
+## <img src="Images/TechnologyIcons/RayVentory.svg" width=32px> ReyVentory Data Hub
 
 ### actions
-- [`Get table data`](#get-table-data)
+- [Get table data](#get-table-data)
 
-#### `Get table data`
+#### Get table data
 
-#### Description
+##### Description
 Gets all rows from table.
 
-#### Example
+##### Example
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Shopware.svg" width=32px> `Shopware`
+## <img src="Images/TechnologyIcons/Shopware.svg" width=32px> Shopware
 
 ### actions
-- [`Create product`](#create-product)
-- [`Create product cross selling`](#create-product-cross-selling)
-- [`Delete product`](#delete-product)
-- [`Delete product cross selling`](#delete-product-cross-selling)
-- [`Get product`](#get-product)
-- [`Get product cross selling`](#get-product-cross-selling)
-- [`Translate categories`](#translate-categories)
-- [`Translate product`](#translate-product)
-- [`Update product`](#update-product)
-- [`Update product cross selling`](#update-product-cross-selling)
+- [Create product](#create-product)
+- [Create product cross selling](#create-product-cross-selling)
+- [Delete product](#delete-product)
+- [Delete product cross selling](#delete-product-cross-selling)
+- [Get product](#get-product)
+- [Get product cross selling](#get-product-cross-selling)
+- [Translate categories](#translate-categories)
+- [Translate product](#translate-product)
+- [Update product](#update-product)
+- [Update product cross selling](#update-product-cross-selling)
 
-#### `Create product`
+#### Create product
 
-#### Description
+##### Description
 Creates products in your shop.
 
-#### Example
+##### Example
 
-#### `Create product cross selling`
+#### Create product cross selling
 
-#### Description
+##### Description
 Adds new cross selling to specific product.
 
-#### Example
+##### Example
 
-#### `Delete product`
+#### Delete product
 
-#### Description
+##### Description
 Deletes specific product from the shop.
 
-#### Example
+##### Example
 
-#### `Delete product cross selling`
+#### Delete product cross selling
 
-#### Description
+##### Description
 Deletes the cross selling entity for a given product.
 
-#### Example
+##### Example
 
-#### `Get product`
+#### Get product
 
-#### Description
+##### Description
 Get a specifi product.
 
-#### Example
+##### Example
 
-#### `Get product cross selling`
+#### Get product cross selling
 
-#### Description
+##### Description
 Gets all cross selling entities of a specific product.
 
-#### Example
+##### Example
 
-#### `Translate categories`
+#### Translate categories
 
-#### Description
+##### Description
 Adds translated texts to given categories in the specified language.
 
-#### Example
+##### Example
 
-#### `Translate product`
+#### Translate product
 
-#### Description
+##### Description
 Adds translated texts to a specific product.
 
-#### Example
+##### Example
 
-#### `Update product`
+#### Update product
 
-#### Description
+##### Description
 Updates a specific product.
 
-#### Example
+##### Example
 
-#### `Update product cross selling`
+#### Update product cross selling
 
-#### Description
+##### Description
 Updates a given cross selling entity of a specific product.
 
-#### Example
+##### Example
 
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/SMAX.svg" width=32px> `SMAX`
+## <img src="Images/TechnologyIcons/SMAX.svg" width=32px> SMAX
 
 ### actions
-- [`Add comment`](#add-comment)
-- [`Create record`](#create-record)
-- [`Delete comment`](#delete-comment)
-- [`Delete record`](#delete-record)
-- [`Find record`](#find-record)
-- [`Find records`](#find-records)
-- [`Get record`](#get-record)
-- [`Update comment`](#update-comment)
-- [`Update record`](#update-record)
+- [Add comment](#add-comment)
+- [Create record](#create-record)
+- [Delete comment](#delete-comment)
+- [Delete record](#delete-record)
+- [Find record](#find-record)
+- [Find records](#find-records)
+- [Get record](#get-record)
+- [Update comment](#update-comment)
+- [Update record](#update-record)
 
-#### `Add comment`
+#### Add comment
 
-#### Description
+##### Description
 Adds one or more attechments to a record.
 
-#### Example
+##### Example
 
-#### `Create record`
+#### Create record
 
-#### Description
+##### Description
 Adds a new comment to a record.
 
-#### Example
+##### Example
 
-#### `Delete comment`
+#### Delete comment
 
-#### Description
+##### Description
 Deletes anm existing comment.
 
-#### Example
+##### Example
 
-#### `Delete record`
+#### Delete record
 
-#### Description
+##### Description
 Deletes anm existing record.
 
-#### Example
+##### Example
 
-#### `Find record`
+#### Find record
 
-#### Description
+##### Description
 Find a record by query.
 
-#### Example
+##### Example
 
-#### `Find records`
+#### Find records
 
-#### Description
+##### Description
 Find records by query.
 
-#### Example
+##### Example
 
-#### `Get record`
+#### Get record
 
-#### Description
+##### Description
 Get a record by ID.
 
-#### Example
+##### Example
 
-#### `Update comment`
+#### Update comment
 
-#### Description
+##### Description
 Updates an existing comment.
 
-#### Example
+##### Example
 
-#### `Update record`
+#### Update record
 
-#### Description
+##### Description
 Updates an existing record.
 
-#### Example
+##### Example
 
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Text.svg" width=32px> `Text`
+## <img src="Images/TechnologyIcons/Text.svg" width=32px> Text
 
 ### actions
-- [`Create file`](#create-file)
-- [`Create file (from Base64)`](#create-file-from-Base64)
-- [`Create text`](#create-text)
-- [`Generate password`](#generate-password)
-- [`Map single value`](#map-single-value)
-- [`Read file`](#read-file)
-- [`Split text`](#split-text)
+- [Create file](#create-file)
+- [Create file (from Base64)](#create-file-from-Base64)
+- [Create text](#create-text)
+- [Generate password](#generate-password)
+- [Map single value](#map-single-value)
+- [Read file](#read-file)
+- [Split text](#split-text)
 
-#### `Create file`
+#### Create file
 
-#### Description
+##### Description
 Combine variables and static text into a file.
 
-#### Example
+##### Example
 
-#### `Create file (from Base64)`
+#### Create file (from Base64)
 
-#### Description
+##### Description
 Converts Base64 text into a file.
 
-#### Example
+##### Example
 
-#### `Create text`
+#### Create text
 
-#### Description
+##### Description
 Combine variables and static text into a new text document.
 
-#### Example
+##### Example
 
-#### `Generate password`
+#### Generate password
 
-#### Description
+##### Description
 Generates a random sewuence of characters with a given length and character set.
 
-#### Example
+##### Example
 
-#### `Map single value`
+#### Map single value
 
-#### Description
+##### Description
 Takes any input text, mapped against a table with a specific output selected.
 
-#### Example
+##### Example
 
-#### `Read file`
+#### Read file
 
-#### Description
+##### Description
 Reads the content of a file variable.
 
-#### Example
+##### Example
 
-#### `Split text`
+#### Split text
 
-#### Description
+##### Description
 Takes any input text and split it by any given separator.
 
-#### Example
+##### Example
 
 
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Timer.svg" width=32px> `Timer`
+## <img src="Images/TechnologyIcons/Timer.svg" width=32px> Timer
 
 ### actions
-- [`Delay`](#delay)
+- [Delay](#delay)
 
-#### `Delay`
+#### Delay
 
-#### Description
+##### Description
 Waits a certain amount of time.\
 Enter the time span between each execution (format h:mm:ss).
 
-#### Example
+##### Example
 0:2:30 (2.5 minutes)
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/USM.svg" width=32px> `USM`
+## <img src="Images/TechnologyIcons/USM.svg" width=32px> USM (Preview)
 
 ### actions
-- [`Change Object`](#change-object)
-- [`Create Object`](#create-object)
-- [`Create Ticket`](#create-ticket)
-- [`Find Objects`](#find-objects)
-- [`Get Object`](#get-objects)
-- [`Get Object by field`](#get-object-by-field)
+- [Change Object](#change-object)
+- [Create Object](#create-object)
+- [Create Ticket](#create-ticket)
+- [Find Objects](#find-objects)
+- [Get Object](#get-objects)
+- [Get Object by field](#get-object-by-field)
 
-#### `Change Object`
+#### Change Object
 
-#### Description
+##### Description
 Changes (updates) an existing Business Object.
 
-#### Example
+##### Example
 
 
-#### `Create Object`
+#### Create Object
 
-#### Description
+##### Description
 Creates a new Business Object.
 
-#### Example
+##### Example
 
 
-#### `Create Ticket`
+#### Create Ticket
 
-#### Description
+##### Description
 Creates a new ticket (Incident, Problem, ...).
 
-#### Example
+##### Example
 
 
-#### `Find Objects`
+#### Find Objects
 
-#### Description
+##### Description
 Finds a specific bbusiness object.
 
-#### Example
+##### Example
 
 
-#### `Get Object`
+#### Get Object
 
-#### Description
+##### Description
 Fet a specific business object.
 
-#### Example
+##### Example
 
 
-#### `Get Object by field`
+#### Get Object by field
 
-#### Description
+##### Description
 Get the first business object by field.
 
-#### Example
+##### Example
 
 [:top:](#technologies)
-## <img src="Images/TechnologyIcons/Webhook.svg" width=32px> `Webhook`
+## <img src="Images/TechnologyIcons/Webhook.svg" width=32px> Webhook
 
 ### actions
-- [`Webhook Response`](#webhook-response)
+- [Webhook Response](#webhook-response)
 
-#### `Webhook Response`
+#### Webhook Response
 
-#### Description
+##### Description
 Customize the webhook response sent when immediatly executing a workflow via webhook.\
 The response content. This can be a variety of text and variables.
-#### Example
-JSON: {{ { Id: Ticket.Id, Messages: [ "Thanks Oktopus" ] } }}\
-File: {{AFileVariable}}\
-Text: Hello from my workflow.\
-HTML: <a href="https://freedom-manufaktur.com">Thanks Oktopus</a>
+##### Example
+JSON: `{{ { Id: Ticket.Id, Messages: [ "Thanks Oktopus" ] } }}`\
+File: `{{AFileVariable}}`\
+Text: `Hello from my workflow.`\
+HTML: `<a href="https://freedom-manufaktur.com">Thanks Oktopus</a>`
 
 
 [:top:](#technologies)

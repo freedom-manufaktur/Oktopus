@@ -1,7 +1,8 @@
 Documentation for whoosh Oktopus triggers
 ---
-Version: `5.18.0` - `2024-10-15` \
+Version: `5.18.0` - `2024-10-16` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/main/Oktopus%20Triggers.md)
+> Note: This document is still work in progress, many triggers do not have a
 
 # Overview
 This document describes the triggers available in whoosh Oktopus.
@@ -28,10 +29,10 @@ This document describes the triggers available in whoosh Oktopus.
 
 #### Work Item trigger (Webhook)
 
-#### Description
+##### Description
 Triggers when a work item created or updated webhook is received.
 
-#### Example
+##### Example
 
 [:top:](#overview)
 
@@ -42,10 +43,10 @@ Triggers when a work item created or updated webhook is received.
 
 #### Envelope status changed
 
-#### Description
+##### Description
 Triggers when the status of an envelope changes.
 
-#### Examples
+##### Examples
 
 [:top:](#overview)
 
@@ -56,10 +57,10 @@ Triggers when the status of an envelope changes.
 
 #### Workflow failed
 
-#### Description
+##### Description
 Triggers when a workflow failed with an error.
 
-#### Examples
+##### Examples
 
 [:top:](#overview)
 
@@ -74,38 +75,38 @@ Triggers when a workflow failed with an error.
 
 #### Email received
 
-#### Description
+##### Description
 Triggers whenever an email was received in the users inbox (unread).
 
-#### Examples
+##### Examples
 
 #### Meeting accepted
 
-#### Description
+##### Description
 Triggers whenever a meeting accepted response was received in the users inbox (unread).
 
-#### Examples
+##### Examples
 
 #### Meeting accepted tentatively
 
-#### Description
+##### Description
 Triggers whenever a meeting accepted tentatively response was received in the users inbox (unread).
 
-#### Examples
+##### Examples
 
 #### Meeting declined
 
-#### Description
+##### Description
 Triggers whenever a meeting declined response was received in the users inbox (unread).
 
-#### Examples
+##### Examples
 
 #### Meeting response
 
-#### Description
+##### Description
 Triggers whenever a meeting response was received in the users inbox (unread).
 
-#### Examples
+##### Examples
 
 [:top:](#overview)
 
@@ -116,10 +117,10 @@ Triggers whenever a meeting response was received in the users inbox (unread).
 
 #### Watch folder for files
 
-#### Description
+##### Description
 Triggers when a file is found in a certain directory.
 
-#### Examples
+##### Examples
 
 [:top:](#overview)
 
@@ -130,10 +131,10 @@ Triggers when a file is found in a certain directory.
 
 #### Mail recieved
 
-#### Description
+##### Description
 Triggers when receving an email.
 
-#### Examples
+##### Examples
 
 [:top:](#overview)
 
@@ -144,10 +145,10 @@ Triggers when receving an email.
 
 #### Business Object found
 
-#### Description
+##### Description
 Triggers when a Business Object with a specific field value is found.
 
-#### Examples
+##### Examples
 
 [:top:](#overview)
 
@@ -162,40 +163,40 @@ Triggers when a Business Object with a specific field value is found.
 
 #### Attachment added/deleted Webhook
 
-#### Description
+##### Description
 Triggers whenever an attachment was added or deleted with webhook notification. 
 
-#### Examples
+##### Examples
 
 #### Comment created/updated Webhook
 
-#### Description
+##### Description
 Triggers whenever a comment was created or updated with webhook notification.
 
-#### Examples
+##### Examples
 
 #### Issue created/updated Webhook
 
-#### Description
+##### Description
 Triggers whenever an issue was created or updated with webhook notification.
 
-#### Examples
+##### Examples
 
 #### Issue found JQL
 
-#### Description
+##### Description
 Triggers whenever an issue was found by the specified Jira query (JQL).
 
-#### Examples
+##### Examples
 
 #### Jira Automation Webhook
 
-#### Description
+##### Description
 Triggers whenever a notification is sent to this Webhook. The content is determinded by your Jira Automation 
 settings.
 
 
-#### Examples
+##### Examples
 
 [:top:](#overview)
 
@@ -206,10 +207,10 @@ settings.
 
 #### Mail received
 
-#### Description
+##### Description
 Triggers when a mail is present in a given mailbox.
 
-#### Examples
+##### Examples
 
 [:top:](#overview)
 
@@ -220,10 +221,10 @@ Triggers when a mail is present in a given mailbox.
 
 #### Contact delta detected
 
-#### Description
+##### Description
 Triggers when a contact was created or updated.
 
-#### Examples
+##### Examples
 
 [:top:](#overview)
 
@@ -234,10 +235,10 @@ Triggers when a contact was created or updated.
 
 #### Record found
 
-#### Description
+##### Description
 Triggers when a record matches a specified criteria.
 
-#### Examples
+##### Examples
 My Field,"Max, Mustermann"
 
 [:top:](#overview)
@@ -255,17 +256,17 @@ My Field,"Max, Mustermann"
 
 Enter a [CRON expression](https://en.wikipedia.org/wiki/Cron#CRON_expression). Time is calculated in UTC.
 
-##### Examples
-- 15 3 * * * (daily at 03:15)
-- * * * * 1 (every monday)
+###### Examples
+- `15 3 * * *` (daily at 03:15)
+- `* * * * 1` (every monday)
 
 #### Interval
 
 ##### Description
 Enter the time span between each execution (format d.hh:mm:ss).
 
-##### Examples
-0:2:30 (2.5 minutes) or 1.0:0:0 (1 day)
+###### Examples
+`0:2:30` (2.5 minutes) or `1.0:0:0` (1 day)
 
 #### Manual
 
@@ -275,16 +276,16 @@ Triggers only when the user explicitly requests execution.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/USM.svg" width=32px> USM Preview
+## <img src="Images/TechnologyIcons/USM.svg" width=32px> USM (Preview)
 ### Triggers
 - [Object found](#object-found)
 
 #### Object found
 
-#### Description
+##### Description
 Triggers whenever a business object matches the given criteria.
 
-#### Examples
+##### Examples
 
 [:top:](#overview)
 
@@ -295,10 +296,10 @@ Triggers whenever a business object matches the given criteria.
 
 #### Object found
 
-#### Description
+##### Description
 Wait for an HTTP call to the endpoint.
 
-#### Example
+##### Example
 
 [:top:](#overview)
 
