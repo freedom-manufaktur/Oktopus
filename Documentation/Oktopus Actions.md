@@ -594,10 +594,10 @@ Get all devices.
 #### Get IP prefixes
 Get all IP prefixes.
 
-#### Get Sites
+#### Get sites
 Get all Sites.
 
-#### Get support contacts
+#### Get support contracts
 Get all support contracts. This requires a NetBox plugin.
 
 #### Get tenants
