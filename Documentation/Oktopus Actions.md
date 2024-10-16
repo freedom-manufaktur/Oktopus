@@ -49,7 +49,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Create User](#create-user)
 - [Delete principal](#delete-principal)
 - [Find User](#find-user)
-- [Remove a pricipal from groups](#remove-a-pricipal-from-groups)
+- [Remove a principal from groups](#remove-a-principal-from-groups)
 - [Reset user password](#reset-user-password)
 - [Update User](#update-user)
 
