@@ -24,7 +24,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Mail](#-mail)
 - [Microsoft 365](#-microsoft-365)
 - [Microsoft 365 Contacts](#-microsoft-365-contacts)
-- [Microsoft SharePoint](#-microsoft-sharepoint)
+- [Microsoft OneDrive / SharePoint](#-microsoft-onedrive--sharepoint)
 - [Microsoft SQL Server](#-microsoft-sql-server)
 - [Microsoft Teams](#-microsoft-teams)
 - [Microsoft Word](#-microsoft-word)
