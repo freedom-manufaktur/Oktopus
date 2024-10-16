@@ -353,58 +353,57 @@ Updates a Business Object.
 - [Get Issues](#get-issues)
 - [Get Project Roles](#get-project-roles)
 - [Set Project Role users](#set-project-role-users)
-- [Trigger issue update](#trigger-issue-update)
+- [Trigger issue updated](#trigger-issue-updated)
 - [Update Comment](#update-comment)
 - [Update Issue](#update-issue)
 
 #### Add Attachment
-Adds a new attachment to an issue. 
+Adds a new attachment to an issue.
 
-#### Add Comment 
-Adds a new comment to an issue. 
+#### Add Comment
+Adds a new comment to an issue.
 
-#### Add web link 
-Adds a new link to a specified URL. 
+#### Add web link
+Adds a new link to a specified URL.
 
 #### Create Issue
-Creates a new issue. 
+Creates a new issue.
 
-#### Delete Issue 
-Deletes an existing issue. 
+#### Delete Issue
+Deletes an existing issue.
 
-#### Do Transition 
-Transition an issue from one State to the next. Also allows multiple transitions 
-at once. 
+#### Do Transition
+Transition an issue from one State to the next. Also allows multiple transitions at once.
 
-#### Find Issue (JQL) 
-Get the first issue that matches the specified Jira query (JQL). 
+#### Find Issue (JQL)
+Get the first issue that matches the specified Jira query (JQL).
 
-#### Find User 
-Finds a user by ID, email or name. 
+#### Find User
+Finds a user by ID, email or name.
 
-#### Get Attachment 
-Get a specific attachment. 
+#### Get Attachment
+Get a specific attachment.
 
-#### Get Issue 
-Get a specific issue. 
+#### Get Issue
+Get a specific issue.
 
-#### Get Issues 
-Get specific issues. 
+#### Get Issues
+Get specific issues.
 
-#### Get Project Roles 
-Gets all available project roles and their users. 
+#### Get Project Roles
+Gets all available project roles and their users.
 
-#### Set Project Role users 
-Replaces all assigned users and groups With a new set of users/groups. 
+#### Set Project Role users
+Replaces all assigned users and groups With a new set of users/groups.
 
-#### Trigger issue updated 
-Triggers an Oktopus workflow With 'Issue created/updated (Webhook)l trigger.
- 
-#### Update Comment 
-Updates an existing comment. 
+#### Trigger issue updated
+Triggers an Oktopus workflow With 'Issue created/updated (Webhook) trigger.
 
-#### Update Issue 
-Updates an existing issue. 
+#### Update Comment
+Updates an existing comment.
+
+#### Update Issue
+Updates an existing issue.
 
 [:top:](#technologies)
 
@@ -429,7 +428,7 @@ Parses the given JSON text and stores the object result.
 Gets all fact sheets. You may choose specific types like 'Applicationl.
 
 ### Get metadata (language)
-Gets the metadata (e.g. about fact sheets) for a specific language. This is handy to translate field values. 
+Gets the metadata (e.g. about fact sheets) for a specific language. This is handy to translate field values.
 
 ### GraphQL query
 Executes an arbitrary query With any result.
@@ -477,7 +476,7 @@ Send a mail.
 - [Update contact](#update-contact)
 
 #### Create contact
-Create contact for the current or a specific user. 
+Create contact for the current or a specific user.
 
 #### Create or update (upsert) contacts
 Create or update (upsert) multiple contacts of the current or specific users.
@@ -635,7 +634,7 @@ In following link u have information about the filters in get requests.
 https://docs.ninox.com/en/api/introduction/tables-fields-records
 
 #### Create or update record(s)
-Create or update (upsert) a Single record or many at once. 
+Create or update (upsert) a Single record or many at once.
 
 #### Create record
 Create a new record within a table.

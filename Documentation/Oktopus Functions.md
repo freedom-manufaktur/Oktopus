@@ -376,7 +376,7 @@ dateOnly.from <dateTime>
 
 #### Description
 
-Returns the date string of an input `dateTime`. 
+Returns the date string of an input `dateTime`.
 
 #### Arguments
 
@@ -540,7 +540,7 @@ Stores a global variable of an input `value`. If the `globalVariableName` alread
 
 #### Arguments
 
-- `value`: The input object 
+- `value`: The input object
 - `globalVariableName`: The name of the global variable
 
 #### Returns
@@ -1165,7 +1165,7 @@ timeOnly.from <dateTime>
 
 #### Description
 
-Returns a time object of an input `dateTime`. 
+Returns a time object of an input `dateTime`.
 
 #### Arguments
 

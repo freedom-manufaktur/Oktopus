@@ -117,7 +117,7 @@ Triggers when a Business Object with a specific field value is found.
 - [Jira Automation (Webhook)](#jira-automation-webhook)
 
 #### Attachment added/deleted Webhook
-Triggers whenever an attachment was added or deleted with webhook notification. 
+Triggers whenever an attachment was added or deleted with webhook notification.
 
 #### Comment created/updated Webhook
 Triggers whenever a comment was created or updated with webhook notification.
@@ -129,7 +129,7 @@ Triggers whenever an issue was created or updated with webhook notification.
 Triggers whenever an issue was found by the specified Jira query (JQL).
 
 #### Jira Automation Webhook
-Triggers whenever a notification is sent to this Webhook. The content is determinded by your Jira Automation 
+Triggers whenever a notification is sent to this Webhook. The content is determinded by your Jira Automation
 settings.
 
 [:top:](#overview)
