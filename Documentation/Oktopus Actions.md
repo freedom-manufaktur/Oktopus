@@ -43,7 +43,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Webhook](#-webhook)
 
 
-## <img src="Images/TechnologyIcons/Active%20Directory.svg" width=32px> Active Directory
+## <img src="Images/TechnologyIcons/Active%20Directory.svg" width="32"> Active Directory
 ### Actions
 - [Add a principal to groups](#add-a-principal-to-groups)
 - [Create User](#create-user)
@@ -77,7 +77,7 @@ Update a User With a selection of properties.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Azure%20DevOps.svg" width=32px> Azure DevOps
+## <img src="Images/TechnologyIcons/Azure%20DevOps.svg" width="32"> Azure DevOps
 ### Actions
 - [Add attachments to Work Item](#add-attachments-to-work-item)
 - [Create Work Item](#create-work-item)
@@ -119,7 +119,7 @@ Removes a user from an organization.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Text.svg" width=32px> CSV
+## <img src="Images/TechnologyIcons/Text.svg" width="32"> CSV
 ### Actions
 - [Parse CSV text](#parse-csv-text)
 
@@ -129,7 +129,7 @@ Parses the given CSV text and stores the object result.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Debug.svg" width=32px> Debug
+## <img src="Images/TechnologyIcons/Debug.svg" width="32"> Debug
 ### Actions
 - [Print Expression](#print-expression)
 
@@ -138,7 +138,7 @@ Prints the expression to the log file.
 
 [:top:](#technologies)
 
-## <img src="Images/TechnologyIcons/DocuSign.svg" width=32px> DocuSign
+## <img src="Images/TechnologyIcons/DocuSign.svg" width="32"> DocuSign
 ### Actions
 - [Get envelope](#get-envelope)
 - [Get envelope audit events](#get-envelope-audit-events)
@@ -156,7 +156,7 @@ Notify People about a document signing request.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/ServerMail.svg" width=32px> Exchange Server
+## <img src="Images/TechnologyIcons/ServerMail.svg" width="32"> Exchange Server
 ### Actions
 - [Cancel Meeting](#cancel-meeting)
 - [Create Meeting](#create-meeting)
@@ -190,7 +190,7 @@ Update an existing meeting.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Compress.svg" width=32px> File compression
+## <img src="Images/TechnologyIcons/Compress.svg" width="32"> File compression
 ### Actions
 - [Create archive](#create-archive)
 
@@ -200,7 +200,7 @@ Creates an archive file (typically .zip).
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/FolderDocument.svg" width=32px> File System
+## <img src="Images/TechnologyIcons/FolderDocument.svg" width="32"> File System
 ### Actions
 - [Copy file](#copy-file)
 - [Delete file](#delete-file)
@@ -226,7 +226,7 @@ Writes the given file variable or data to a file.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Http.svg" width=32px> HTTP
+## <img src="Images/TechnologyIcons/Http.svg" width="32"> HTTP
 ### Actions
 - [Send HTTP request](#send-http-request)
 - [Send HTTP request (preview)](#send-http-request-preview)
@@ -241,7 +241,7 @@ Note: This is a preview step, wich is not production ready and will change in th
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Igel.svg" width=32px> IGEL Technology
+## <img src="Images/TechnologyIcons/Igel.svg" width="32"> IGEL Technology
 ### Actions
 - [Get firmwares](#get-firmwares)
 - [Get thin clients](#get-thin-clients)
@@ -255,7 +255,7 @@ Get all thin clients.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/PhotoLandscape.svg" width=32px> Image
+## <img src="Images/TechnologyIcons/PhotoLandscape.svg" width="32"> Image
 
 ### Actions
 - [Convert image](#convert-image)
@@ -266,7 +266,7 @@ Converts a number of images to a target format.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/MailCloud.svg" width=32px> IMAP
+## <img src="Images/TechnologyIcons/MailCloud.svg" width="32"> IMAP
 ### Actions
 - [Delete mail](#delete-mail)
 - [Move mail](#move-mail)
@@ -280,7 +280,7 @@ Move an email to a different folder.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Ivanti.svg" width=32px> Ivanti Neurons for ITSM / Ivanti Service Manager (ISM)
+## <img src="Images/TechnologyIcons/Ivanti.svg" width="32"> Ivanti Neurons for ITSM / Ivanti Service Manager (ISM)
 ### Actions
 - [Add attachment](#add-attachment)
 - [Create Business Object](#create-business-object)
@@ -338,7 +338,7 @@ Updates a Business Object.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Jira%20Software.svg" width=32px> Jira
+## <img src="Images/TechnologyIcons/Jira%20Software.svg" width="32"> Jira
 ### Actions
 - [Add Attachment](#add-attachment)
 - [Add Comment](#add-comment)
@@ -409,7 +409,7 @@ Updates an existing issue.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width=32px> JSON
+## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width="32"> JSON
 ### Actions
 - [Parse JSON text](#parse-json-text)
 
@@ -419,7 +419,7 @@ Parses the given JSON text and stores the object result.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/LeanIX.svg" width=32px> LeanIX
+## <img src="Images/TechnologyIcons/LeanIX.svg" width="32"> LeanIX
 ### Actions
 - [Get fact sheets](#get-fact-sheets)
 - [Get metadata (language)](#get-metadata-language)
@@ -437,7 +437,7 @@ Executes an arbitrary query With any result.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Mail.svg" width=32px> Mail
+## <img src="Images/TechnologyIcons/Mail.svg" width="32"> Mail
 ### Actions
 - [Parse EML](#parse-eml)
 
@@ -447,7 +447,7 @@ Parses an EML file into its individual parts.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width=32px> Microsoft 365
+## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width="32"> Microsoft 365
 ### Actions
 - [Delete mail](#delete-mail)
 - [Move mail](#move-mail)
@@ -468,7 +468,7 @@ Send a mail.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Google%20Contacts.svg" width=32px> Microsoft 365 Contacts
+## <img src="Images/TechnologyIcons/Google%20Contacts.svg" width="32"> Microsoft 365 Contacts
 ### Actions
 - [Create contact](#create-contact)
 - [Create or update (upsert) contacts](#create-or-update-upsert-contacts)
@@ -494,7 +494,7 @@ Update a contact of the current or a specific user.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20OneDrive.svg" width=32px> Microsoft OneDrive / SharePoint
+## <img src="Images/TechnologyIcons/Microsoft%20OneDrive.svg" width="32"> Microsoft OneDrive / SharePoint
 ### Actions
 - [Delete file](#delete-file)
 - [Download file](#download-file)
@@ -512,7 +512,7 @@ Uploads a file to OneDrive.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20SQL%20Server.svg" width=32px> Microsoft SQL Server
+## <img src="Images/TechnologyIcons/Microsoft%20SQL%20Server.svg" width="32"> Microsoft SQL Server
 ### Actions
 - [Query](#query)
 
@@ -522,7 +522,7 @@ Executes a user specified query.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20Teams.svg" width=32px> Microsoft Teams
+## <img src="Images/TechnologyIcons/Microsoft%20Teams.svg" width="32"> Microsoft Teams
 ### Actions
 - [Create Team](#create-team)
 - [Get 1:1 chat](#get-1:1-chat)
@@ -557,7 +557,7 @@ Sends a message to a Chat.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20Word.svg" width=32px> Microsoft Word
+## <img src="Images/TechnologyIcons/Microsoft%20Word.svg" width="32"> Microsoft Word
 ### Actions
 - [Convert documents to PDF](#convert-documents-to-pdf)
 - [Convert to PDF](#convert-to-pdf)
@@ -579,7 +579,7 @@ Modify a document by removing certain paragraphs.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Netbox.svg" width=32px> NetBox
+## <img src="Images/TechnologyIcons/Netbox.svg" width="32"> NetBox
 ### Actions
 - [Get devices](#get-devices)
 - [Get IP prefixes](#get-ip-prefixes)
@@ -613,7 +613,7 @@ Get all VLANs.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Ninox.svg" width=32px> Ninox
+## <img src="Images/TechnologyIcons/Ninox.svg" width="32"> Ninox
 ### Actions
 - [Create or update record(s)](#create-or-update-records)
 - [Create record](#create-record)
@@ -679,7 +679,7 @@ Uploads attachments to a record.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Oktopus%20Icon%20Orange.svg" width=32px> Oktopus
+## <img src="Images/TechnologyIcons/Oktopus%20Icon%20Orange.svg" width="32"> Oktopus
 ### Actions
 - [Evaluate script](#evaluate-script)
 
@@ -689,7 +689,7 @@ Evaluate a more or less comples script which generates variables or influences t
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/PDF.svg" width=32px> PDF
+## <img src="Images/TechnologyIcons/PDF.svg" width="32"> PDF
 ### Actions
 - [Merge PDFs](#merge-pdfs)
 
@@ -699,7 +699,7 @@ Merge multiple PDF files into one PDF file.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20Power%20BI.svg" width=32px> Power BI
+## <img src="Images/TechnologyIcons/Microsoft%20Power%20BI.svg" width="32"> Power BI
 ### Actions
 - [Add rows to push dataset](#add-rows-to-push-dataset)
 - [Create push dataset](#create-push-dataset)
@@ -737,7 +737,7 @@ Refreshes a dataset.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/RayVentory.svg" width=32px> ReyVentory Data Hub
+## <img src="Images/TechnologyIcons/RayVentory.svg" width="32"> ReyVentory Data Hub
 ### Actions
 - [Get table data](#get-table-data)
 
@@ -747,7 +747,7 @@ Gets all rows from table.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Shopware.svg" width=32px> Shopware
+## <img src="Images/TechnologyIcons/Shopware.svg" width="32"> Shopware
 ### Actions
 - [Create product](#create-product)
 - [Create product cross selling](#create-product-cross-selling)
@@ -793,7 +793,7 @@ Updates a given cross selling entity of a specific product.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/SMAX.svg" width=32px> SMAX
+## <img src="Images/TechnologyIcons/SMAX.svg" width="32"> SMAX
 ### Actions
 - [Add comment](#add-comment)
 - [Create record](#create-record)
@@ -835,7 +835,7 @@ Updates an existing record.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Text.svg" width=32px> Text
+## <img src="Images/TechnologyIcons/Text.svg" width="32"> Text
 ### Actions
 - [Create file](#create-file)
 - [Create file (from Base64)](#create-file-from-Base64)
@@ -869,7 +869,7 @@ Takes any input text and split it by any given separator.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Timer.svg" width=32px> Timer
+## <img src="Images/TechnologyIcons/Timer.svg" width="32"> Timer
 ### Actions
 - [Delay](#delay)
 
@@ -883,7 +883,7 @@ Enter the time span between each execution (format `h:mm:ss`).
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/USM.svg" width=32px> USM (Preview)
+## <img src="Images/TechnologyIcons/USM.svg" width="32"> USM (Preview)
 ### Actions
 - [Change Object](#change-object)
 - [Create Object](#create-object)
@@ -913,7 +913,7 @@ Get the first business object by field.
 [:top:](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Webhook.svg" width=32px> Webhook
+## <img src="Images/TechnologyIcons/Webhook.svg" width="32"> Webhook
 ### Actions
 - [Webhook Response](#webhook-response)
 

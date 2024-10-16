@@ -22,7 +22,7 @@ This document describes the triggers available in whoosh Oktopus.
 - [Webhook](#-webhook)
 
 
-## <img src="Images/TechnologyIcons/Azure%20DevOps.svg" width=32px> Azure DevOps
+## <img src="Images/TechnologyIcons/Azure%20DevOps.svg" width="32"> Azure DevOps
 ### Triggers
 - [Work Item trigger (Webhook)](#work-item-trigger-Webhook)
 
@@ -32,7 +32,7 @@ Triggers when a work item created or updated webhook is received.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/DocuSign.svg" width=32px> DocuSign
+## <img src="Images/TechnologyIcons/DocuSign.svg" width="32"> DocuSign
 ### Triggers
 - [Envelope status changed](#envelope-status-changed)
 
@@ -42,7 +42,7 @@ Triggers when the status of an envelope changes.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/Debug.svg" width=32px> Error Handling
+## <img src="Images/TechnologyIcons/Debug.svg" width="32"> Error Handling
 ### Triggers
 - [Workflow failed](#workflow-failed)
 
@@ -52,7 +52,7 @@ Triggers when a workflow failed with an error.
 [:top:](#overview)
 
 
-### <img src="Images/TechnologyIcons/ServerMail.svg" width=32px> Exchange Server
+### <img src="Images/TechnologyIcons/ServerMail.svg" width="32"> Exchange Server
 ### Triggers
 - [Email received](#email-received)
 - [Meeting accepted](#meeting-accepted)
@@ -78,7 +78,7 @@ Triggers whenever a meeting response was received in the users inbox (unread).
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/FolderDocument.svg" width=32px> File System
+## <img src="Images/TechnologyIcons/FolderDocument.svg" width="32"> File System
 ### Triggers
 - [Watch folder for files](#watch-folder-for-files)
 
@@ -88,7 +88,7 @@ Triggers when a file is found in a certain directory.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/MailCloud.svg" width=32px> IMAP
+## <img src="Images/TechnologyIcons/MailCloud.svg" width="32"> IMAP
 ### Triggers
 - [Mail recieved](#mail-recieved)
 
@@ -98,7 +98,7 @@ Triggers when receving an email.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/Ivanti.svg" width=32px> Ivanti Service Manager
+## <img src="Images/TechnologyIcons/Ivanti.svg" width="32"> Ivanti Service Manager
 ### Triggers
 - [Business Object found](#business-object-found)
 
@@ -108,7 +108,7 @@ Triggers when a Business Object with a specific field value is found.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/Jira%20Software.svg" width=32px> Jira
+## <img src="Images/TechnologyIcons/Jira%20Software.svg" width="32"> Jira
 ### Triggers
 - [Attachment added/deleted (Webhook)](#attachment-addeddeleted-webhook)
 - [Comment created/updated (Webhook)](#Comment-createdupdated-webhook)
@@ -135,7 +135,7 @@ settings.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width=32px> Microsoft 365
+## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width="32"> Microsoft 365
 ### Triggers
 - [Mail received](#mail-received)
 
@@ -145,7 +145,7 @@ Triggers when a mail is present in a given mailbox.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/Google%20Contacts.svg" width=32px> Microsoft 365 Contacts
+## <img src="Images/TechnologyIcons/Google%20Contacts.svg" width="32"> Microsoft 365 Contacts
 ### Triggers
 - [Contact delta detected](#contact-delta-detected)
 
@@ -155,7 +155,7 @@ Triggers when a contact was created or updated.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/Ninox.svg" width=32px> Ninox
+## <img src="Images/TechnologyIcons/Ninox.svg" width="32"> Ninox
 ### Triggers
 - [Record found](#record-found)
 
@@ -168,7 +168,7 @@ My Field,"Max, Mustermann"
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/Timer.svg" width=32px> Timer
+## <img src="Images/TechnologyIcons/Timer.svg" width="32"> Timer
 ### Triggers
 - [CRON Schedule](#cron-schedule)
 - [Interval](#interval)
@@ -193,7 +193,7 @@ Triggers only when the user explicitly requests execution.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/USM.svg" width=32px> USM (Preview)
+## <img src="Images/TechnologyIcons/USM.svg" width="32"> USM (Preview)
 ### Triggers
 - [Object found](#object-found)
 
@@ -203,11 +203,11 @@ Triggers whenever a business object matches the given criteria.
 [:top:](#overview)
 
 
-## <img src="Images/TechnologyIcons/Webhook.svg" width=32px> Webhook
+## <img src="Images/TechnologyIcons/Webhook.svg" width="32"> Webhook
 ### Triggers
-- [Receive Webhook](#object-found)
+- [Receive Webhook](#receive-webhook)
 
-#### Object found
+#### Receive Webhook
 Wait for an HTTP call to the endpoint.
 
 [:top:](#overview)
