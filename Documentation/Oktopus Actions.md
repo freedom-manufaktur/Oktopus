@@ -1,7 +1,7 @@
 Documentation for whoosh Oktopus actions
 ---
 Version: `5.18.0` - `2024-10-15` \
-Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/main/Oktopus%20Actions.md)
+Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
 - [Active Directory](#-active-Directory)
@@ -454,7 +454,7 @@ Parses an EML file into its individual parts.
 - [Send mail](#send-mail)
 
 ### Entra ID App
-Click [here](How%20to%20register%20an%20App%20within%20MS%20Entra%20ID.md) for help.
+[How to register an App within Microsoft Entra ID](Register%20an%20App%20within%20Entra%20ID.md)
 
 #### Delete mail
 Delete an email.
@@ -534,7 +534,7 @@ Executes a user specified query.
 
 #### Create Team
 Creates a team (including the Microsoft 365 Group).
-[How do you create a app in Entra ID](How%20to%20register%20an%20App%20within%20MS%20Entra%20ID.md)
+[How to register an App within Microsoft Entra ID](Register%20an%20App%20within%20Entra%20ID.md)
 
 #### Get 1:1 chat
 Starts or resumes a chat from the service account With another person.

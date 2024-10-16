@@ -1,7 +1,7 @@
 Documentation for whoosh Oktopus triggers
 ---
 Version: `5.18.0` - `2024-10-16` \
-Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/main/Oktopus%20Triggers.md)
+Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Triggers.md)
 
 # Overview
 This document describes the triggers available in whoosh Oktopus.

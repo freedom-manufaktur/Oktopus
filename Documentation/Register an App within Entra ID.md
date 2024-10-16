@@ -1,5 +1,7 @@
-# Register an application in Microsoft Entra
-
+Register an application within Microsoft Entra ID
+---
+Version: `5.18.0` - `2024-10-15` \
+Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Register%20an%20App%20within%20Entra%20ID.md)
 
 ## Step 1 
 - Open the [`Microsoft Entra admin center`](https://entra.microsoft.com/#home) and log in with your credentials

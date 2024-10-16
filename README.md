@@ -9,4 +9,4 @@ https://freedom-manufaktur.com/whoosh-oktopus
 - [Oktopus Functions](Documentation/Oktopus%20Functions.md) - available scripting functions
 
 ## Additional documentation
-- [How to register an App within MS Entra ID](Documentation/How%20to%20register%20an%20App%20within%20MS%20Entra%20ID.md) - for use when necessary
+- [How to register an App within Microsoft Entra ID](Documentation/Register%20an%20App%20within%20Entra%20ID.md) - for use when necessary

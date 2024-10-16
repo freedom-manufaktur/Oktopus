@@ -1,7 +1,7 @@
 Documentation and examples for whoosh Oktopus functions
 ---
 Version: `5.18.0` - `2024-10-15` \
-Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/main/Oktopus%20Functions.md)
+Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Functions.md)
 
 # Language
 whoosh Oktopus uses [Scriban](https://github.com/scriban/scriban) as scripting/templating engine.\
