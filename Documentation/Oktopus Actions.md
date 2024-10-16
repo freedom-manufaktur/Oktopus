@@ -888,7 +888,7 @@ Enter the time span between each execution (format `h:mm:ss`).
 - [Create Object](#create-object)
 - [Create Ticket](#create-ticket)
 - [Find Objects](#find-objects)
-- [Get Object](#get-objects)
+- [Get Object](#get-object)
 - [Get Object by field](#get-object-by-field)
 
 #### Change Object
