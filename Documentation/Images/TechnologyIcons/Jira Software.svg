@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" version="1.1" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style>.cls-1{fill:#253858;}.cls-2{fill:#2684ff;}.cls-3{fill:url(#linear-gradient);}.cls-4{fill:url(#linear-gradient-2);}</style>
+  <linearGradient id="linear-gradient" x1="34.64" x2="19" y1="15.35" y2="30.99" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#0052cc" offset=".18"/>
+   <stop stop-color="#2684ff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linear-gradient-2" x1="38.78" x2="54.39" y1="60.28" y2="44.67" gradientTransform="matrix(1.9799 0 0 1.9799 -.0025869 0)" xlink:href="#linear-gradient"/>
+  <linearGradient id="linearGradient201" x1="34.64" x2="19" y1="15.35" y2="30.99" gradientTransform="matrix(1.9799 0 0 1.9799 -.0025869 0)" gradientUnits="userSpaceOnUse" xlink:href="#linear-gradient"/>
+ </defs>
+ <title>Jira Software-blue</title>
+ <g data-name="Layer 2">
+  <g id="Blue">
+   <g transform="translate(2.4577)" stroke-width="1.9799">
+    <path class="cls-2" d="m143.34 70.803-70.803-70.803-70.803 70.803a5.9398 5.9398 0 0 0 0 8.3949l70.803 70.803 70.803-70.803a5.9398 5.9398 0 0 0 0-8.3949zm-70.803 26.373-22.175-22.175 22.175-22.175 22.175 22.175z"/>
+    <path class="cls-3" d="m72.542 52.825a37.342 37.342 0 0 1-0.1584-52.647l-48.528 48.508 26.412 26.412z" fill="url(#linearGradient201)"/>
+    <path class="cls-4" d="m94.777 74.941-22.235 22.235a37.342 37.342 0 0 1 0 52.825l48.647-48.647z" fill="url(#linear-gradient-2)"/>
+   </g>
+  </g>
+ </g>
+</svg>
