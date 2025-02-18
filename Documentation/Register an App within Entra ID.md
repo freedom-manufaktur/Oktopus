@@ -1,4 +1,4 @@
-Register an application within Microsoft Entra ID
+﻿Register an application within Microsoft Entra ID
 ---
 Version: `5.18.0` - `2024-10-15` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Register%20an%20App%20within%20Entra%20ID.md)
@@ -13,9 +13,9 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
   <img src="Images/EntraID/Entra_App%20registrations.png" width=2000px>
 
 ## Step 3
-- Click on `+ New registration`
-- Choose the `Name` of the application you want to register
-- Choose `Accounts in this organizational directory only (freedommanufakturdev only - Single tenant)` as the `Supported account types`
+- Click on `New registration`
+- Choose a `Name` for the application you want to register. E.g. `whoosh Oktopus access`
+- Choose `Accounts in this organizational directory only (example.com only - Single tenant)` as the `Supported account types`
 - `Redirect URI` is optional and not needed 
   <img src="Images/EntraID/Entra_register%20an%20application.png" width=2000px>
 
@@ -51,31 +51,6 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 
 ## Step 9
 - Copy and save the `Value` of the secret key
-  <img src="Images/EntraID/Entra_Secret%20key.png" width=2000px>
+  ![Entra ID Client Secret](<Images/EntraID/Entra ID Client Secret.png>)
 
 Now you have registered an application with all required informations.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
