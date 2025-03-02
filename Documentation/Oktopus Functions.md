@@ -1,6 +1,6 @@
-Documentation and examples for whoosh Oktopus functions
+﻿Documentation and examples for whoosh Oktopus functions
 ---
-Version: `5.18.0` - `2024-10-15` \
+Version: `5.23.0` - `2025-03-02` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Functions.md)
 
 # Language
@@ -1051,6 +1051,7 @@ String functions available through the object 'step' in whoosh Oktopus.
 - [`string.getFileName`](#stringgetfilename)
 - [`string.hasContent`](#stringhascontent)
 - [`string.isNullOrEmpty`](#stringisnullorempty)
+- [`string.TruncateSmart`](#stringtruncatesmart)
 
 [:top:](#oktopus-built-in-functions)
 ### `string.getFileName`
@@ -1145,6 +1146,39 @@ Returns if an input `value` is null or empty.
 ```html
 true
 false
+```
+[:top:](#oktopus-built-in-functions)
+
+### `string.TruncateSmart`
+```
+string.TruncateSmart <text> <maxLength> <ellipsis>? <averageWordLength>?
+```
+
+#### Description
+Truncates the `text` when it's too long.\
+The algorithm tries to be smart and truncate directly after a word (when reasonable).
+
+#### Arguments
+- `text`: The input string
+- `maxLength`: The maximum number of characters to return (includes the `ellipsis`).
+- `ellipsis`: The ellipsis to use when the text is truncated. Default: `...`
+- `averageWordLength`: The average length of a word. Default: `10`
+
+#### Returns
+The original or truncated text.
+
+#### Examples
+> **input**
+```oktopus-html
+{{ string.TruncateSmart "Lorem ipsum, consetetur elitr." 20 }}
+{{ string.TruncateSmart "Lorem ipsum, consetetur elitr." 20 averageWordLength: 5 }}
+{{ string.TruncateSmart "Lorem ipsum, consetetur elitr." 20 "---" }}
+```
+> **output**
+```html
+Lorem ipsum,...
+Lorem ipsum, cons...
+Lorem ipsum,---
 ```
 [:top:](#oktopus-built-in-functions)
 
