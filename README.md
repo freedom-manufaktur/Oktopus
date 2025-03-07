@@ -1,5 +1,5 @@
 whoosh Oktopus
----
+===
 Der Schnittstellen-Dealer\
 https://freedom-manufaktur.com/whoosh-oktopus
 
@@ -10,3 +10,4 @@ https://freedom-manufaktur.com/whoosh-oktopus
 
 ## Additional documentation
 - [How to register an App within Microsoft Entra ID](Documentation/Register%20an%20App%20within%20Entra%20ID.md) - for use when necessary
+- [How to register an Exchange Online App within Microsoft Entra ID](<Documentation/Register an Exchange Online App within Entra ID.md>) - for use when necessary
