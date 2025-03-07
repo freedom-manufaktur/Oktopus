@@ -1,6 +1,6 @@
 List of whoosh Oktopus actions
----
-Version: `5.23.0` - `2025-03-07` \
+===
+Version: `5.24.0` - `2025-03-07` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
