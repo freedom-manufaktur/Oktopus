@@ -1,6 +1,6 @@
-Documentation for whoosh Oktopus actions
+List of whoosh Oktopus actions
 ---
-Version: `5.18.0` - `2024-10-15` \
+Version: `5.23.0` - `2025-03-07` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -12,6 +12,8 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Exchange Server](#-exchange-server)
 - [File compression](#-file-compression)
 - [File System](#-file-system)
+- [Google Admin Console](#-google-admin-console)
+- [Google Drive](#-google-drive)
 - [HTTP](#-http)
 - [IGEL Technology](#-igel-technology)
 - [Image](#-image)
@@ -20,10 +22,11 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Jira](#-jira)
 - [JSON](#-json)
 - [LeanIX](#-leanix)
-- [LexOffice](#) *** *In Progress*
+- [LexOffice](#) - *Work in progress*
 - [Mail](#-mail)
 - [Microsoft 365](#-microsoft-365)
 - [Microsoft 365 Contacts](#-microsoft-365-contacts)
+- [Microsoft Excel](#--microsoft-excel)
 - [Microsoft OneDrive / SharePoint](#-microsoft-onedrive--sharepoint)
 - [Microsoft SQL Server](#-microsoft-sql-server)
 - [Microsoft Teams](#-microsoft-teams)
@@ -38,12 +41,12 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [SMAX](#-smax)
 - [Text](#-text)
 - [Timer](#-timer)
-- [Timewax](#) *** *In Progress*
+- [Timewax](#) - *Work in progress*
 - [USM (Preview)](#-usm-preview)
 - [Webhook](#-webhook)
 
 
-## <img src="Images/TechnologyIcons/Active%20Directory.svg" width="32"> Active Directory
+## <img src="Images/TechnologyIcons/Active%20Directory.svg" width="24"> Active Directory
 ### Actions
 - [Add a principal to groups](#add-a-principal-to-groups)
 - [Create User](#create-user)
@@ -74,10 +77,10 @@ Resets a users password.
 #### Update User
 Update a User With a selection of properties.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Azure%20DevOps.svg" width="32"> Azure DevOps
+## <img src="Images/TechnologyIcons/Azure%20DevOps.svg" width="24"> Azure DevOps
 ### Actions
 - [Add attachments to Work Item](#add-attachments-to-work-item)
 - [Create Work Item](#create-work-item)
@@ -116,29 +119,29 @@ Lists all users in an organization.
 #### Users: Remove User
 Removes a user from an organization.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Text.svg" width="32"> CSV
+## <img src="Images/TechnologyIcons/Text.svg" width="24"> CSV
 ### Actions
 - [Parse CSV text](#parse-csv-text)
 
 #### Parse CSV text
 Parses the given CSV text and stores the object result.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Debug.svg" width="32"> Debug
+## <img src="Images/TechnologyIcons/Debug.svg" width="24"> Debug
 ### Actions
 - [Print Expression](#print-expression)
 
 #### Print Expression
 Prints the expression to the log file.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
-## <img src="Images/TechnologyIcons/DocuSign.svg" width="32"> DocuSign
+## <img src="Images/TechnologyIcons/DocuSign.svg" width="24"> DocuSign
 ### Actions
 - [Get envelope](#get-envelope)
 - [Get envelope audit events](#get-envelope-audit-events)
@@ -153,10 +156,10 @@ Get the audit events of a document signing request (envelope).
 #### Sign Document
 Notify People about a document signing request.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/ServerMail.svg" width="32"> Exchange Server
+## <img src="Images/TechnologyIcons/ServerMail.svg" width="24"> Exchange Server
 ### Actions
 - [Cancel Meeting](#cancel-meeting)
 - [Create Meeting](#create-meeting)
@@ -187,20 +190,20 @@ Sends an email.
 #### Update Meeting
 Update an existing meeting.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Compress.svg" width="32"> File compression
+## <img src="Images/TechnologyIcons/Compress.svg" width="24"> File compression
 ### Actions
 - [Create archive](#create-archive)
 
 #### Create archive
 Creates an archive file (typically .zip).
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/FolderDocument.svg" width="32"> File System
+## <img src="Images/TechnologyIcons/FolderDocument.svg" width="24"> File System
 ### Actions
 - [Copy file](#copy-file)
 - [Delete file](#delete-file)
@@ -223,10 +226,47 @@ Reads the content of a file to a variable.
 #### Save file
 Writes the given file variable or data to a file.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Http.svg" width="32"> HTTP
+## <img src="Images/TechnologyIcons/GoogleAdminConsole.svg" width="24"> Google Admin Console
+### Actions
+- [Get a User](#google-admin---get-a-user)
+
+#### Google Admin - Get a User
+Gets the information about a user.
+
+[⬆️ Back to top](#technologies)
+
+
+## <img src="Images/TechnologyIcons/GoogleDrive.svg" width="24"> Google Drive
+### Actions
+- [Get drive](#google-drive---get-drive)
+- [Find drives](#google-drive---find-drives)
+- [Get file](#google-drive---get-file)
+- [Download file](#google-drive---download-file)
+- [Find files/folders](#google-drive---find-filesfolders)
+
+#### Google Drive - Get drive
+Gets a drive by name.
+
+#### Google Drive - Find drives
+Finds all drives by query.
+
+#### Google Drive - Get file
+Gets a file by name.
+
+#### Google Drive - Download file
+Download a file.
+Gets a file by name.
+
+#### Google Drive - Find files/folders
+Finds all files and folders by query.
+
+[⬆️ Back to top](#technologies)
+
+
+## <img src="Images/TechnologyIcons/Http.svg" width="24"> HTTP
 ### Actions
 - [Send HTTP request](#send-http-request)
 - [Send HTTP request (preview)](#send-http-request-preview)
@@ -238,10 +278,10 @@ Call any HTTP endpoint.
 Call any HTTP endpoint multiple times.
 Note: This is a preview step, wich is not production ready and will change in th efuture.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Igel.svg" width="32"> IGEL Technology
+## <img src="Images/TechnologyIcons/Igel.svg" width="24"> IGEL Technology
 ### Actions
 - [Get firmwares](#get-firmwares)
 - [Get thin clients](#get-thin-clients)
@@ -252,10 +292,10 @@ Get all firmwares.
 #### Get thin clients
 Get all thin clients.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/PhotoLandscape.svg" width="32"> Image
+## <img src="Images/TechnologyIcons/PhotoLandscape.svg" width="24"> Image
 
 ### Actions
 - [Convert image](#convert-image)
@@ -263,10 +303,10 @@ Get all thin clients.
 #### Convert image
 Converts a number of images to a target format.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/MailCloud.svg" width="32"> IMAP
+## <img src="Images/TechnologyIcons/MailCloud.svg" width="24"> IMAP
 ### Actions
 - [Delete mail](#delete-mail)
 - [Move mail](#move-mail)
@@ -277,10 +317,10 @@ Delete an email.
 #### Move mail
 Move an email to a different folder.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Ivanti.svg" width="32"> Ivanti Neurons for ITSM / Ivanti Service Manager (ISM)
+## <img src="Images/TechnologyIcons/Ivanti.svg" width="24"> Ivanti Neurons for ITSM / Ivanti Service Manager (ISM)
 ### Actions
 - [Add attachment](#add-attachment)
 - [Create Business Object](#create-business-object)
@@ -335,10 +375,10 @@ Get the request data - including parameters - associated with a service request 
 #### Update Business Object
 Updates a Business Object.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Jira%20Software.svg" width="32"> Jira
+## <img src="Images/TechnologyIcons/Jira%20Software.svg" width="24"> Jira
 ### Actions
 - [Add Attachment](#add-attachment)
 - [Add Comment](#add-comment)
@@ -405,20 +445,20 @@ Updates an existing comment.
 #### Update Issue
 Updates an existing issue.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width="32"> JSON
+## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width="24"> JSON
 ### Actions
 - [Parse JSON text](#parse-json-text)
 
 #### Parse JSON text
 Parses the given JSON text and stores the object result.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/LeanIX.svg" width="32"> LeanIX
+## <img src="Images/TechnologyIcons/LeanIX.svg" width="24"> LeanIX
 ### Actions
 - [Get fact sheets](#get-fact-sheets)
 - [Get metadata (language)](#get-metadata-language)
@@ -433,20 +473,20 @@ Gets the metadata (e.g. about fact sheets) for a specific language. This is hand
 ### GraphQL query
 Executes an arbitrary query With any result.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Mail.svg" width="32"> Mail
+## <img src="Images/TechnologyIcons/Mail.svg" width="24"> Mail
 ### Actions
 - [Parse EML](#parse-eml)
 
 #### Parse EML
 Parses an EML file into its individual parts.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width="32"> Microsoft 365
+## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width="24"> Microsoft 365
 ### Actions
 - [Delete mail](#delete-mail)
 - [Move mail](#move-mail)
@@ -464,10 +504,10 @@ Move an email to a different folder.
 #### Send mail
 Send a mail.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Google%20Contacts.svg" width="32"> Microsoft 365 Contacts
+## <img src="Images/TechnologyIcons/Google%20Contacts.svg" width="24"> Microsoft 365 Contacts
 ### Actions
 - [Create contact](#create-contact)
 - [Create or update (upsert) contacts](#create-or-update-upsert-contacts)
@@ -490,10 +530,20 @@ Get all contact folders for the current or a specific user.
 #### Update contact
 Update a contact of the current or a specific user.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20OneDrive.svg" width="32"> Microsoft OneDrive / SharePoint
+## <img src="Images/TechnologyIcons/Microsoft%20Excel.svg" width="24"> Microsoft Excel
+### Actions
+- [Data import](#excel---data-import)
+
+#### Excel - Data import
+Take an Excel template and import any amount of rows and columns into the speadsheet.
+
+[⬆️ Back to top](#technologies)
+
+
+## <img src="Images/TechnologyIcons/Microsoft%20OneDrive.svg" width="24"> Microsoft OneDrive / SharePoint
 ### Actions
 - [Delete file](#delete-file)
 - [Download file](#download-file)
@@ -508,20 +558,20 @@ Downloads a file from OneDrive.
 #### Upload file
 Uploads a file to OneDrive.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20SQL%20Server.svg" width="32"> Microsoft SQL Server
+## <img src="Images/TechnologyIcons/Microsoft%20SQL%20Server.svg" width="24"> Microsoft SQL Server
 ### Actions
 - [Query](#query)
 
 #### Query
 Executes a user specified query.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20Teams.svg" width="32"> Microsoft Teams
+## <img src="Images/TechnologyIcons/Microsoft%20Teams.svg" width="24"> Microsoft Teams
 ### Actions
 - [Create Team](#create-team)
 - [Get 1:1 chat](#get-11-chat)
@@ -553,10 +603,10 @@ Sends a message to a channel inside a team.
 #### Send chat message
 Sends a message to a Chat.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20Word.svg" width="32"> Microsoft Word
+## <img src="Images/TechnologyIcons/Microsoft%20Word.svg" width="24"> Microsoft Word
 ### Actions
 - [Convert documents to PDF](#convert-documents-to-pdf)
 - [Convert to PDF](#convert-to-pdf)
@@ -575,10 +625,10 @@ Fill a document that contains placeholders with an actual value.
 #### Modify document
 Modify a document by removing certain paragraphs.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Netbox.svg" width="32"> NetBox
+## <img src="Images/TechnologyIcons/Netbox.svg" width="24"> NetBox
 ### Actions
 - [Get devices](#get-devices)
 - [Get IP prefixes](#get-ip-prefixes)
@@ -609,10 +659,10 @@ Get all virtual machines.
 #### Get VLANs
 Get all VLANs.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Ninox.svg" width="32"> Ninox
+## <img src="Images/TechnologyIcons/Ninox.svg" width="24"> Ninox
 ### Actions
 - [Create or update record(s)](#create-or-update-records)
 - [Create record](#create-record)
@@ -675,30 +725,30 @@ Uploads an attachment to a record.
 #### Update attachments
 Uploads attachments to a record.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Oktopus%20Icon%20Orange.svg" width="32"> Oktopus
+## <img src="Images/TechnologyIcons/Oktopus%20Icon%20Orange.svg" width="24"> Oktopus
 ### Actions
 - [Evaluate script](#evaluate-script)
 
 #### Evaluate script
 Evaluate a more or less comples script which generates variables or influences the workflow state.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/PDF.svg" width="32"> PDF
+## <img src="Images/TechnologyIcons/PDF.svg" width="24"> PDF
 ### Actions
 - [Merge PDFs](#merge-pdfs)
 
 #### Merge PDFs
 Merge multiple PDF files into one PDF file.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Microsoft%20Power%20BI.svg" width="32"> Power BI
+## <img src="Images/TechnologyIcons/Microsoft%20Power%20BI.svg" width="24"> Power BI
 ### Actions
 - [Add rows to push dataset](#add-rows-to-push-dataset)
 - [Create push dataset](#create-push-dataset)
@@ -733,20 +783,20 @@ Gets all tables inside a oush dataset. Push dataset are very limited in ther fun
 #### Refresh dataset
 Refreshes a dataset.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/RayVentory.svg" width="32"> ReyVentory Data Hub
+## <img src="Images/TechnologyIcons/RayVentory.svg" width="24"> ReyVentory Data Hub
 ### Actions
 - [Get table data](#get-table-data)
 
 #### Get table data
 Gets all rows from table.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Shopware.svg" width="32"> Shopware
+## <img src="Images/TechnologyIcons/Shopware.svg" width="24"> Shopware
 ### Actions
 - [Create product](#create-product)
 - [Create product cross selling](#create-product-cross-selling)
@@ -789,10 +839,10 @@ Updates a specific product.
 #### Update product cross selling
 Updates a given cross selling entity of a specific product.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/SMAX.svg" width="32"> SMAX
+## <img src="Images/TechnologyIcons/SMAX.svg" width="24"> SMAX
 ### Actions
 - [Add comment](#add-comment)
 - [Create record](#create-record)
@@ -831,10 +881,10 @@ Updates an existing comment.
 #### Update record
 Updates an existing record.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Text.svg" width="32"> Text
+## <img src="Images/TechnologyIcons/Text.svg" width="24"> Text
 ### Actions
 - [Create file](#create-file)
 - [Create file (from Base64)](#create-file-from-Base64)
@@ -865,10 +915,10 @@ Reads the content of a file variable.
 #### Split text
 Takes any input text and split it by any given separator.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Timer.svg" width="32"> Timer
+## <img src="Images/TechnologyIcons/Timer.svg" width="24"> Timer
 ### Actions
 - [Delay](#delay)
 
@@ -879,10 +929,10 @@ Enter the time span between each execution (format `h:mm:ss`).
 ##### Example
 `0:2:30` (2.5 minutes)
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/USM.svg" width="32"> USM (Preview)
+## <img src="Images/TechnologyIcons/USM.svg" width="24"> USM (Preview)
 ### Actions
 - [Change Object](#change-object)
 - [Create Object](#create-object)
@@ -909,10 +959,10 @@ Fet a specific business object.
 #### Get Object by field
 Get the first business object by field.
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Webhook.svg" width="32"> Webhook
+## <img src="Images/TechnologyIcons/Webhook.svg" width="24"> Webhook
 ### Actions
 - [Webhook Response](#webhook-response)
 
@@ -926,4 +976,4 @@ File: `{{AFileVariable}}`\
 Text: `Hello from my workflow.`\
 HTML: `<a href="https://freedom-manufaktur.com">Thanks Oktopus</a>`
 
-[:top:](#technologies)
+[⬆️ Back to top](#technologies)
