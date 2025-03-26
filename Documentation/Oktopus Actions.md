@@ -1,6 +1,6 @@
-List of whoosh Oktopus actions
+﻿List of whoosh Oktopus actions
 ===
-Version: `5.24.0` - `2025-03-07` \
+Version: `5.25.0` - `2025-03-21` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -18,7 +18,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [IGEL Technology](#-igel-technology)
 - [Image](#-image)
 - [IMAP](#-imap)
-- [Ivanti Service Manager](#-ivanti-neurons-for-itsm--ivanti-service-manager-ism)
+- [Ivanti Neurons for ITSM / Ivanti Service Manager (ISM)](#-ivanti-neurons-for-itsm--ivanti-service-manager-ism)
 - [Jira](#-jira)
 - [JSON](#-json)
 - [LeanIX](#-leanix)
@@ -42,7 +42,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Text](#-text)
 - [Timer](#-timer)
 - [Timewax](#) - *Work in progress*
-- [USM (Preview)](#-usm-preview)
+- [USU Service Manager (USM)](#-usu-service-manager-usm)
 - [Webhook](#-webhook)
 
 
@@ -535,27 +535,39 @@ Update a contact of the current or a specific user.
 
 ## <img src="Images/TechnologyIcons/Microsoft%20Excel.svg" width="24"> Microsoft Excel
 ### Actions
+- [Data export](#excel---data-export)
 - [Data import](#excel---data-import)
+
+#### Excel - Data export
+Take an Excel file and export all of the rows and columns from a sheet.
+##### Ideas
+* You may then convert the data to `CSV` or `JSON` and upload it somewhere.
+* You may iterate over the list and upsert specific or all rows and columns to a Ticket system.
+* Import data from services without an API, but with an Excel export.
 
 #### Excel - Data import
 Take an Excel template and import any amount of rows and columns into the speadsheet.
+##### Ideas
+* Make use of formulas to do advanced calculations or charting on the imported data.
+* Highlight certain columns for your customers to fill out. E.g. B2B shopping list.
+* After filling the template with your data, send it directly to your customer or upload it to any other service.
 
 [⬆️ Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Microsoft%20OneDrive.svg" width="24"> Microsoft OneDrive / SharePoint
 ### Actions
-- [Delete file](#delete-file)
-- [Download file](#download-file)
-- [Upload file](#upload-file)
+- [Delete file](#onedrive---delete-file)
+- [Download file](#onedrive---download-file)
+- [Upload file](#onedrive---upload-file)
 
-#### Delete file
+#### OneDrive - Delete file
 Deletes a file from OneDrive.
 
-#### Download file
+#### OneDrive - Download file
 Downloads a file from OneDrive.
 
-#### Upload file
+#### OneDrive - Upload file
 Uploads a file to OneDrive.
 
 [⬆️ Back to top](#technologies)
@@ -932,7 +944,7 @@ Enter the time span between each execution (format `h:mm:ss`).
 [⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/USM.svg" width="24"> USM (Preview)
+## <img src="Images/TechnologyIcons/USM.svg" width="24"> USU Service Manager (USM)
 ### Actions
 - [Change Object](#change-object)
 - [Create Object](#create-object)

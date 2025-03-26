@@ -1,6 +1,6 @@
-List of whoosh Oktopus triggers
+﻿List of whoosh Oktopus triggers
 ===
-Version: `5.23.0` - `2025-03-07` \
+Version: `5.25.0` - `2025-03-21` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Triggers.md)
 
 # Technologies
@@ -10,13 +10,13 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Exchange Server](#-exchange-server)
 - [File System](#-file-system)
 - [IMAP](#-imap)
-- [Ivanti Service Manager](#-ivanti-service-manager)
+- [Ivanti Neurons for ITSM / Ivanti Service Manager (ISM)](#-ivanti-neurons-for-itsm--ivanti-service-manager-ism)
 - [Jira](#-jira)
 - [Microsoft 365](#-microsoft-365)
 - [Microsoft 365 Contacts](#-microsoft-365-contacts)
 - [Ninox](#-ninox)
 - [Timer](#-timer)
-- [USM (Preview)](#-usm-preview)
+- [USU Service Manager (USM)](#-usu-service-manager-usm)
 - [Webhook](#-webhook)
 
 
@@ -96,7 +96,7 @@ Triggers when receving an email.
 [⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Ivanti.svg" width="24"> Ivanti Service Manager
+## <img src="Images/TechnologyIcons/Ivanti.svg" width="24"> Ivanti Neurons for ITSM / Ivanti Service Manager (ISM)
 ### Triggers
 - [Business Object found](#business-object-found)
 
@@ -191,7 +191,7 @@ Triggers only when the user explicitly requests execution.
 [⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/USM.svg" width="24"> USM (Preview)
+## <img src="Images/TechnologyIcons/USM.svg" width="24"> USU Service Manager (USM)
 ### Triggers
 - [Object found](#object-found)
 
