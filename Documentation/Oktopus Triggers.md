@@ -191,7 +191,7 @@ Triggers only when the user explicitly requests execution.
 [⬆️ Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/USM.svg" width="24"> USM (Preview)
+## <img src="Images/TechnologyIcons/USM.svg" width="24"> USU Service Manager (USM)
 ### Triggers
 - [Object found](#object-found)
 
