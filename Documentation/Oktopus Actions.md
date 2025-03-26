@@ -77,7 +77,7 @@ Resets a users password.
 #### Update User
 Update a User With a selection of properties.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Azure%20DevOps.svg" width="24"> Azure DevOps
@@ -119,7 +119,7 @@ Lists all users in an organization.
 #### Users: Remove User
 Removes a user from an organization.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Text.svg" width="24"> CSV
@@ -129,7 +129,7 @@ Removes a user from an organization.
 #### Parse CSV text
 Parses the given CSV text and stores the object result.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Debug.svg" width="24"> Debug
@@ -139,7 +139,7 @@ Parses the given CSV text and stores the object result.
 #### Print Expression
 Prints the expression to the log file.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 ## <img src="Images/TechnologyIcons/DocuSign.svg" width="24"> DocuSign
 ### Actions
@@ -156,7 +156,7 @@ Get the audit events of a document signing request (envelope).
 #### Sign Document
 Notify People about a document signing request.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/ServerMail.svg" width="24"> Exchange Server
@@ -190,7 +190,7 @@ Sends an email.
 #### Update Meeting
 Update an existing meeting.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Compress.svg" width="24"> File compression
@@ -200,7 +200,7 @@ Update an existing meeting.
 #### Create archive
 Creates an archive file (typically .zip).
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/FolderDocument.svg" width="24"> File System
@@ -226,7 +226,7 @@ Reads the content of a file to a variable.
 #### Save file
 Writes the given file variable or data to a file.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/GoogleAdminConsole.svg" width="24"> Google Admin Console
@@ -236,7 +236,7 @@ Writes the given file variable or data to a file.
 #### Google Admin - Get a User
 Gets the information about a user.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/GoogleDrive.svg" width="24"> Google Drive
@@ -263,7 +263,7 @@ Gets a file by name.
 #### Google Drive - Find files/folders
 Finds all files and folders by query.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Http.svg" width="24"> HTTP
@@ -278,7 +278,7 @@ Call any HTTP endpoint.
 Call any HTTP endpoint multiple times.
 Note: This is a preview step, wich is not production ready and will change in th efuture.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Igel.svg" width="24"> IGEL Technology
@@ -292,7 +292,7 @@ Get all firmwares.
 #### Get thin clients
 Get all thin clients.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/PhotoLandscape.svg" width="24"> Image
@@ -303,7 +303,7 @@ Get all thin clients.
 #### Convert image
 Converts a number of images to a target format.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/MailCloud.svg" width="24"> IMAP
@@ -317,7 +317,7 @@ Delete an email.
 #### Move mail
 Move an email to a different folder.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Ivanti.svg" width="24"> Ivanti Neurons for ITSM / Ivanti Service Manager (ISM)
@@ -375,7 +375,7 @@ Get the request data - including parameters - associated with a service request 
 #### Update Business Object
 Updates a Business Object.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Jira%20Software.svg" width="24"> Jira
@@ -445,7 +445,7 @@ Updates an existing comment.
 #### Update Issue
 Updates an existing issue.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width="24"> JSON
@@ -455,7 +455,7 @@ Updates an existing issue.
 #### Parse JSON text
 Parses the given JSON text and stores the object result.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/LeanIX.svg" width="24"> LeanIX
@@ -473,7 +473,7 @@ Gets the metadata (e.g. about fact sheets) for a specific language. This is hand
 ### GraphQL query
 Executes an arbitrary query With any result.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Mail.svg" width="24"> Mail
@@ -483,7 +483,7 @@ Executes an arbitrary query With any result.
 #### Parse EML
 Parses an EML file into its individual parts.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width="24"> Microsoft 365
@@ -504,7 +504,7 @@ Move an email to a different folder.
 #### Send mail
 Send a mail.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Google%20Contacts.svg" width="24"> Microsoft 365 Contacts
@@ -530,7 +530,7 @@ Get all contact folders for the current or a specific user.
 #### Update contact
 Update a contact of the current or a specific user.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Microsoft%20Excel.svg" width="24"> Microsoft Excel
@@ -552,7 +552,7 @@ Take an Excel template and import any amount of rows and columns into the speads
 * Highlight certain columns for your customers to fill out. E.g. B2B shopping list.
 * After filling the template with your data, send it directly to your customer or upload it to any other service.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Microsoft%20OneDrive.svg" width="24"> Microsoft OneDrive / SharePoint
@@ -570,7 +570,7 @@ Downloads a file from OneDrive.
 #### OneDrive - Upload file
 Uploads a file to OneDrive.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Microsoft%20SQL%20Server.svg" width="24"> Microsoft SQL Server
@@ -580,7 +580,7 @@ Uploads a file to OneDrive.
 #### Query
 Executes a user specified query.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Microsoft%20Teams.svg" width="24"> Microsoft Teams
@@ -615,7 +615,7 @@ Sends a message to a channel inside a team.
 #### Send chat message
 Sends a message to a Chat.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Microsoft%20Word.svg" width="24"> Microsoft Word
@@ -637,7 +637,7 @@ Fill a document that contains placeholders with an actual value.
 #### Modify document
 Modify a document by removing certain paragraphs.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Netbox.svg" width="24"> NetBox
@@ -671,7 +671,7 @@ Get all virtual machines.
 #### Get VLANs
 Get all VLANs.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Ninox.svg" width="24"> Ninox
@@ -737,7 +737,7 @@ Uploads an attachment to a record.
 #### Update attachments
 Uploads attachments to a record.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Oktopus%20Icon%20Orange.svg" width="24"> Oktopus
@@ -747,7 +747,7 @@ Uploads attachments to a record.
 #### Evaluate script
 Evaluate a more or less comples script which generates variables or influences the workflow state.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/PDF.svg" width="24"> PDF
@@ -757,7 +757,7 @@ Evaluate a more or less comples script which generates variables or influences t
 #### Merge PDFs
 Merge multiple PDF files into one PDF file.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Microsoft%20Power%20BI.svg" width="24"> Power BI
@@ -795,7 +795,7 @@ Gets all tables inside a oush dataset. Push dataset are very limited in ther fun
 #### Refresh dataset
 Refreshes a dataset.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/RayVentory.svg" width="24"> ReyVentory Data Hub
@@ -805,7 +805,7 @@ Refreshes a dataset.
 #### Get table data
 Gets all rows from table.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Shopware.svg" width="24"> Shopware
@@ -851,7 +851,7 @@ Updates a specific product.
 #### Update product cross selling
 Updates a given cross selling entity of a specific product.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/SMAX.svg" width="24"> SMAX
@@ -893,7 +893,7 @@ Updates an existing comment.
 #### Update record
 Updates an existing record.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Text.svg" width="24"> Text
@@ -927,7 +927,7 @@ Reads the content of a file variable.
 #### Split text
 Takes any input text and split it by any given separator.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Timer.svg" width="24"> Timer
@@ -941,7 +941,7 @@ Enter the time span between each execution (format `h:mm:ss`).
 ##### Example
 `0:2:30` (2.5 minutes)
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/USM.svg" width="24"> USU Service Manager (USM)
@@ -971,7 +971,7 @@ Fet a specific business object.
 #### Get Object by field
 Get the first business object by field.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Webhook.svg" width="24"> Webhook
@@ -988,4 +988,4 @@ File: `{{AFileVariable}}`\
 Text: `Hello from my workflow.`\
 HTML: `<a href="https://freedom-manufaktur.com">Thanks Oktopus</a>`
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
