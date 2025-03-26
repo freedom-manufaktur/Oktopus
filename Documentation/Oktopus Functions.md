@@ -1053,7 +1053,7 @@ String functions available through the object 'step' in whoosh Oktopus.
 - [`string.isNullOrEmpty`](#stringisnullorempty)
 - [`string.TruncateSmart`](#stringtruncatesmart)
 
-[⬆️ Back to top](#oktopus-built-in-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `string.getFileName`
 
 ```
