@@ -557,17 +557,17 @@ Take an Excel template and import any amount of rows and columns into the speads
 
 ## <img src="Images/TechnologyIcons/Microsoft%20OneDrive.svg" width="24"> Microsoft OneDrive / SharePoint
 ### Actions
-- [Delete file](#onedrive-delete-file)
-- [Download file](#onedrive-download-file)
-- [Upload file](#onedrive-upload-file)
+- [Delete file](#onedrive---delete-file)
+- [Download file](#onedrive---download-file)
+- [Upload file](#onedrive---upload-file)
 
-#### OneDrive Delete file
+#### OneDrive - Delete file
 Deletes a file from OneDrive.
 
-#### OneDrive Download file
+#### OneDrive - Download file
 Downloads a file from OneDrive.
 
-#### OneDrive Upload file
+#### OneDrive - Upload file
 Uploads a file to OneDrive.
 
 [⬆️ Back to top](#technologies)
