@@ -1062,7 +1062,7 @@ string.getFileName <name> <extension> <fallbackName>?
 
 #### Description
 
-Returns the file name of of the input `name` and `extension`. The optional `fallbackName` will be used if `name` contains invalid characters, like '/', '\', '<', '>', '|', ':', '*', '?' or '"'.
+Returns the file name of of the input `name` and `extension`. The optional `fallbackName` will be used if `name` contains invalid characters, like `/`, `\`, `<`, `>`, `|`, `:`, `*`, `?` or `"`.
 
 #### Arguments
 
