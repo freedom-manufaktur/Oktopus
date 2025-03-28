@@ -717,12 +717,12 @@ A new JSON string
 #### Examples
 
 > **input**
-```oktopus-html
+```ruby
 {{ json.serialize {Foo:"Bar"} }}
 {{ json.serialize {Foo:"Bar"} "Indented" }}
 ```
 > **output**
-```html
+```json
 {"Foo":"Bar"}
 
 {
@@ -730,38 +730,32 @@ A new JSON string
 }
 ```
 [🔝 Back to top](#oktopus-functions)
-## `oktopus` functions
 
-Oktopus information functions available through the object 'oktopus' in whoosh Oktopus.
+
+## `oktopus` functions
+Oktopus information functions available through the object `oktopus` in whoosh Oktopus.
 
 - [`oktopus.server`](#oktopusserver)
 
 [🔝 Back to top](#oktopus-functions)
-### `oktopus.server`
 
-```
+
+### `oktopus.server`
+```ruby
 oktopus.server
 ```
 
 #### Description
-
-Returns a JSON of relevant information of the current whoosh Oktopus instance.
-
-#### Arguments
-
-
-#### Returns
-
+Returns an object with relevant information of the current whoosh Oktopus instance.
 
 #### Examples
-
 > **input**
-```oktopus-html
+```ruby
 {{ oktopus.server }}
 {{ oktopus.server.uptime | object.format "%d" }}
 ```
 > **output**
-```html
+```json
 {"MachineName":"TESTDEV","Uptime":"1.33:07:00.1337000","Version":"5.9.0","EnvironmentName":"Test Environment"}'
 1
 ```
