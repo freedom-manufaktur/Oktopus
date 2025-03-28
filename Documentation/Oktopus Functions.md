@@ -11,7 +11,7 @@ Check out the
 
 for further information.
 
-# Oktopus functions
+# Oktopus built-in functions
 This document describes the built-in functions provided by whoosh Oktopus (in addition to [Scriban built-in functions](https://github.com/scriban/scriban/blob/master/doc/builtins.md)).
 
 - [`array` functions](#array-functions)
@@ -34,7 +34,7 @@ Array functions available through the object 'array' in whoosh Oktopus.
 - [`array.hasItems`](#arrayhasitems)
 - [`array.remove`](#arrayremove)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ### `array.isNullOrEmpty`
 ```
@@ -61,7 +61,7 @@ Returns if an input `list` is null or empty. The shortcut `array.empty` can be u
 true
 false
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ### `array.hasItems`
 ```
@@ -88,7 +88,7 @@ Returns if an input `list` has elements.
 true
 false
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ### `array.remove`
 ```
@@ -114,7 +114,7 @@ A new list with the element removed
 ```html
 [2, 3]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ## `convert` functions
 Convert functions available through the object 'convert' in whoosh Oktopus.
@@ -127,7 +127,7 @@ Convert functions available through the object 'convert' in whoosh Oktopus.
 - [`convert.toLong`](#converttolong)
 - [`convert.toText`](#converttotext)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ### `convert.toCsv`
 ```
@@ -160,7 +160,7 @@ Id,Text
 Id,Text
 "{Id: 1, Text: ""Foo""}","{Id: 2, Text: ""Bar""}"
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ### `convert.toCsvRows`
 ```
@@ -196,7 +196,7 @@ Id,Text
 1,Foo
 2,Bar
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ### `convert.toDecimal`
 ```
@@ -225,7 +225,7 @@ The input `value` converted to a 128 bit decimal
 1337.01
 1337.01
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ### `convert.toDouble`
 
@@ -259,7 +259,7 @@ The input `value` converted to a 64 bit double
 1.337
 1337
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `convert.toInt`
 
 ```
@@ -292,7 +292,7 @@ The input `value` converted to a 32 bit integer
 1337
 1337
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `convert.toLong`
 
 ```
@@ -325,7 +325,7 @@ The input `value` converted to a 64 bit integer
 1337
 1337
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `convert.toText`
 
 ```
@@ -356,7 +356,7 @@ The input `value` converted to a string
 "1.337"
 1337
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ## `dateOnly` functions
 
@@ -367,7 +367,7 @@ DateOnly functions available through the object 'dateOnly' in whoosh Oktopus.
 - [`dateOnly.parse`](#dateonlyparse)
 - [`dateOnly.today`](#dateonlytoday)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `dateOnly.from`
 
 ```
@@ -398,7 +398,7 @@ The date string of the `dateTime` input
 2024-01-01
 2024-12-31
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `dateOnly.now`
 
 ```
@@ -425,7 +425,7 @@ Returns a date string of the current time.
 ```html
 2024-01-01
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `dateOnly.parse`
 
 ```
@@ -462,7 +462,7 @@ A date string of the input `dateString`
 December 31
 2024-12-31
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `dateOnly.today`
 
 ```
@@ -489,7 +489,7 @@ Returns a date string of the current time.
 ```html
 2024-01-01
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ## `globalVariable` functions
 
@@ -498,7 +498,7 @@ Global variable functions available through the object 'globalVariable' in whoos
 - [`globalVariable.load`](#globalvariableload)
 - [`globalVariable.store`](#globalvariablestore)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `globalVariable.load`
 
 ```
@@ -527,7 +527,7 @@ The value of the input `globalVariableName`
 ```html
 "MyValue"
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `globalVariable.store`
 
 ```
@@ -556,7 +556,7 @@ Stores a global variable of an input `value`. If the `globalVariableName` alread
 ```html
 Storing global variable 'MyGlobalVariable'='MyValue'
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ## `html` functions
 
@@ -565,7 +565,7 @@ HTML functions available through the object 'html' in whoosh Oktopus.
 - [`html.removeAllAttributes`](#htmlremoveallattributes)
 - [`html.removeAttributes`](#htmlremoveattributes)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ### `html.removeAllAttributes`
 
@@ -595,7 +595,7 @@ A new HTML string with all attributes removed
 ```html
 <html><head></head><body><p>FooBar</p></body></html>
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `html.removeAttributes`
 
 ```
@@ -624,7 +624,7 @@ A new HTML string with the attributes removed
 ```html
 <html><head></head><body><p>FooBar</p></body></html>
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ## `json` functions
 
@@ -634,7 +634,7 @@ JSON functions available through the object 'json' in whoosh Oktopus.
 - [`json.format`](#jsonformat)
 - [`json.serialize`](#jsonserialize)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `json.deserialize`
 
 ```
@@ -663,7 +663,7 @@ A new JSON object
 ```html
 {Foo: "Bar"}
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `json.format`
 
 ```
@@ -694,7 +694,7 @@ A new formatted JSON string
  "Foo":"Bar"
 }
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `json.serialize`
 
 ```
@@ -729,7 +729,7 @@ A new JSON string
  "Foo":"Bar"
 }
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 
 ## `oktopus` functions
@@ -737,7 +737,7 @@ Oktopus information functions available through the object `oktopus` in whoosh O
 
 - [`oktopus.server`](#oktopusserver)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 
 ### `oktopus.server`
@@ -759,7 +759,7 @@ Returns an object with relevant information of the current whoosh Oktopus instan
 {"MachineName":"TESTDEV","Uptime":"1.33:07:00.1337000","Version":"5.9.0","EnvironmentName":"Test Environment"}'
 1
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ## `step` functions
 
@@ -775,7 +775,7 @@ Oktopus step functions available through the object 'step' in whoosh Oktopus. Th
 - [`step.skipIfNull`](#stepskipifnull)
 - [`step.wait`](#stepwait)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `step.errorMessage`
 
 ```
@@ -803,7 +803,7 @@ if (step.errorMessage | string.contains "temporarily unavailable") step.retryIn 
 <input>(1,1): Waiting for 5000ms...
 Error handling script decided to retry step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `step.item`
 
 ```
@@ -831,7 +831,7 @@ Returns the item set in the current step context. This can be used in certain st
 ```html
 
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `step.retry`
 
 ```
@@ -858,7 +858,7 @@ Retries a step if it fails. This is typically used under `Advanced Settings` in 
 ```html
 Error handling script decided to retry step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `step.retryIn`
 
 ```
@@ -887,7 +887,7 @@ Waits for a given `timespan` ( set in milliseconds ) and then retries a step if 
 <input>(1,1): Waiting for 5000ms...
 Error handling script decided to retry step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `step.skip`
 
 ```
@@ -914,7 +914,7 @@ Skips the current step. This is typically used under `Advanced Settings` in the 
 ```html
 Skipping step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `step.skipIf`
 
 ```
@@ -944,7 +944,7 @@ Skips the current step if the input `value` evaluates to true.
 Skipping step [...]
 Successfully executed step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `step.skipIfEmpty`
 
 ```
@@ -976,7 +976,7 @@ Skipping step [...]
 Skipping step [...]
 Successfully executed step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `step.skipIfNull`
 
 ```
@@ -1006,7 +1006,7 @@ Skips the current step if the input `value` is null.
 Skipping step [...]
 Successfully executed step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `step.wait`
 
 ```
@@ -1036,7 +1036,7 @@ Waits for a given `timespan` ( set in milliseconds ). This is typically used und
 <input>(1,1): Waiting for 5000ms...
 <input>(1,1): Waiting for 5ms...
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ## `string` functions
 
@@ -1047,7 +1047,7 @@ String functions available through the object 'step' in whoosh Oktopus.
 - [`string.isNullOrEmpty`](#stringisnullorempty)
 - [`string.TruncateSmart`](#stringtruncatesmart)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `string.getFileName`
 
 ```
@@ -1080,7 +1080,7 @@ string.GetFileName "<>" "eml" "Email"
 Test.eml
 Email.eml
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `string.hasContent`
 
 ```
@@ -1141,7 +1141,7 @@ Returns if an input `value` is null or empty.
 true
 false
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ### `string.TruncateSmart`
 ```
@@ -1174,7 +1174,7 @@ Lorem ipsum,...
 Lorem ipsum, cons...
 Lorem ipsum,---
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ## `timeOnly` functions
 
@@ -1184,7 +1184,7 @@ TimeOnly functions available through the object 'timeOnly' in whoosh Oktopus.
 - [`timeOnly.now`](#timeonlynow)
 - [`timeOnly.parse`](#timeonlyparse)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `timeOnly.from`
 
 ```
@@ -1215,7 +1215,7 @@ A new time object of the `dateTime` input.
 13:37:00.0000000
 14:37:00.0000000
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `timeOnly.now`
 
 ```
@@ -1242,7 +1242,7 @@ Returns a new time object of the current time.
 ```html
 13:37:00.0000000
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `timeOnly.parse`
 
 ```
@@ -1277,7 +1277,7 @@ A new time object of the input `dateString`
 13
 13:37:00.0000000
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ## `variable` functions
 
@@ -1292,7 +1292,7 @@ Variable functions available through the object 'variable' in whoosh Oktopus.
 - [`variable.store`](#variablestore)
 - [`variable.useNull`](#variableusenull)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `variable.skip`
 
 ```
@@ -1319,7 +1319,7 @@ Skips the variable of a step.
 ```html
 Ignoring [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `variable.skipIf`
 
 ```
@@ -1349,7 +1349,7 @@ Skips the variable of a step if the input `value` evaluates to true.
 Ignoring [...]
 Successfully executed step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `variable.skipIfEmpty`
 
 ```
@@ -1381,7 +1381,7 @@ Ignoring [...]
 Ignoring [...]
 Successfully executed step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `variable.skipIfNotEmpty`
 
 ```
@@ -1413,7 +1413,7 @@ Successfully executed step [...]
 Successfully executed step [...]
 Ignoring [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `variable.skipIfNotNull`
 
 ```
@@ -1443,7 +1443,7 @@ Skips the variable of a step if the input `value` is not null. The shortcut `var
 Ignoring [...]
 Successfully executed step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `variable.skipIfNull`
 
 ```
@@ -1473,7 +1473,7 @@ Skips the variable of a step if the input `value` is null. The shortcut `variabl
 Ignoring [...]
 Successfully executed step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `variable.store`
 
 ```
@@ -1504,7 +1504,7 @@ Stores the input `value` with a `variableName` in the current workflow context. 
 Storing variable 'Foo'='Bar'
 Storing variable 'FooBar'='{"Foo":"Bar"}'
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `variable.useNull`
 
 ```
@@ -1531,7 +1531,7 @@ Forces `null` to be used as a variable instead of an empty string.
 ```html
 Text = <null>
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ## `workflow` functions
 
@@ -1544,7 +1544,7 @@ Workflow functions available through the object 'workflow' in whoosh Oktopus.
 - [`workflow.stopIfEmpty`](#workflowstopIfEmpty)
 - [`workflow.stopIfNull`](#workflowstopIfNull)
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `workflow.hideSecret`
 
 ```
@@ -1570,7 +1570,7 @@ Prevent logging the clear text of the `value`.
 > **output**
 ```html
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `workflow.log`
 
 ```
@@ -1599,7 +1599,7 @@ Logs the `value` under "Protocol" after the step was executed where the function
 🛈FooBar
 ✅FooBar
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `workflow.stop`
 
 ```
@@ -1629,7 +1629,7 @@ Stops the current workflow. An optional `message` string can be used to display 
 Stopping workflow at step [...]
 Stopping workflow at step [...] "Stopping workflow now."
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `workflow.stopIf`
 
 ```
@@ -1662,7 +1662,7 @@ Stopping workflow at step [...]
 Stopping workflow at step [...] "Stopping workflow now."
 Successfully executed step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 ### `workflow.stopIfEmpty`
 
 ```
@@ -1695,7 +1695,7 @@ Stopping workflow at step [...]
 Stopping workflow at step [...] "Stopping workflow now."
 Successfully executed step [...]
 ```
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
 
 ### `workflow.stopIfNull`
 ```
@@ -1726,4 +1726,4 @@ Stopping workflow at step [...] "Stopping workflow now."
 Successfully executed step [...]
 ```
 
-[🔝 Back to top](#oktopus-functions)
+[🔝 Back to top](#oktopus-built-in-functions)
