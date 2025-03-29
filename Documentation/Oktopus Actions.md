@@ -124,10 +124,13 @@ Removes a user from an organization.
 
 ## <img src="Images/TechnologyIcons/Text.svg" width="24"> CSV
 ### Actions
-- [Parse CSV text](#parse-csv-text)
+- [Parse CSV](#parse-csv)
 
-#### Parse CSV text
-Parses the given CSV text and stores the object result.
+#### Parse CSV
+Parses the given CSV and stores the resulting data.
+##### Ideas
+* After downloading an attachment from a ticket, parse the CSV file and process the data.
+* After reading a file from a network share (exported by a software), parse the CSV file and process the data (e.g. upsert to a CMDB).
 
 [🔝 Back to top](#technologies)
 
@@ -140,6 +143,7 @@ Parses the given CSV text and stores the object result.
 Prints the expression to the log file.
 
 [🔝 Back to top](#technologies)
+
 
 ## <img src="Images/TechnologyIcons/DocuSign.svg" width="24"> DocuSign
 ### Actions
@@ -450,10 +454,13 @@ Updates an existing issue.
 
 ## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width="24"> JSON
 ### Actions
-- [Parse JSON text](#parse-json-text)
+- [Parse JSON](#parse-json)
 
-#### Parse JSON text
-Parses the given JSON text and stores the object result.
+#### Parse JSON
+Parses the given JSON and stores the resulting data.
+##### Ideas
+* After downloading an attachment from a ticket, parse the JSON file and process the data.
+* After reading a file from a network share (exported by a software), parse the JSON file and process the data (e.g. upsert to a CMDB).
 
 [🔝 Back to top](#technologies)
 
