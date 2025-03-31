@@ -288,8 +288,8 @@ Upload a file (to a shared drive).
 Call any HTTP endpoint.
 
 #### Send HTTP request (preview)
-Call any HTTP endpoint multiple times.
-Note: This is a preview step, wich is not production ready and will change in th efuture.
+Call any HTTP endpoint multiple times.\
+Note: This is a preview step, wich is not production ready and may change in the future.
 
 [🔝 Back to top](#technologies)
 
