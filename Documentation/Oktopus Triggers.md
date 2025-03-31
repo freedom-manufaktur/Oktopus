@@ -27,7 +27,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 #### Work Item trigger (Webhook)
 Triggers when a work item created or updated webhook is received.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/DocuSign.svg" width="24"> DocuSign
@@ -37,7 +37,7 @@ Triggers when a work item created or updated webhook is received.
 #### Envelope status changed
 Triggers when the status of an envelope changes.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Debug.svg" width="24"> Error Handling
@@ -47,7 +47,7 @@ Triggers when the status of an envelope changes.
 #### Workflow failed
 Triggers when a workflow failed with an error.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ### <img src="Images/TechnologyIcons/ServerMail.svg" width="24"> Exchange Server
@@ -73,7 +73,7 @@ Triggers whenever a meeting declined response was received in the users inbox (u
 #### Meeting response
 Triggers whenever a meeting response was received in the users inbox (unread).
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/FolderDocument.svg" width="24"> File System
@@ -83,7 +83,7 @@ Triggers whenever a meeting response was received in the users inbox (unread).
 #### Watch folder for files
 Triggers when a file is found in a certain directory.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/MailCloud.svg" width="24"> IMAP
@@ -93,7 +93,7 @@ Triggers when a file is found in a certain directory.
 #### Mail recieved
 Triggers when receving an email.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Ivanti.svg" width="24"> Ivanti Neurons for ITSM / Ivanti Service Manager (ISM)
@@ -103,7 +103,7 @@ Triggers when receving an email.
 #### Business Object found
 Triggers when a Business Object with a specific field value is found.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Jira%20Software.svg" width="24"> Jira
@@ -130,7 +130,7 @@ Triggers whenever an issue was found by the specified Jira query (JQL).
 Triggers whenever a notification is sent to this Webhook. The content is determinded by your Jira Automation
 settings.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width="24"> Microsoft 365
@@ -140,7 +140,7 @@ settings.
 #### Mail received
 Triggers when a mail is present in a given mailbox.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Google%20Contacts.svg" width="24"> Microsoft 365 Contacts
@@ -150,7 +150,7 @@ Triggers when a mail is present in a given mailbox.
 #### Contact delta detected
 Triggers when a contact was created or updated.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Ninox.svg" width="24"> Ninox
@@ -163,7 +163,7 @@ Triggers when a record matches a specified criteria.
 ##### Examples
 My Field,"Max, Mustermann"
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Timer.svg" width="24"> Timer
@@ -188,7 +188,7 @@ Enter the time span between each execution (format d.hh:mm:ss).
 #### Manual
 Triggers only when the user explicitly requests execution.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/USM.svg" width="24"> USU Service Manager (USM)
@@ -198,7 +198,7 @@ Triggers only when the user explicitly requests execution.
 #### Object found
 Triggers whenever a business object matches the given criteria.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
 ## <img src="Images/TechnologyIcons/Webhook.svg" width="24"> Webhook
@@ -208,6 +208,6 @@ Triggers whenever a business object matches the given criteria.
 #### Receive Webhook
 Wait for an HTTP call to the endpoint.
 
-[⬆️ Back to top](#technologies)
+[🔝 Back to top](#technologies)
 
 
