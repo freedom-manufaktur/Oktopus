@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus actions
 ===
-Version: `5.25.0` - `2025-03-21` \
+Version: `5.26.0` - `2025-03-30` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -248,8 +248,9 @@ Gets the information about a user.
 - [Get drive](#google-drive---get-drive)
 - [Find drives](#google-drive---find-drives)
 - [Get file](#google-drive---get-file)
-- [Download file](#google-drive---download-file)
 - [Find files/folders](#google-drive---find-filesfolders)
+- [Download file](#google-drive---download-file)
+- [Upload file](#google-drive---upload-file)
 
 #### Google Drive - Get drive
 Gets a drive by name.
@@ -260,12 +261,20 @@ Finds all drives by query.
 #### Google Drive - Get file
 Gets a file by name.
 
-#### Google Drive - Download file
-Download a file.
-Gets a file by name.
-
 #### Google Drive - Find files/folders
 Finds all files and folders by query.
+
+#### Google Drive - Download file
+Download a file (from a shared drive).
+##### Ideas
+- Download a template for a [Word - Mail Merge](#mail-merge) or an [Excel - Data import](#excel---data-import).
+- Download images to use as a signature in an email.
+
+#### Google Drive - Upload file
+Upload a file (to a shared drive).
+##### Ideas
+- After performing a [Word - Mail Merge](#mail-merge) upload the created document (e.g. invoice) to a Google Drive for archival.
+- Export some data from your CRM (maybe regularly) and store it in a drive for easy access.
 
 [🔝 Back to top](#technologies)
 
