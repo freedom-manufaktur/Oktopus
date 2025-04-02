@@ -51,7 +51,7 @@ Table of contents
 
 8. If you are presented with `Service account key creation is disabled` and error message `The organization policy constraint 'iam.disableServiceAccountKeyCreation' is enforced on your organization.` then please follow the instructions on how to [enable service account key creation](#enable-service-account-key-creation) and retry the key creation.
 
-9. Save the downloaded `.json` file.
+9. Save the downloaded `.json` file (e.g. `whoosh-oktopus-f56aaf1480f8.json`).
    ![Successful key creation](<Images/GoogleWorkspace/Google Cloud IAM Service Accounts - Details - Keys add JSON success.png>)
 
 
@@ -68,7 +68,7 @@ Table of contents
    - `https://www.googleapis.com/auth/drive.readonly`: Read-only access to Google Drive.
    - `https://www.googleapis.com/auth/drive`: Read and write access to Google Drive.
    - `https://www.googleapis.com/auth/admin.directory.user.readonly`: Read-only access to Google Admin Console.
-   > Note: You should always select the least permissive access as possible.
+   > Note: You should always follow the principle of least privilege (PoLP).
 
    ![Add a new client ID](<Images/GoogleWorkspace/Google Admin Domain Wide Delegation - Add client.png>)
 
