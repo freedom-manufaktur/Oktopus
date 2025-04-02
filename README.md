@@ -12,3 +12,4 @@ https://freedom-manufaktur.com/whoosh-oktopus
 ## Additional documentation
 - [How to register an App within Microsoft Entra ID](<Documentation/Register an App within Entra ID.md>) - For use when necessary.
 - [How to register an Exchange Online App within Microsoft Entra ID](<Documentation/Register an Exchange Online App within Entra ID.md>) - For use when necessary.
+- [How to register a Google Workspace Service Account](<Documentation/Register a Google Workspace Service Account.md>) - For use when necessary.
