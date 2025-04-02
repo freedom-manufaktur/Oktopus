@@ -26,7 +26,7 @@ Table of contents
 
 
 # Create a new service account
-> Note: This step is only necessary if you haven't already done so. If you already have a project, skip to the next chapter.
+> Note: This step is only necessary if you haven't already done so. If you already have a service account, skip to the next chapter.
 
 1. Open the [Google Cloud > IAM & Admin > Service accounts](https://console.cloud.google.com/iam-admin/serviceaccounts) and make sure the correct project (e.g. `whoosh Oktopus`) is selected.
   ![Service accounts](<Images/GoogleWorkspace/Google Cloud IAM Service Accounts.png>)
