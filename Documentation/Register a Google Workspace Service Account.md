@@ -80,7 +80,7 @@ Table of contents
 As a result of the previous chapters you should have the following information at your disposal:
 - Service Account Email (e.g. `whoosh-oktopus@whoosh-oktopus.iam.gserviceaccount.com`)
 - Service Account Unique ID (e.g. `102673634169041257612`)
-- Service Account Key (e.g. `whoosh-oktopus-f56aaf1480f8.json`)
+- Service Account Key JSON (e.g. `whoosh-oktopus-f56aaf1480f8.json`)
 
 
 # Use within Oktopus
