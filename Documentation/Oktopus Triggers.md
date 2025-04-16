@@ -61,8 +61,8 @@ Triggers when a workflow failed with an error.
 #### Email received
 Triggers whenever an email was received in the users inbox (unread).
 ##### Ideas
-* Implement a mail-in workflow, which analyses the email to create a new ticket or assign it to an existing one.
-* Use image inlining and attachment separation to create tickets that capture the original spirit of the email, rather then text only.
+- Implement a mail-in workflow, which analyses the email to create a new ticket or assign it to an existing one.
+- Use image inlining and attachment separation to create tickets that capture the original spirit of the email, rather then text only.
 
 #### Meeting accepted
 Triggers whenever a meeting accepted response was received in the users inbox (unread).
@@ -143,8 +143,8 @@ settings.
 #### Mail received
 Triggers when a mail is present in a given mailbox (and is unread).
 ##### Ideas
-* Implement a mail-in workflow, which analyses the email to create a new ticket or assign it to an existing one.
-* Use image inlining and attachment separation to create tickets that capture the original spirit of the email, rather then text only.
+- Implement a mail-in workflow, which analyses the email to create a new ticket or assign it to an existing one.
+- Use image inlining and attachment separation to create tickets that capture the original spirit of the email, rather then text only.
 
 [🔝 Back to top](#technologies)
 
@@ -166,7 +166,7 @@ Triggers when a contact was created or updated.
 #### Record found
 Triggers when a record matches a specified criteria.
 ##### Ideas
-* At any point, mark any object with a hidden field as *"This object needs attention"*, then trigger your workflow based on that.
+- At any point, mark any object with a hidden field as *"This object needs attention"*, then trigger your workflow based on that.
 ##### Examples
 `CreateInvoice,True`
 
@@ -203,7 +203,7 @@ Triggers only when the user explicitly requests execution.
 #### Object found
 Triggers whenever a business object matches the given criteria.
 ##### Ideas
-* At any point, mark any object with a hidden field as *"This object needs attention"*, then trigger your workflow based on that.
+- At any point, mark any object with a hidden field as *"This object needs attention"*, then trigger your workflow based on that.
 
 [🔝 Back to top](#technologies)
 
@@ -215,7 +215,7 @@ Triggers whenever a business object matches the given criteria.
 #### Receive Webhook
 Exposes an HTTP endpoint and waits for any calls to it (any kind of HTTP request).
 ##### Ideas
-* Many of the modern cloud based systems allow the configutation of Webhooks. Oktopus can catch them all and run any kind of workflow based on that.
-* Oktopus can call itself and allow all kinds of advanced scenarios.
+- Many of the modern cloud based systems allow the configutation of Webhooks. Oktopus can catch them all and run any kind of workflow based on that.
+- Oktopus can call itself and allow all kinds of advanced scenarios.
 
 [🔝 Back to top](#technologies)

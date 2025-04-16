@@ -129,8 +129,8 @@ Removes a user from an organization.
 #### Parse CSV
 Parses the given CSV and stores the resulting data.
 ##### Ideas
-* After downloading an attachment from a ticket, parse the CSV file and process the data.
-* After reading a file from a network share (exported by a software), parse the CSV file and process the data (e.g. upsert to a CMDB).
+- After downloading an attachment from a ticket, parse the CSV file and process the data.
+- After reading a file from a network share (exported by a software), parse the CSV file and process the data (e.g. upsert to a CMDB).
 
 [🔝 Back to top](#technologies)
 
@@ -354,13 +354,13 @@ Move an email to a different folder.
 #### Add attachment
 Adds an attachment to a specific Business Object.
 ##### Ideas
-* Another ticket system (e.g. Jira) has a new attachment, which should now be added to a Business Object.
+- Another ticket system (e.g. Jira) has a new attachment, which should now be added to a Business Object.
 
 #### Add attachments
 Adds multiple (0-n) attachments to a specific Business Object.
 ##### Ideas
-* A mail-in workflow creates a `Journal.Email` object and adds the attachments to it.
-* Another ticket system (e.g. Jira) already has a bunch of attachments, that should be uploaded all at once.
+- A mail-in workflow creates a `Journal.Email` object and adds the attachments to it.
+- Another ticket system (e.g. Jira) already has a bunch of attachments, that should be uploaded all at once.
 
 #### Create Business Object
 Creates a new Business Object (any kind of object).
@@ -368,9 +368,9 @@ Creates a new Business Object (any kind of object).
 #### Create Service Request
 Creates a new Service Request based on a Request Offering.
 ##### Ideas
-* A mail-in workflow creates a new service request based on that email (or attaches the email to an existing Business Object).
-* Create service requests on a regular basis for recurring tasks.
-* A 3rd party system wants to create service requests.
+- A mail-in workflow creates a new service request based on that email (or attaches the email to an existing Business Object).
+- Create service requests on a regular basis for recurring tasks.
+- A 3rd party system wants to create service requests.
 
 #### Create or update Business Obejct(s)
 Create or update (upsert) a Single Business Object or many at once.
@@ -485,8 +485,8 @@ Updates an existing issue.
 #### Parse JSON
 Parses the given JSON and stores the resulting data.
 ##### Ideas
-* After downloading an attachment from a ticket, parse the JSON file and process the data.
-* After reading a file from a network share (exported by a software), parse the JSON file and process the data (e.g. upsert to a CMDB).
+- After downloading an attachment from a ticket, parse the JSON file and process the data.
+- After reading a file from a network share (exported by a software), parse the JSON file and process the data (e.g. upsert to a CMDB).
 
 [🔝 Back to top](#technologies)
 
@@ -516,8 +516,8 @@ Executes an arbitrary query With any result.
 #### Parse EML
 Parses an EML file into its individual parts.
 ##### Ideas
-* A 3rd party system has captured an email as EML file and you want to extract the individual information, like body (HTML) and attachments.
-* You want to convert the HTML body (by default without images) to HTML that has the images inlined and can be stored in a HTML compatible field.
+- A 3rd party system has captured an email as EML file and you want to extract the individual information, like body (HTML) and attachments.
+- You want to convert the HTML body (by default without images) to HTML that has the images inlined and can be stored in a HTML compatible field.
 
 [🔝 Back to top](#technologies)
 
@@ -577,16 +577,16 @@ Update a contact of the current or a specific user.
 #### Excel - Data export
 Take an Excel file and export all of the rows and columns from a sheet.
 ##### Ideas
-* You may then convert the data to `CSV` or `JSON` and upload it somewhere.
-* You may iterate over the list and upsert specific or all rows and columns to a Ticket system.
-* Import data from services without an API, but with an Excel export.
+- You may then convert the data to `CSV` or `JSON` and upload it somewhere.
+- You may iterate over the list and upsert specific or all rows and columns to a Ticket system.
+- Import data from services without an API, but with an Excel export.
 
 #### Excel - Data import
 Take an Excel template and import any amount of rows and columns into the speadsheet.
 ##### Ideas
-* Make use of formulas to do advanced calculations or charting on the imported data.
-* Highlight certain columns for your customers to fill out. E.g. B2B shopping list.
-* After filling the template with your data, send it directly to your customer or upload it to any other service.
+- Make use of formulas to do advanced calculations or charting on the imported data.
+- Highlight certain columns for your customers to fill out. E.g. B2B shopping list.
+- After filling the template with your data, send it directly to your customer or upload it to any other service.
 
 [🔝 Back to top](#technologies)
 
