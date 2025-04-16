@@ -213,7 +213,7 @@ Triggers whenever a business object matches the given criteria.
 - [Receive Webhook](#receive-webhook)
 
 #### Receive Webhook
-Wait for an HTTP call to the endpoint.
+Exposes an HTTP endpoint and waits for any calls to it (any kind of HTTP request).
 ##### Ideas
 * Many of the modern cloud based systems allow the configutation of Webhooks. Oktopus can catch them all and run any kind of workflow based on that.
 * Oktopus can call itself and allow all kinds of advanced scenarios.
