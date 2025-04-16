@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus triggers
 ===
-Version: `5.25.0` - `2025-03-21` \
+Version: `5.27.0` - `2025-04-14` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Triggers.md)
 
 # Technologies
@@ -60,6 +60,9 @@ Triggers when a workflow failed with an error.
 
 #### Email received
 Triggers whenever an email was received in the users inbox (unread).
+##### Ideas
+- Implement a mail-in workflow, which analyses the email to create a new ticket or assign it to an existing one.
+- Use image inlining and attachment separation to create tickets that capture the original spirit of the email, rather then text only.
 
 #### Meeting accepted
 Triggers whenever a meeting accepted response was received in the users inbox (unread).
@@ -138,7 +141,10 @@ settings.
 - [Mail received](#mail-received)
 
 #### Mail received
-Triggers when a mail is present in a given mailbox.
+Triggers when a mail is present in a given mailbox (and is unread).
+##### Ideas
+- Implement a mail-in workflow, which analyses the email to create a new ticket or assign it to an existing one.
+- Use image inlining and attachment separation to create tickets that capture the original spirit of the email, rather then text only.
 
 [🔝 Back to top](#technologies)
 
@@ -159,9 +165,10 @@ Triggers when a contact was created or updated.
 
 #### Record found
 Triggers when a record matches a specified criteria.
-
+##### Ideas
+- At any point, mark any object with a hidden field as *"This object needs attention"*, then trigger your workflow based on that.
 ##### Examples
-My Field,"Max, Mustermann"
+`CreateInvoice,True`
 
 [🔝 Back to top](#technologies)
 
@@ -174,14 +181,12 @@ My Field,"Max, Mustermann"
 
 #### CRON Schedule
 Enter a [CRON expression](https://en.wikipedia.org/wiki/Cron#CRON_expression). Time is calculated in UTC.
-
 ##### Examples
 - `15 3 * * *` (daily at 03:15)
 - `* * * * 1` (every monday)
 
 #### Interval
-Enter the time span between each execution (format d.hh:mm:ss).
-
+Enter the time span between each execution (format `d.hh:mm:ss`).
 ##### Examples
 `0:2:30` (2.5 minutes) or `1.0:0:0` (1 day)
 
@@ -197,6 +202,8 @@ Triggers only when the user explicitly requests execution.
 
 #### Object found
 Triggers whenever a business object matches the given criteria.
+##### Ideas
+- At any point, mark any object with a hidden field as *"This object needs attention"*, then trigger your workflow based on that.
 
 [🔝 Back to top](#technologies)
 
@@ -206,8 +213,9 @@ Triggers whenever a business object matches the given criteria.
 - [Receive Webhook](#receive-webhook)
 
 #### Receive Webhook
-Wait for an HTTP call to the endpoint.
+Exposes an HTTP endpoint and waits for any calls to it (any kind of HTTP request).
+##### Ideas
+- Many of the modern cloud based systems allow the configutation of Webhooks. Oktopus can catch them all and run any kind of workflow based on that.
+- Oktopus can call itself and allow all kinds of advanced scenarios.
 
 [🔝 Back to top](#technologies)
-
-
