@@ -336,7 +336,9 @@ Move an email to a different folder.
 ## <img src="Images/TechnologyIcons/Ivanti.svg" width="24"> Ivanti Neurons for ITSM / Ivanti Service Manager (ISM)
 ### Actions
 - [Add attachment](#add-attachment)
+- [Add attachments](#add-attachments)
 - [Create Business Object](#create-business-object)
+- [Create Service Request](#create-service-request)
 - [Create or update Business Obejct(s)](#create-or-update-business-obejcts)
 - [Delete Busines Object](#delete-busines-object)
 - [Find Business Objects (by field)](#find-business-objects-by-field)
@@ -351,9 +353,24 @@ Move an email to a different folder.
 
 #### Add attachment
 Adds an attachment to a specific Business Object.
+##### Ideas
+* Another ticket system (e.g. Jira) has a new attachment, which should now be added to a Business Object.
+
+#### Add attachments
+Adds multiple (0-n) attachments to a specific Business Object.
+##### Ideas
+* A mail-in workflow creates a `Journal.Email` object and adds the attachments to it.
+* Another ticket system (e.g. Jira) already has a bunch of attachments, that should be uploaded all at once.
 
 #### Create Business Object
-Creates a new Business Object.
+Creates a new Business Object (any kind of object).
+
+#### Create Service Request
+Creates a new Service Request based on a Request Offering.
+##### Ideas
+* A mail-in workflow creates a new service request based on that email (or attaches the email to an existing Business Object).
+* Create service requests on a regular basis for recurring tasks.
+* A 3rd party system wants to create service requests.
 
 #### Create or update Business Obejct(s)
 Create or update (upsert) a Single Business Object or many at once.
@@ -498,6 +515,9 @@ Executes an arbitrary query With any result.
 
 #### Parse EML
 Parses an EML file into its individual parts.
+##### Ideas
+* A 3rd party system has captured an email as EML file and you want to extract the individual information, like body (HTML) and attachments.
+* You want to convert the HTML body (by default without images) to HTML that has the images inlined and can be stored in a HTML compatible field.
 
 [🔝 Back to top](#technologies)
 
