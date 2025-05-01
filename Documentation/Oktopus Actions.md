@@ -674,7 +674,10 @@ Convert multiple documents to PDF.
 Convert a single documents to PDF.
 
 #### Mail Merge
-Fill a document that contains placeholders with an actual value.
+Fill a document that contains placeholders (`MERGEFIELD`) with an actual value.
+##### Ideas
+- Use the information of an order and create an invoice document.
+- Create a template for multiple geographical regions and remove certain paragraphs based an the customer region. 
 
 #### Modify document
 Modify a document by removing certain paragraphs.
