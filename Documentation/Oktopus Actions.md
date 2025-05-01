@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus actions
 ===
-Version: `5.27.0` - `2025-04-14` \
+Version: `5.28.0` - `2025-04-30` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -75,7 +75,7 @@ Remove a User, Group or Computer from any number of groups.
 Resets a users password.
 
 #### Update User
-Update a User With a selection of properties.
+Update a User with a selection of properties.
 
 [🔝 Back to top](#technologies)
 
@@ -343,6 +343,7 @@ Move an email to a different folder.
 - [Delete Busines Object](#delete-busines-object)
 - [Find Business Objects (by field)](#find-business-objects-by-field)
 - [Find Business Objects (by query)](#find-business-objects-by-query)
+- [Find Business Objects (by relation)](#find-business-objects-by-relation)
 - [Find Employees](#find-employees)
 - [Get attachment](#get-attachment)
 - [Get Business Object (by field)](#get-business-object-by-field)
@@ -379,10 +380,15 @@ Create or update (upsert) a Single Business Object or many at once.
 Deletes a Business Object.
 
 #### Find Business Objects (by field)
-Finds Business Objects With a specific field value.
+Finds Business Objects with a specific field value.
 
 #### Find Business Objects (by query)
-Finds Business Objects With a combination of conditions.
+Finds Business Objects with a combination of conditions.
+
+#### Find Business Objects (by relation)
+Finds Business Objects related to a specific object.
+##### Ideas
+- After getting a specific Business Object, get all affected *CIs* or responsible *Employees*.
 
 #### Find Employees
 Finds employee objects (Employee#) by ID. This is a handy shortcut when transforming LoginlD to ReclD or ice versa.
@@ -391,10 +397,10 @@ Finds employee objects (Employee#) by ID. This is a handy shortcut when transfor
 Gets an attachment Object and downloads the content.
 
 #### Get Business Object (by field)
-Gets the oldest Business Object With a specific field value.
+Gets the oldest Business Object with a specific field value.
 
 #### Get Business Object (by query)
-Gets the oldest Business Object With a combination of conditions.
+Gets the oldest Business Object with a combination of conditions.
 
 #### Get Business Object (by field values)
 Gets the oldest Business Objects for each specific field value.
@@ -464,10 +470,10 @@ Get specific issues.
 Gets all available project roles and their users.
 
 #### Set Project Role users
-Replaces all assigned users and groups With a new set of users/groups.
+Replaces all assigned users and groups with a new set of users/groups.
 
 #### Trigger issue updated
-Triggers an Oktopus workflow With 'Issue created/updated (Webhook) trigger.
+Triggers an Oktopus workflow with 'Issue created/updated (Webhook) trigger.
 
 #### Update Comment
 Updates an existing comment.
@@ -504,7 +510,7 @@ Gets all fact sheets. You may choose specific types like 'Applicationl.
 Gets the metadata (e.g. about fact sheets) for a specific language. This is handy to translate field values.
 
 ### GraphQL query
-Executes an arbitrary query With any result.
+Executes an arbitrary query with any result.
 
 [🔝 Back to top](#technologies)
 
@@ -634,7 +640,7 @@ Creates a team (including the Microsoft 365 Group).
 [How to register an App within Microsoft Entra ID](Register%20an%20App%20within%20Entra%20ID.md)
 
 #### Get 1:1 chat
-Starts or resumes a chat from the service account With another person.
+Starts or resumes a chat from the service account with another person.
 
 #### Get channel messages
 Gets the most recent 50 messages in a channel.
@@ -668,7 +674,10 @@ Convert multiple documents to PDF.
 Convert a single documents to PDF.
 
 #### Mail Merge
-Fill a document that contains placeholders with an actual value.
+Fill a document that contains placeholders (`MERGEFIELD`) with an actual value.
+##### Ideas
+- Use the information of an order and create an invoice document.
+- Create a template for multiple geographical regions and remove certain paragraphs based an the customer region. 
 
 #### Modify document
 Modify a document by removing certain paragraphs.
