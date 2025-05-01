@@ -1,6 +1,6 @@
 ﻿Documentation and examples for whoosh Oktopus functions
 ---
-Version: `5.23.0` - `2025-03-02` \
+Version: `5.28.0` - `2025-04-30` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Functions.md)
 
 # Language
@@ -558,35 +558,61 @@ Storing global variable 'MyGlobalVariable'='MyValue'
 ```
 [🔝 Back to top](#oktopus-built-in-functions)
 
-## `html` functions
 
+## `html` functions
 HTML functions available through the object 'html' in whoosh Oktopus.
 
+- [`html.GetBody`](#htmlgetbody)
 - [`html.removeAllAttributes`](#htmlremoveallattributes)
 - [`html.removeAttributes`](#htmlremoveattributes)
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
-### `html.removeAllAttributes`
 
+### `html.GetBody`
 ```
-html.removeAllAttributes <htmlString>
+html.GetBody <text>
 ```
 
 #### Description
-
-Removes all attributes of the input `htmlString`.
+Extracts the body of an arbitrary HTML input `text`.
 
 #### Arguments
-
-- `htmlString`: The input HTML string
+- `text`: The input HTML string
 
 #### Returns
+A new HTML string with the body.
 
+#### Examples
+> **input**
+```oktopus-html
+{{ html.GetBody "<html><head></head><body><p>Foo</p></body></html>" }}
+{{ html.GetBody "<p>Bar</p>" }}
+```
+> **output**
+```html
+<p>Foo</p>
+<p>Bar</p>
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `html.removeAllAttributes`
+```
+html.removeAllAttributes <text>
+```
+
+#### Description
+Removes all attributes of the input `text`.
+
+#### Arguments
+- `text`: The input HTML string
+
+#### Returns
 A new HTML string with all attributes removed
 
 #### Examples
-
 > **input**
 ```oktopus-html
 {{ html.removeAllAttributes "<html><head></head><body><p src='FooBar'>FooBar</p></body></html>" }}
@@ -595,20 +621,22 @@ A new HTML string with all attributes removed
 ```html
 <html><head></head><body><p>FooBar</p></body></html>
 ```
-[🔝 Back to top](#oktopus-built-in-functions)
-### `html.removeAttributes`
 
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `html.removeAttributes`
 ```
-html.removeAttributes <htmlString>
+html.removeAttributes <text>
 ```
 
 #### Description
 
-Removes the attributes of the input `htmlString`. XML namespaces, src and href are not removed by this function, if you want to remove all attributes then use [`html.RemoveAllAttributes`](#htmlremoveallattributes).
+Removes the attributes of the input `text`. XML namespaces, src and href are not removed by this function, if you want to remove all attributes then use [`html.RemoveAllAttributes`](#htmlremoveallattributes).
 
 #### Arguments
 
-- `htmlString`: The input HTML string
+- `text`: The input HTML string
 
 #### Returns
 
