@@ -148,8 +148,8 @@ The input `value` converted to Base64
 #### Examples
 > **input**
 ```oktopus-html
-{{ convert.toCsv "Test" }}
-{{ convert.toCsv MyFileVar }}
+{{ convert.toBase64 "Test" }}
+{{ convert.toBase64 MyFileVar }}
 ```
 > **output**
 ```html
@@ -175,8 +175,8 @@ The input `value` converted to Base64URL
 #### Examples
 > **input**
 ```oktopus-html
-{{ convert.toCsv "Test" }}
-{{ convert.toCsv MyFileVar }}
+{{ convert.toBase64URL "Test" }}
+{{ convert.toBase64URL MyFileVar }}
 ```
 > **output**
 ```html
