@@ -154,7 +154,7 @@ The input `value` converted to Base64
 > **output**
 ```html
 VGVzdA==
-77u_VGVzdENvbnRlbnQ
+77u/VGVzdENvbnRlbnQ=
 ```
 [🔝 Back to top](#oktopus-built-in-functions)
 
