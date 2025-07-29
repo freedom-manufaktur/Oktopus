@@ -164,7 +164,7 @@ convert.toBase64Url <value>
 ```
 
 #### Description
-Converts the input `value` to Base64URL. Base64URL converts the special characters `/`, `=` and `+` from Base64 so it can be used as for URL adresses and filenames.
+Converts the input `value` to Base64URL. Base64URL converts the special characters `/`, `=` and `+` from Base64 so it can be used for URL adresses and filenames.
 
 #### Arguments
 - `value`: The input object
