@@ -1651,7 +1651,7 @@ Fails the current workflow. An optional `reason` string can be used to display a
 
 > **input**
 ```oktopus-html
-{{ workflow.fail}}
+{{ workflow.fail }}
 {{ if MyVariable == "Fail"; workflow.fail "Workflow failed."; end }}
 ```
 > **output**
