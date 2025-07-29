@@ -1652,7 +1652,7 @@ Fails the current workflow. An optional `reason` string can be used to display a
 > **input**
 ```oktopus-html
 {{ workflow.fail}}
-{{ if MyVariable == "Fail" workflow.fail "Workflow failed." end }}
+{{ if MyVariable == "Fail"; workflow.fail "Workflow failed."; end }}
 ```
 > **output**
 ```html
@@ -1737,7 +1737,7 @@ Stops the current workflow. An optional `reason` string can be used to display a
 > **input**
 ```oktopus-html
 {{ workflow.stop }}
-{{ if MyVariable == "Abort" workflow.stop "Stopping workflow now." end }}
+{{ if MyVariable == "Abort"; workflow.stop "Stopping workflow now."; end }}
 ```
 > **output**
 ```html
