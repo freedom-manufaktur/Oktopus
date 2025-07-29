@@ -1,6 +1,6 @@
-﻿Documentation and examples for whoosh Oktopus functions
+Documentation and examples for whoosh Oktopus functions
 ---
-Version: `5.28.0` - `2025-04-30` \
+Version: `6.4.0` - `2025-07-29` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Functions.md)
 
 # Language
@@ -119,6 +119,8 @@ A new list with the element removed
 ## `convert` functions
 Convert functions available through the object 'convert' in whoosh Oktopus.
 
+- [`convert.toBase64`](#converttobase64)
+- [`convert.toBase64URL`](#converttobase64url)
 - [`convert.toCsv`](#converttocsv)
 - [`convert.toCsvRows`](#converttocsvrows)
 - [`convert.toDecimal`](#converttodecimal)
@@ -127,6 +129,60 @@ Convert functions available through the object 'convert' in whoosh Oktopus.
 - [`convert.toLong`](#converttolong)
 - [`convert.toText`](#converttotext)
 
+[🔝 Back to top](#oktopus-built-in-functions)
+
+### `convert.toBase64`
+```
+convert.toBase64 <value>
+```
+
+#### Description
+Converts the input `value` to Base64. 
+
+#### Arguments
+- `value`: The input object
+
+#### Returns
+The input `value` converted to Base64
+
+#### Examples
+> **input**
+```oktopus-html
+{{ convert.toCsv "Test" }}
+{{ convert.toCsv MyFileVar }}
+```
+> **output**
+```html
+VGVzdA==
+77u_VGVzdENvbnRlbnQ
+```
+[🔝 Back to top](#oktopus-built-in-functions)
+
+### `convert.toBase64URL`
+```
+convert.toBase64Url <value>
+```
+
+#### Description
+Converts the input `value` to Base64URL. Base64URL converts the special characters `/`, `=` and `+` from Base64 so it can be used as for URL adresses and filenames.
+
+#### Arguments
+- `value`: The input object
+
+#### Returns
+The input `value` converted to Base64URL
+
+#### Examples
+> **input**
+```oktopus-html
+{{ convert.toCsv "Test" }}
+{{ convert.toCsv MyFileVar }}
+```
+> **output**
+```html
+VGVzdA
+77u_VGVzdENvbnRlbnQ
+```
 [🔝 Back to top](#oktopus-built-in-functions)
 
 ### `convert.toCsv`
@@ -1565,6 +1621,7 @@ Text = <null>
 
 Workflow functions available through the object 'workflow' in whoosh Oktopus.
 
+- [`workflow.fail`](#workflowfail)
 - [`workflow.hideSecret`](#workflowhideSecret)
 - [`workflow.log`](#workflowlog)
 - [`workflow.stop`](#workflowstop)
@@ -1572,6 +1629,36 @@ Workflow functions available through the object 'workflow' in whoosh Oktopus.
 - [`workflow.stopIfEmpty`](#workflowstopIfEmpty)
 - [`workflow.stopIfNull`](#workflowstopIfNull)
 
+[🔝 Back to top](#oktopus-built-in-functions)
+### `workflow.fail`
+
+```
+workflow.fail <reason>?
+```
+
+#### Description
+
+Fails the current workflow. An optional `reason` string can be used to display a message why the workflow failed.
+
+#### Arguments
+
+- `reason`: An optional message string
+
+#### Returns
+
+
+#### Examples
+
+> **input**
+```oktopus-html
+{{ workflow.fail}}
+{{ if MyVariable == "Fail" workflow.fail "Workflow failed." end }}
+```
+> **output**
+```html
+Failed to execute step [...]
+Failed to execute step [...] 'Fail (Workflow failed.)']
+```
 [🔝 Back to top](#oktopus-built-in-functions)
 ### `workflow.hideSecret`
 
@@ -1631,16 +1718,16 @@ Logs the `value` under "Protocol" after the step was executed where the function
 ### `workflow.stop`
 
 ```
-workflow.stop <message>?
+workflow.stop <reason>?
 ```
 
 #### Description
 
-Stops the current workflow. An optional `message` string can be used to display a reason why the workflow stopped.
+Stops the current workflow. An optional `reason` string can be used to display a message why the workflow stopped.
 
 #### Arguments
 
-- `message`: An optional message string
+- `reason`: An optional message string
 
 #### Returns
 
@@ -1655,23 +1742,23 @@ Stops the current workflow. An optional `message` string can be used to display 
 > **output**
 ```html
 Stopping workflow at step [...]
-Stopping workflow at step [...] "Stopping workflow now."
+Stopping workflow at step [...] 'Stopping workflow now.'
 ```
 [🔝 Back to top](#oktopus-built-in-functions)
 ### `workflow.stopIf`
 
 ```
-workflow.stopIf <value> <message>?
+workflow.stopIf <value> <reason>?
 ```
 
 #### Description
 
-Stops the current workflow if the input `value` evaluates to true. An optional `message` string can be used to display a reason why the workflow stopped.
+Stops the current workflow if the input `value` evaluates to true. An optional `reason` string can be used to display a message why the workflow stopped.
 
 #### Arguments
 
 - `value`: The input object
-- `message`: An optional message string
+- `reason`: An optional message string
 
 #### Returns
 
@@ -1687,24 +1774,24 @@ Stops the current workflow if the input `value` evaluates to true. An optional `
 > **output**
 ```html
 Stopping workflow at step [...]
-Stopping workflow at step [...] "Stopping workflow now."
+Stopping workflow at step [...] 'Stopping workflow now.'
 Successfully executed step [...]
 ```
 [🔝 Back to top](#oktopus-built-in-functions)
 ### `workflow.stopIfEmpty`
 
 ```
-workflow.stopIfEmpty <value> <message>?
+workflow.stopIfEmpty <value> <reason>?
 ```
 
 #### Description
 
-Stops the workflow if the input `value` is null or is an empty string. An optional `message` string can be used to display a reason why the workflow stopped.
+Stops the workflow if the input `value` is null or is an empty string. An optional `reason` string can be used to display a message why the workflow stopped.
 
 #### Arguments
 
 - `value`: The input object
-- `message`: An optional message string
+- `reason`: An optional message string
 
 #### Returns
 
@@ -1720,22 +1807,22 @@ Stops the workflow if the input `value` is null or is an empty string. An option
 > **output**
 ```html
 Stopping workflow at step [...]
-Stopping workflow at step [...] "Stopping workflow now."
+Stopping workflow at step [...] 'Stopping workflow now.'
 Successfully executed step [...]
 ```
 [🔝 Back to top](#oktopus-built-in-functions)
 
 ### `workflow.stopIfNull`
 ```
-workflow.stopIfNull <value> <message>?
+workflow.stopIfNull <value> <reason>?
 ```
 
 #### Description
-Stops the current workflow if the input `value` is null. An optional `message` string can be used to display a reason why the workflow stopped.
+Stops the current workflow if the input `value` is null. An optional `reason` string can be used to display a message why the workflow stopped.
 
 #### Arguments
 - `value`: The input object
-- `message`: An optional message string
+- `reason`: An optional message string
 
 #### Returns
 
@@ -1750,7 +1837,7 @@ Stops the current workflow if the input `value` is null. An optional `message` s
 > **output**
 ```html
 Stopping workflow at step [...]
-Stopping workflow at step [...] "Stopping workflow now."
+Stopping workflow at step [...] 'Stopping workflow now.'
 Successfully executed step [...]
 ```
 
