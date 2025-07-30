@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus actions
 ===
-Version: `5.28.0` - `2025-04-30` \
+Version: `6.5.0` - `2025-07-30` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -22,7 +22,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Jira](#-jira)
 - [JSON](#-json)
 - [LeanIX](#-leanix)
-- [LexOffice](#) - *Work in progress*
+- [Lexware Office](#-lexware-office)
 - [Mail](#-mail)
 - [Microsoft 365](#-microsoft-365)
 - [Microsoft 365 Contacts](#-microsoft-365-contacts)
@@ -282,14 +282,9 @@ Upload a file (to a shared drive).
 ## <img src="Images/TechnologyIcons/Http.svg" width="24"> HTTP
 ### Actions
 - [Send HTTP request](#send-http-request)
-- [Send HTTP request (preview)](#send-http-request-preview)
 
 #### Send HTTP request
 Call any HTTP endpoint.
-
-#### Send HTTP request (preview)
-Call any HTTP endpoint multiple times.\
-Note: This is a preview step, wich is not production ready and may change in the future.
 
 [🔝 Back to top](#technologies)
 
@@ -427,6 +422,7 @@ Updates a Business Object.
 - [Get Attachment](#get-attachment)
 - [Get Issue](#get-issue)
 - [Get Issues](#get-issues)
+- [Get Project](#get-project)
 - [Get Project Roles](#get-project-roles)
 - [Set Project Role users](#set-project-role-users)
 - [Trigger issue updated](#trigger-issue-updated)
@@ -466,6 +462,12 @@ Get a specific issue.
 #### Get Issues
 Get specific issues.
 
+#### Get Project
+Gets a project or project workflow scheme.
+##### Ideas
+- Determin if a project exists and is accessible, when working with multiple projects.
+- Determin the type of workflow used. This is especially helpful, when issue types have different workflows across different projects.
+
 #### Get Project Roles
 Gets all available project roles and their users.
 
@@ -484,7 +486,7 @@ Updates an existing issue.
 [🔝 Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width="24"> JSON
+## <img src="Images/TechnologyIcons/Json.svg" width="24"> JSON
 ### Actions
 - [Parse JSON](#parse-json)
 
@@ -504,13 +506,47 @@ Parses the given JSON and stores the resulting data.
 - [GraphQL query](#graphql-query)
 
 #### Get fact sheets
-Gets all fact sheets. You may choose specific types like 'Applicationl.
+Gets all fact sheets. You may choose specific types like 'Application'.
 
 ### Get metadata (language)
 Gets the metadata (e.g. about fact sheets) for a specific language. This is handy to translate field values.
 
 ### GraphQL query
 Executes an arbitrary query with any result.
+
+[🔝 Back to top](#technologies)
+
+
+## <img src="Images/TechnologyIcons/Lexware%20Office.svg" width="24"> Lexware Office
+### Actions
+- [Create company](#lexware-office---create-company)
+- [Create invoice](#lexware-office---create-invoice)
+- [Create person](#lexware-office---create-person)
+- [Get contact](#lexware-office---get-contact)
+- [Get invoice](#lexware-office---get-invoice)
+
+#### Lexware Office - Create company
+Creates a new company contact.
+##### Ideas
+- Use a CRM to manage your customers and automatically publish them to Lexware Office.
+
+#### Lexware Office - Create invoice
+Creates a new invoice to be sent to a new or existing customer.
+##### Ideas
+- Use a CRM to manage your orders and automatically create an invoice for them.
+
+#### Lexware Office - Create person
+Creates a new person contact.
+##### Ideas
+- Use a CRM to manage your customers and automatically publish them to Lexware Office.
+
+#### Lexware Office - Get contact
+Gets an contact by ID.
+
+#### Lexware Office - Get invoice
+Gets an invoice by ID.
+##### Ideas
+- Get a previously created invoice and update your CRM with new status informations.
 
 [🔝 Back to top](#technologies)
 
