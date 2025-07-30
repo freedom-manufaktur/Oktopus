@@ -486,7 +486,7 @@ Updates an existing issue.
 [🔝 Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width="24"> JSON
+## <img src="Images/TechnologyIcons/Json.svg" width="24"> JSON
 ### Actions
 - [Parse JSON](#parse-json)
 
