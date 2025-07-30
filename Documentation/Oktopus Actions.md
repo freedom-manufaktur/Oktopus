@@ -422,6 +422,7 @@ Updates a Business Object.
 - [Get Attachment](#get-attachment)
 - [Get Issue](#get-issue)
 - [Get Issues](#get-issues)
+- [Get Project](#get-project)
 - [Get Project Roles](#get-project-roles)
 - [Set Project Role users](#set-project-role-users)
 - [Trigger issue updated](#trigger-issue-updated)
@@ -460,6 +461,12 @@ Get a specific issue.
 
 #### Get Issues
 Get specific issues.
+
+#### Get Project
+Gets a project or project workflow scheme.
+##### Ideas
+- Determin if a project exists and is accessible, when working with multiple projects.
+- Determin the type of workflow used. This is especially helpful, when issue types have different workflows across different projects.
 
 #### Get Project Roles
 Gets all available project roles and their users.
