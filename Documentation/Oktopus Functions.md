@@ -856,6 +856,7 @@ Oktopus step functions available through the object 'step' in whoosh Oktopus. Th
 - [`step.skipIf`](#stepskipif)
 - [`step.skipIfEmpty`](#stepskipifempty)
 - [`step.skipIfNull`](#stepskipifnull)
+- [`step.skipIfWhitespace`](#stepskipIfWhitespace)
 - [`step.wait`](#stepwait)
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -1070,6 +1071,36 @@ Skips the current step if the input `value` is null.
 ```
 > **output**
 ```html
+Skipping step [...]
+Successfully executed step [...]
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `step.skipIfWhitespace`
+```
+step.skipIfWhitespace <value>
+```
+
+#### Description
+Skips the current step if the input `value` is null, empty or consists solely of whitespace characters.
+
+#### Arguments
+- `value`: The input object
+
+#### Returns
+
+#### Examples
+> **input**
+```oktopus-html
+{{ step.skipIfWhitespace null }}
+{{ step.skipIfWhitespace " " }}
+{{ step.skipIfWhitespace {} }}
+```
+> **output**
+```html
+Skipping step [...]
 Skipping step [...]
 Successfully executed step [...]
 ```
@@ -1346,6 +1377,7 @@ Variable functions available through the object 'variable' in whoosh Oktopus.
 - [`variable.skipIfNotEmpty`](#variableskipifnotempty)
 - [`variable.skipIfNotNull`](#variableskipifnotnull)
 - [`variable.skipIfNull`](#variableskipifnull)
+- [`variable.skipIfWhitespace`](#variableskipIfWhitespace)
 - [`variable.store`](#variablestore)
 - [`variable.useNull`](#variableusenull)
 
@@ -1514,6 +1546,36 @@ Skips the variable of a step if the input `value` is null. The shortcut `variabl
 ```
 > **output**
 ```html
+Ignoring [...]
+Successfully executed step [...]
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `variable.skipIfWhitespace`
+```
+variable.skipIfWhitespace <value>
+```
+
+#### Description
+Skips the variable of a step if the input `value` is null, empty or consists solely of whitespace characters. The shortcut `variable.skipWhitespace` can be used instead.
+
+#### Arguments
+- `value`: The input object
+
+#### Returns
+
+#### Examples
+> **input**
+```oktopus-html
+{{ variable.skipIfWhitespace null }}
+{{ variable.skipIfWhitespace " " }}
+{{ variable.skipIfWhitespace {} }}
+```
+> **output**
+```html
+Ignoring [...]
 Ignoring [...]
 Successfully executed step [...]
 ```
