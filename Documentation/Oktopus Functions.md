@@ -1,4 +1,4 @@
-﻿Documentation and examples for whoosh Oktopus functions
+﻿workflow.stopIfWhitespaceDocumentation and examples for whoosh Oktopus functions
 ---
 Version: `6.5.0` - `2025-07-30` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Functions.md)
@@ -1585,6 +1585,7 @@ Workflow functions available through the object 'workflow' in whoosh Oktopus.
 - [`workflow.stopIf`](#workflowstopIf)
 - [`workflow.stopIfEmpty`](#workflowstopIfEmpty)
 - [`workflow.stopIfNull`](#workflowstopIfNull)
+- [`workflow.stopIfWhitespace`](#workflowstopIfWhitespace)
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
@@ -1781,6 +1782,39 @@ Stops the current workflow if the input `value` is null. An optional `reason` st
 ```
 > **output**
 ```html
+Stopping workflow at step [...]
+Stopping workflow at step [...] 'Stopping workflow now.'
+Successfully executed step [...]
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `workflow.stopIfWhitespace`
+```
+workflow.stopIfWhitespace <value> <reason>?
+```
+
+#### Description
+Stops the current workflow if the input `value` is null, empty or consists solely of whitespace characters. An optional `reason` string can be used to display a message why the workflow stopped.
+
+#### Arguments
+- `value`: The input object
+- `reason`: An optional message string
+
+#### Returns
+
+#### Examples
+> **input**
+```oktopus-html
+{{ workflow.stopIfWhitespace null }}
+{{ workflow.stopIfWhitespace "" }}
+{{ workflow.stopIfWhitespace " " "Stopping workflow now." }}
+{{ workflow.stopIfWhitespace {} }}
+```
+> **output**
+```html
+Stopping workflow at step [...]
 Stopping workflow at step [...]
 Stopping workflow at step [...] 'Stopping workflow now.'
 Successfully executed step [...]
