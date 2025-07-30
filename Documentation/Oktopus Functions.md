@@ -30,9 +30,16 @@ This document describes the built-in functions provided by whoosh Oktopus (in ad
 ## `array` functions
 Array functions available through the object 'array' in whoosh Oktopus.
 
+- [`array.distinct`](#arraydistinct)
 - [`array.isNullOrEmpty`](#arrayisnullorempty)
 - [`array.hasItems`](#arrayhasitems)
 - [`array.remove`](#arrayremove)
+- [`array.unique`](#arrayunique)
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+### `array.distinct`
+Alias for [`array.uniq`](https://github.com/scriban/scriban/blob/master/doc/builtins.md#arrayuniq)
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
@@ -119,6 +126,12 @@ A new list with the element removed
 ```html
 [2, 3]
 ```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `array.unique`
+Alias for [`array.uniq`](https://github.com/scriban/scriban/blob/master/doc/builtins.md#arrayuniq)
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
