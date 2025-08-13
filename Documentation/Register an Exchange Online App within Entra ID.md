@@ -6,8 +6,8 @@ Link: [Documentation on GitHub](<https://github.com/freedom-manufaktur/Oktopus/b
 ## Register a new application
 1.  Open the [Microsoft Entra admin center](https://entra.microsoft.com/#home) and sign in with your credentials
 
-2.  Under **Applications**, on the left side, click **App registrations**.
-    <img src="Images/EntraID/Entra_App%20registrations.png" width=2000px>
+2.  Under **Entra ID**, on the left side, click **App registrations**.
+    ![Entra ID App registrations](<Images/EntraID/App registrations.png>)
 
 3.  Click on `New registration`
     - Choose a `Name` for the application you want to register. E.g. `whoosh Oktopus Exchange Online access`
