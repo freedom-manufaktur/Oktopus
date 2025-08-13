@@ -1169,17 +1169,17 @@ Returns `defaultText` if the input `text` is `null` or empty.
 #### Examples
 > **input**
 ```oktopus-html
-null | string.DefaultIfEmpty "DefaultText"
-"" | string.DefaultIfEmpty "DefaultText"
-"  " | string.DefaultIfEmpty "DefaultText"
-"MyText" | string.DefaultIfEmpty "DefaultText"
+{{   null | string.DefaultIfEmpty "DefaultText" | json.serialize }}
+{{     "" | string.DefaultIfEmpty "DefaultText" | json.serialize }}
+{{   "  " | string.DefaultIfEmpty "DefaultText" | json.serialize }}
+{{ "Text" | string.DefaultIfEmpty "DefaultText" | json.serialize }}
 ```
 > **output**
 ```html
 "DefaultText"
 "DefaultText"
 "  "
-"MyText"
+"Text"
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -1203,17 +1203,17 @@ Returns `defaultText` if the input `text` is `null`, empty or consists solely of
 #### Examples
 > **input**
 ```oktopus-html
-null | string.DefaultIfWhitespace "DefaultText"
-"" | string.DefaultIfWhitespace "DefaultText"
-"  " | string.DefaultIfWhitespace "DefaultText"
-"MyText" | string.DefaultIfWhitespace "DefaultText"
+{{   null | string.DefaultIfWhitespace "DefaultText" | json.serialize }}
+{{     "" | string.DefaultIfWhitespace "DefaultText" | json.serialize }}
+{{   "  " | string.DefaultIfWhitespace "DefaultText" | json.serialize }}
+{{ "Text" | string.DefaultIfWhitespace "DefaultText" | json.serialize }}
 ```
 > **output**
 ```html
 "DefaultText"
 "DefaultText"
 "DefaultText"
-"MyText"
+"Text"
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -1238,8 +1238,8 @@ A new string of file name
 #### Examples
 > **input**
 ```oktopus-html
-string.GetFileName "Test" "eml" "Email"
-string.GetFileName "<>" "eml" "Email"
+{{ string.GetFileName "Test" "eml" "Email" }}
+{{ string.GetFileName "<>" "eml" "Email" }}
 ```
 > **output**
 ```html
@@ -1325,19 +1325,19 @@ The original or trimmed text.
 #### Examples
 > **input**
 ```oktopus-html
-{{ null | string.Trim }}
-{{ "" | string.Trim }}
-{{ "  " | string.Trim }}
-{{ "MyText" | string.Trim }}
-{{ " My Text " | string.Trim }}
+{{      null | string.Trim | json.serialize }}
+{{        "" | string.Trim | json.serialize }}
+{{      "  " | string.Trim | json.serialize }}
+{{    "Text" | string.Trim | json.serialize }}
+{{ " Te xt " | string.Trim | json.serialize }}
 ```
 > **output**
 ```html
 null
 ""
 ""
-"MyText"
-"My Text"
+"Text"
+"Te xt"
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -1360,19 +1360,19 @@ The original, trimmed text or `null`.
 #### Examples
 > **input**
 ```oktopus-html
-{{ null | string.TrimToNull }}
-{{ "" | string.TrimToNull }}
-{{ "  " | string.TrimToNull }}
-{{ "MyText" | string.TrimToNull }}
-{{ " My Text " | string.TrimToNull }}
+{{      null | string.TrimToNull | json.serialize }}
+{{        "" | string.TrimToNull | json.serialize }}
+{{      "  " | string.TrimToNull | json.serialize }}
+{{    "Text" | string.TrimToNull | json.serialize }}
+{{ " Te xt " | string.TrimToNull | json.serialize }}
 ```
 > **output**
 ```html
 null
 null
 null
-"MyText"
-"My Text"
+"Text"
+"Te xt"
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
