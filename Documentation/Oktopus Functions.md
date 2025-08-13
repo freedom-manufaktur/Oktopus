@@ -1185,7 +1185,7 @@ Returns `defaultText` if the input `text` is `null` or empty.
 [🔝 Back to top](#oktopus-built-in-functions)
 
 
-### `string.DefaultIfEmpty`
+### `string.DefaultIfWhitespace`
 ```
 string.DefaultIfWhitespace <text> <defaultText>
 ```
