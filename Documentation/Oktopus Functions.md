@@ -60,9 +60,9 @@ Returns if an input `list` is null or empty. The shortcut `array.empty` can be u
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ array.isNullOrEmpty [] }}
-{{ array.isNullOrEmpty [1, 2, 3]  }}
+{{ array.isNullOrEmpty [1, 2, 3] }}
 ```
 > **output**
 ```html
@@ -89,7 +89,7 @@ Returns if an input `list` has elements.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ array.hasItems [1, 2, 3] }}
 {{ array.hasItems [] }}
 ```
@@ -119,7 +119,7 @@ A new list with the element removed
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ array.remove [1, 2, 3] 1 }}
 ```
 > **output**
@@ -167,9 +167,9 @@ The input `value` converted to Base64
 
 #### Examples
 > **input**
-```oktopus-html
-{{ convert.toBase64 "Test" }}
-{{ convert.toBase64 MyFileVar }}
+```scriban
+{{ "Test" | convert.toBase64 }}
+{{ MyFileVar | convert.toBase64 }}
 ```
 > **output**
 ```html
@@ -196,9 +196,9 @@ The input `value` converted to Base64URL
 
 #### Examples
 > **input**
-```oktopus-html
-{{ convert.toBase64URL "Test" }}
-{{ convert.toBase64URL MyFileVar }}
+```scriban
+{{ "Test" | convert.toBase64URL }}
+{{ MyFileVar | convert.toBase64URL }}
 ```
 > **output**
 ```html
@@ -227,7 +227,7 @@ The input `value` converted to a CSV
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ convert.toCsv {Id:1,Text:"Foo"} }}
 {{ convert.toCsv {Id:1,Text:"Foo"} "Id,Text" }}
 {{ convert.toCsv [{Id:1,Text:"Foo"},{Id:2,Text:"Bar"}] "Id,Text" }}
@@ -262,9 +262,11 @@ The input `value` converted to CSV rows
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ convert.toCsvRows {Id:1,Text:"Foo"} }}
+
 {{ convert.toCsvRows {Id:1,Text:"Foo"} "Id,Text" }}
+
 {{ convert.toCsvRows [{Id:1,Text:"Foo"},{Id:2,Text:"Bar"}] "Id,Text" }}
 ```
 > **output**
@@ -300,9 +302,9 @@ The input `value` converted to a 128 bit decimal
 
 #### Examples
 > **input**
-```oktopus-html
-{{ convert.toDecimal "1.337,01" "de" }}
-{{ convert.toDecimal "1,337.01" "en" }}
+```scriban
+{{ "1.337,01" | convert.toDecimal "de" }}
+{{ "1,337.01" | convert.toDecimal "en" }}
 ```
 > **output**
 ```html
@@ -331,9 +333,9 @@ The input `value` converted to a 64 bit double
 
 #### Examples
 > **input**
-```oktopus-html
-{{ convert.toDouble "1,337" "de" }}
-{{ convert.toDouble "1,337" "en" }}
+```scriban
+{{ "1,337" | convert.toDouble "de" }}
+{{ "1,337" | convert.toDouble "en" }}
 ```
 > **output**
 ```html
@@ -362,12 +364,16 @@ The input `value` converted to a 32 bit integer
 
 #### Examples
 > **input**
-```oktopus-html
-{{ convert.toInt "1,337" }}
-{{ convert.toInt "1337" }}
+```scriban
+{{  "1337" | convert.toInt }}
+{{ "1,337" | convert.toInt }}
+{{ "1,337" | convert.toInt "en" }}
+{{ "1.337" | convert.toInt "de" }}
 ```
 > **output**
 ```html
+1337
+1337
 1337
 1337
 ```
@@ -393,12 +399,16 @@ The input `value` converted to a 64 bit integer
 
 #### Examples
 > **input**
-```oktopus-html
-{{ convert.toLong "1,337" }}
-{{ convert.toLong "1337" }}
+```scriban
+{{  "1337" | convert.toLong }}
+{{ "1,337" | convert.toLong }}
+{{ "1,337" | convert.toLong "en" }}
+{{ "1.337" | convert.toLong "de" }}
 ```
 > **output**
 ```html
+1337
+1337
 1337
 1337
 ```
@@ -422,13 +432,13 @@ The input `value` converted to a string
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ convert.toText 1.337 }}
 {{ convert.toText 1337 }}
 ```
 > **output**
 ```html
-"1.337"
+1.337
 1337
 ```
 
@@ -461,13 +471,13 @@ The date string of the `dateTime` input
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ dateOnly.from date.now }}
-{{ dateTime = date.parse "2024/12/31 13:37:00Z"; dateOnly.from dateTime  }}
+{{ dateTime = date.parse "2024/12/31 13:37:00Z"; dateOnly.from dateTime }}
 ```
 > **output**
 ```html
-2024-01-01
+2025-08-13
 2024-12-31
 ```
 
@@ -488,12 +498,12 @@ Returns a date string of the current time.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ dateOnly.now }}
 ```
 > **output**
 ```html
-2024-01-01
+2025-08-13
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -517,7 +527,7 @@ A date string of the input `dateString`
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ dateOnly.parse "2024-01-01" }}
 {{ dateOnly.parse "2024/12/31" }}
 {{ (dateOnly.parse "2024-12-31") | object.format "m" }}
@@ -548,12 +558,12 @@ Returns a date string of the current time.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ dateOnly.today }}
 ```
 > **output**
 ```html
-2024-01-01
+2025-08-13
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -584,12 +594,12 @@ The value of the input `globalVariableName`
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ globalVariable.load "MyGlobalVariable" }}
 ```
 > **output**
 ```html
-"MyValue"
+MyValue
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -611,7 +621,7 @@ Stores a global variable of an input `value`. If the `globalVariableName` alread
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ globalVariable.store "MyValue" "MyGlobalVariable" }}
 ```
 > **output**
@@ -648,7 +658,7 @@ A new HTML string with the body.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ html.GetBody "<html><head></head><body><p>Foo</p></body></html>" }}
 {{ html.GetBody "<p>Bar</p>" }}
 ```
@@ -677,7 +687,7 @@ A new HTML string with all attributes removed
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ html.removeAllAttributes "<html><head></head><body><p src='FooBar'>FooBar</p></body></html>" }}
 ```
 > **output**
@@ -704,7 +714,7 @@ A new HTML string with the attributes removed
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ html.removeAttributes "<html><head></head><body><p title='FooBar'>FooBar</p></body></html>" }}
 ```
 > **output**
@@ -741,8 +751,8 @@ A new JSON object
 
 #### Examples
 > **input**
-```oktopus-html
-{{ json.deserialize '{"Foo":"Bar"}' }}
+```scriban
+{{ '{"Foo":"Bar"}' | json.deserialize }}
 ```
 > **output**
 ```html
@@ -768,13 +778,13 @@ A new formatted JSON string
 
 #### Examples
 > **input**
-```oktopus-html
-{{ json.format '{"Foo":"Bar"}' }}
+```scriban
+{{ '{"Foo":"Bar"}' | json.format }}
 ```
 > **output**
 ```html
 {
- "Foo":"Bar"
+  "Foo": "Bar"
 }
 ```
 
@@ -798,8 +808,9 @@ A new JSON string
 
 #### Examples
 > **input**
-```ruby
+```scriban
 {{ json.serialize {Foo:"Bar"} }}
+
 {{ json.serialize {Foo:"Bar"} "Indented" }}
 ```
 > **output**
@@ -807,7 +818,7 @@ A new JSON string
 {"Foo":"Bar"}
 
 {
- "Foo":"Bar"
+  "Foo": "Bar"
 }
 ```
 
@@ -823,7 +834,7 @@ Oktopus information functions available through the object `oktopus` in whoosh O
 
 
 ### `oktopus.server`
-```ruby
+```scriban
 oktopus.server
 ```
 
@@ -832,7 +843,7 @@ Returns an object with relevant information of the current whoosh Oktopus instan
 
 #### Examples
 > **input**
-```ruby
+```scriban
 {{ oktopus.server }}
 {{ oktopus.server.uptime | object.format "%d" }}
 ```
@@ -876,12 +887,14 @@ Returns the error message of when a step fails. This is typically used under `Ad
 
 #### Examples
 > **input**
-```oktopus-html
-if (step.errorMessage | string.contains "temporarily unavailable") step.retryIn (timespan.from_seconds 5) end
+```scriban
+{{ if (step.errorMessage | string.contains "temporarily unavailable")
+  step.retryIn (timespan.from_seconds 5)
+end }}
 ```
 > **output**
-```html
-<input>(1,1): Waiting for 5000ms...
+```text
+<input>(2,5): Waiting for 5000ms...
 Error handling script decided to retry step [...]
 ```
 
@@ -902,7 +915,7 @@ Returns the item set in the current step context. This can be used in certain st
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ step.item.id }}
 {{ step.item.name | convert.toCsv }}
 ```
@@ -929,7 +942,7 @@ Retries a step if it fails. This is typically used under `Advanced Settings` in 
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ step.retry }}
 ```
 > **output**
@@ -955,7 +968,7 @@ Waits for a given `timespan` ( set in milliseconds ) and then retries a step if 
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ step.retryIn (timespan.from_seconds 5) }}
 ```
 > **output**
@@ -981,7 +994,7 @@ Skips the current step. This is typically used under `Advanced Settings` in the 
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ step.skip }}
 ```
 > **output**
@@ -1007,7 +1020,7 @@ Skips the current step if the input `value` evaluates to true.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ step.skipIf true }}
 {{ step.skipIf false }}
 ```
@@ -1035,7 +1048,7 @@ Skips the current step if the input `value` is null or is an empty string.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ step.skipIfEmpty null }}
 {{ step.skipIfEmpty "" }}
 {{ step.skipIfEmpty {} }}
@@ -1065,7 +1078,7 @@ Skips the current step if the input `value` is null.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ step.skipIfNull null }}
 {{ step.skipIfNull {} }}
 ```
@@ -1093,7 +1106,7 @@ Skips the current step if the input `value` is null, empty, or consists only of 
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ step.skipIfWhitespace null }}
 {{ step.skipIfWhitespace " " }}
 {{ step.skipIfWhitespace {} }}
@@ -1123,7 +1136,7 @@ Waits for a given `timespan` ( set in milliseconds ). This is typically used und
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ step.wait (timespan.from_seconds 5) }}
 {{ step.wait 5) }}
 ```
@@ -1168,7 +1181,7 @@ Returns `defaultText` if the input `text` is `null` or empty.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{   null | string.DefaultIfEmpty "DefaultText" | json.serialize }}
 {{     "" | string.DefaultIfEmpty "DefaultText" | json.serialize }}
 {{   "  " | string.DefaultIfEmpty "DefaultText" | json.serialize }}
@@ -1202,7 +1215,7 @@ Returns `defaultText` if the input `text` is `null`, empty, or consists only of 
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{   null | string.DefaultIfWhitespace "DefaultText" | json.serialize }}
 {{     "" | string.DefaultIfWhitespace "DefaultText" | json.serialize }}
 {{   "  " | string.DefaultIfWhitespace "DefaultText" | json.serialize }}
@@ -1237,7 +1250,7 @@ A new string of file name
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ string.GetFileName "Test" "eml" "Email" }}
 {{ string.GetFileName "<>" "eml" "Email" }}
 ```
@@ -1266,7 +1279,7 @@ Returns if an input `value` has content.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ "Test" | string.hasContent }}
 {{ "" | string.hasContent }}
 ```
@@ -1295,7 +1308,7 @@ Returns if an input `value` is null or empty.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ "" | string.isNullOrEmpty }}
 {{ "Test" | string.isNullOrEmpty }}
 ```
@@ -1325,7 +1338,7 @@ The original or trimmed text.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{      null | string.Trim | json.serialize }}
 {{        "" | string.Trim | json.serialize }}
 {{      "  " | string.Trim | json.serialize }}
@@ -1360,7 +1373,7 @@ The original, trimmed text or `null`.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{      null | string.TrimToNull | json.serialize }}
 {{        "" | string.TrimToNull | json.serialize }}
 {{      "  " | string.TrimToNull | json.serialize }}
@@ -1399,7 +1412,7 @@ The original or truncated text.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ string.TruncateSmart "Lorem ipsum, consetetur elitr." 20 }}
 {{ string.TruncateSmart "Lorem ipsum, consetetur elitr." 20 averageWordLength: 5 }}
 {{ string.TruncateSmart "Lorem ipsum, consetetur elitr." 20 "---" }}
@@ -1440,9 +1453,9 @@ A new time object of the `dateTime` input.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ timeOnly.from date.now }}
-{{ dateTime = date.parse "2024/12/31 13:37:00Z"; timeOnly.from dateTime  }}
+{{ dateTime = date.parse "2024/12/31 13:37:00Z"; timeOnly.from dateTime }}
 ```
 > **output**
 ```html
@@ -1467,7 +1480,7 @@ Returns a new time object of the current time.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ timeOnly.now }}
 ```
 > **output**
@@ -1496,7 +1509,7 @@ A new time object of the input `dateString`
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ timeOnly.parse "13:37:00" }}
 {{ (timeOnly.parse "13:37:00") | object.format "HH" }}
 {{ timeOnly.parse "1:37 PM" }}
@@ -1541,7 +1554,7 @@ Skips the variable of a step.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ variable.skip }}
 ```
 > **output**
@@ -1567,7 +1580,7 @@ Skips the variable of a step if the input `value` evaluates to true.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ variable.skipIf true }}
 {{ variable.skipIf false }}
 ```
@@ -1595,7 +1608,7 @@ Skips the variable of a step if the input `value` is null or is an empty string.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ variable.skipIfEmpty null }}
 {{ variable.skipIfEmpty "" }}
 {{ variable.skipIfEmpty {} }}
@@ -1625,7 +1638,7 @@ Skips the variable of a step if the input `value` is not an empty string. The sh
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ variable.skipIfNotEmpty null }}
 {{ variable.skipIfNotEmpty "" }}
 {{ variable.skipIfNotEmpty "{}" }}
@@ -1655,7 +1668,7 @@ Skips the variable of a step if the input `value` is not null. The shortcut `var
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ variable.skipIfNotNull {} }}
 {{ variable.skipIfNotNull null }}
 ```
@@ -1683,7 +1696,7 @@ Skips the variable of a step if the input `value` is null. The shortcut `variabl
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ variable.skipIfNull null }}
 {{ variable.skipIfNull {} }}
 ```
@@ -1711,7 +1724,7 @@ Skips the variable of a step if the input `value` is null, empty, or consists on
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ variable.skipIfWhitespace null }}
 {{ variable.skipIfWhitespace " " }}
 {{ variable.skipIfWhitespace {} }}
@@ -1742,7 +1755,7 @@ Stores the input `value` with a `variableName` in the current workflow context. 
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ variable.store "Bar" "Foo" }}
 {{ variable.store {Foo:"Bar"} "FooBar" }}
 ```
@@ -1769,7 +1782,7 @@ Forces `null` to be used as a variable instead of an empty string.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ variable.useNull }}
 ```
 > **output**
@@ -1810,7 +1823,7 @@ Fails the current workflow. An optional `reason` string can be used to display a
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ workflow.fail }}
 {{ if MyVariable == "Fail"; workflow.fail "Workflow failed."; end }}
 ```
@@ -1837,7 +1850,7 @@ Prevent logging the clear text of the `value`.
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ workflow.hideSecret user.password }}
 ```
 > **output**
@@ -1861,7 +1874,7 @@ Logs the `value` under "Protocol" after the step was executed where the function
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ workflow.log "FooBar" }}
 {{ workflow.log "FooBar" "Success" }}
 ```
@@ -1889,7 +1902,7 @@ Stops the current workflow. An optional `reason` string can be used to display a
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ workflow.stop }}
 {{ if MyVariable == "Abort"; workflow.stop "Stopping workflow now."; end }}
 ```
@@ -1918,7 +1931,7 @@ Stops the current workflow if the input `value` evaluates to true. An optional `
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ workflow.stopIf true }}
 {{ workflow.stopIf MyVariable == "Abort" "Stopping workflow now." }}
 {{ workflow.stopIf false }}
@@ -1949,7 +1962,7 @@ Stops the workflow if the input `value` is null or is an empty string. An option
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ workflow.stopIfEmpty null }}
 {{ workflow.stopIfEmpty "" "Stopping workflow now." }}
 {{ workflow.stopIfEmpty {} }}
@@ -1980,7 +1993,7 @@ Stops the current workflow if the input `value` is null. An optional `reason` st
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ workflow.stopIfNull null }}
 {{ workflow.stopIfNull null "Stopping workflow now." }}
 {{ workflow.stopIfNull {} }}
@@ -2011,7 +2024,7 @@ Stops the current workflow if the input `value` is null, empty, or consists only
 
 #### Examples
 > **input**
-```oktopus-html
+```scriban
 {{ workflow.stopIfWhitespace null }}
 {{ workflow.stopIfWhitespace "" }}
 {{ workflow.stopIfWhitespace " " "Stopping workflow now." }}
