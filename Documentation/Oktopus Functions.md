@@ -1309,6 +1309,7 @@ false
 
 
 ### `string.Trim`
+Alias for [`string.strip`](https://github.com/scriban/scriban/blob/master/doc/builtins.md#stringstrip)
 ```
 string.Trim <text>
 ```
