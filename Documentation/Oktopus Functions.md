@@ -1084,7 +1084,7 @@ step.skipIfWhitespace <value>
 ```
 
 #### Description
-Skips the current step if the input `value` is null, empty or consists solely of whitespace characters.
+Skips the current step if the input `value` is null, empty, or consists only of whitespace characters.
 
 #### Arguments
 - `value`: The input object
@@ -1191,7 +1191,7 @@ string.DefaultIfWhitespace <text> <defaultText>
 ```
 
 #### Description
-Returns `defaultText` if the input `text` is `null`, empty or consists solely of whitespace characters.
+Returns `defaultText` if the input `text` is `null`, empty, or consists only of whitespace characters.
 
 #### Arguments
 - `text`: The input string
@@ -1701,7 +1701,7 @@ variable.skipIfWhitespace <value>
 ```
 
 #### Description
-Skips the variable of a step if the input `value` is null, empty or consists solely of whitespace characters. The shortcut `variable.skipWhitespace` can be used instead.
+Skips the variable of a step if the input `value` is null, empty, or consists only of whitespace characters. The shortcut `variable.skipWhitespace` can be used instead.
 
 #### Arguments
 - `value`: The input object
@@ -2000,7 +2000,7 @@ workflow.stopIfWhitespace <value> <reason>?
 ```
 
 #### Description
-Stops the current workflow if the input `value` is null, empty or consists solely of whitespace characters. An optional `reason` string can be used to display a message why the workflow stopped.
+Stops the current workflow if the input `value` is null, empty, or consists only of whitespace characters. An optional `reason` string can be used to display a message why the workflow stopped.
 
 #### Arguments
 - `value`: The input object
