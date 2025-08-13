@@ -1137,12 +1137,84 @@ Waits for a given `timespan` ( set in milliseconds ). This is typically used und
 
 
 ## `string` functions
-String functions available through the object 'step' in whoosh Oktopus.
+String functions available through the object 'string' in whoosh Oktopus.
 
+- [`string.DefaultIfEmpty`](#stringdefaultifempty)
+- [`string.DefaultIfWhitespace`](#stringdefaultifwhitespace)
 - [`string.getFileName`](#stringgetfilename)
 - [`string.hasContent`](#stringhascontent)
 - [`string.isNullOrEmpty`](#stringisnullorempty)
+- [`string.Trim`](#stringtrim)
+- [`string.TrimToNull`](#stringtrimtonull)
 - [`string.TruncateSmart`](#stringtruncatesmart)
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `string.DefaultIfEmpty`
+```
+string.DefaultIfEmpty <text> <defaultText>
+```
+
+#### Description
+Returns `defaultText` if the input `text` is `null` or empty.
+
+#### Arguments
+- `text`: The input string
+- `defaultText`: The default string
+
+#### Returns
+`text` if `text` has content; otherwise `defaultText`
+
+#### Examples
+> **input**
+```oktopus-html
+null | string.DefaultIfEmpty "DefaultText"
+"" | string.DefaultIfEmpty "DefaultText"
+"  " | string.DefaultIfEmpty "DefaultText"
+"MyText" | string.DefaultIfEmpty "DefaultText"
+```
+> **output**
+```html
+"DefaultText"
+"DefaultText"
+"  "
+"MyText"
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `string.DefaultIfEmpty`
+```
+string.DefaultIfWhitespace <text> <defaultText>
+```
+
+#### Description
+Returns `defaultText` if the input `text` is `null`, empty or consists solely of whitespace characters.
+
+#### Arguments
+- `text`: The input string
+- `defaultText`: The default string
+
+#### Returns
+`text` if `text` has non-whitespace content; otherwise `defaultText`
+
+#### Examples
+> **input**
+```oktopus-html
+null | string.DefaultIfWhitespace "DefaultText"
+"" | string.DefaultIfWhitespace "DefaultText"
+"  " | string.DefaultIfWhitespace "DefaultText"
+"MyText" | string.DefaultIfWhitespace "DefaultText"
+```
+> **output**
+```html
+"DefaultText"
+"DefaultText"
+"DefaultText"
+"MyText"
+```
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
@@ -1195,8 +1267,8 @@ Returns if an input `value` has content.
 #### Examples
 > **input**
 ```oktopus-html
-{{ string.hasContent "Test" }}
-{{ string.hasContent "" }}
+{{ "Test" | string.hasContent }}
+{{ "" | string.hasContent }}
 ```
 > **output**
 ```html
@@ -1224,13 +1296,83 @@ Returns if an input `value` is null or empty.
 #### Examples
 > **input**
 ```oktopus-html
-{{ string.isNullOrEmpty "" }}
-{{ string.isNullOrEmpty "Test" }}
+{{ "" | string.isNullOrEmpty }}
+{{ "Test" | string.isNullOrEmpty }}
 ```
 > **output**
 ```html
 true
 false
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `string.Trim`
+```
+string.Trim <text>
+```
+
+#### Description
+Trims (strips) the whitespace from both ends of the string.
+
+#### Arguments
+- `text`: The input string
+
+#### Returns
+The original or trimmed text.
+
+#### Examples
+> **input**
+```oktopus-html
+{{ null | string.Trim }}
+{{ "" | string.Trim }}
+{{ "  " | string.Trim }}
+{{ "MyText" | string.Trim }}
+{{ " My Text " | string.Trim }}
+```
+> **output**
+```html
+null
+""
+""
+"MyText"
+"My Text"
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `string.TrimToNull`
+```
+string.TrimToNull <text>
+```
+
+#### Description
+Trims (strips) the whitespace from both ends of the string. If the resulting string is empty, `null` is returned.
+
+#### Arguments
+- `text`: The input string
+
+#### Returns
+The original, trimmed text or `null`.
+
+#### Examples
+> **input**
+```oktopus-html
+{{ null | string.TrimToNull }}
+{{ "" | string.TrimToNull }}
+{{ "  " | string.TrimToNull }}
+{{ "MyText" | string.TrimToNull }}
+{{ " My Text " | string.TrimToNull }}
+```
+> **output**
+```html
+null
+null
+null
+"MyText"
+"My Text"
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
