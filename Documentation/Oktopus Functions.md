@@ -1867,8 +1867,8 @@ Logs the `value` under "Protocol" after the step was executed where the function
 ```
 > **output**
 ```html
-🛈FooBar
-✅FooBar
+ℹ️ FooBar
+✅ FooBar
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
