@@ -810,8 +810,10 @@ Downloads all attachments from a record.
 #### Download various attachments
 Downloads specific attachments from specific records.
 
-#### ninox - Execute query
-Downloads specific attachments from specific records.
+#### Ninox - Execute query
+Execute any query or global function.
+##### Ideas
+- Execute a global function, that gathers a large number of records (with calculated fields) and returns the result in one response. This can dramatically improve the query speed compared to calling Ninox one by one.
 
 #### Find record
 Finds a specific record within a table.
