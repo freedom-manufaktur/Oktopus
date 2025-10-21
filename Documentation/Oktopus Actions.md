@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus actions
 ===
-Version: `6.5.0` - `2025-07-30` \
+Version: `6.6.0` - `2025-10-21` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -522,8 +522,10 @@ Executes an arbitrary query with any result.
 - [Create company](#lexware-office---create-company)
 - [Create invoice](#lexware-office---create-invoice)
 - [Create person](#lexware-office---create-person)
+- [Create quotation](#lexware-office---create-quotation)
 - [Get contact](#lexware-office---get-contact)
 - [Get invoice](#lexware-office---get-invoice)
+- [Get quotation](#lexware-office---get-quotation)
 
 #### Lexware Office - Create company
 Creates a new company contact.
@@ -540,6 +542,11 @@ Creates a new person contact.
 ##### Ideas
 - Use a CRM to manage your customers and automatically publish them to Lexware Office.
 
+#### Lexware Office - Create quotation
+Creates a new quotation to be sent to a new or existing customer.
+##### Ideas
+- Use a CRM to manage your orders and automatically create an quotation for them.
+
 #### Lexware Office - Get contact
 Gets an contact by ID.
 
@@ -547,6 +554,11 @@ Gets an contact by ID.
 Gets an invoice by ID.
 ##### Ideas
 - Get a previously created invoice and update your CRM with new status informations.
+
+#### Lexware Office - Get quotation
+Gets an quotation by ID.
+##### Ideas
+- Get a previously created quotation and update your CRM with new status informations.
 
 [🔝 Back to top](#technologies)
 
