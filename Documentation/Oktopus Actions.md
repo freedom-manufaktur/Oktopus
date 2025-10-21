@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus actions
 ===
-Version: `6.5.0` - `2025-07-30` \
+Version: `6.6.0` - `2025-10-21` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -522,8 +522,10 @@ Executes an arbitrary query with any result.
 - [Create company](#lexware-office---create-company)
 - [Create invoice](#lexware-office---create-invoice)
 - [Create person](#lexware-office---create-person)
+- [Create quotation](#lexware-office---create-quotation)
 - [Get contact](#lexware-office---get-contact)
 - [Get invoice](#lexware-office---get-invoice)
+- [Get quotation](#lexware-office---get-quotation)
 
 #### Lexware Office - Create company
 Creates a new company contact.
@@ -540,6 +542,11 @@ Creates a new person contact.
 ##### Ideas
 - Use a CRM to manage your customers and automatically publish them to Lexware Office.
 
+#### Lexware Office - Create quotation
+Creates a new quotation to be sent to a new or existing customer.
+##### Ideas
+- Use a CRM to manage your orders and automatically create an quotation for them.
+
 #### Lexware Office - Get contact
 Gets an contact by ID.
 
@@ -547,6 +554,11 @@ Gets an contact by ID.
 Gets an invoice by ID.
 ##### Ideas
 - Get a previously created invoice and update your CRM with new status informations.
+
+#### Lexware Office - Get quotation
+Gets an quotation by ID.
+##### Ideas
+- Get a previously created quotation and update your CRM with new status informations.
 
 [🔝 Back to top](#technologies)
 
@@ -761,9 +773,10 @@ Get all VLANs.
 - [Create record](#create-record)
 - [Delete attachment](#delete-attachment)
 - [Delete record](#delete-record)
-- [Download attechment](#download-attechment)
-- [Download attechments](#download-attechments)
-- [Download various attechments](#download-various-attechments)
+- [Download attachment](#download-attachment)
+- [Download attachments](#download-attachments)
+- [Download various attachments](#download-various-attachments)
+- [Execute query](#ninox---execute-query)
 - [Find record](#find-record)
 - [Find records](#find-records)
 - [Get record](#get-record)
@@ -788,14 +801,19 @@ Deletes a specific attachment from a record.
 #### Delete record
 Delete a record.
 
-#### Download attechment
+#### Download attachment
 Downloads a specific attachment from a record.
 
-#### Download attechments
+#### Download attachments
 Downloads all attachments from a record.
 
-#### Download various attechments
+#### Download various attachments
 Downloads specific attachments from specific records.
+
+#### Ninox - Execute query
+Execute any query or global function.
+##### Ideas
+- Execute a global function, that gathers a large number of records (with calculated fields) and returns the result in one response. This can dramatically improve the query speed compared to calling Ninox one by one.
 
 #### Find record
 Finds a specific record within a table.
@@ -937,41 +955,41 @@ Updates a given cross selling entity of a specific product.
 
 ## <img src="Images/TechnologyIcons/SMAX.svg" width="24"> SMAX
 ### Actions
-- [Add comment](#add-comment)
-- [Create record](#create-record)
-- [Delete comment](#delete-comment)
-- [Delete record](#delete-record)
-- [Find record](#find-record)
-- [Find records](#find-records)
-- [Get record](#get-record)
-- [Update comment](#update-comment)
-- [Update record](#update-record)
+- [Add comment](#smax---add-comment)
+- [Create record](#smax---create-record)
+- [Delete comment](#smax---delete-comment)
+- [Delete record](#smax---delete-record)
+- [Find record](#smax---find-record)
+- [Find records](#smax---find-records)
+- [Get record](#smax---get-record)
+- [Update comment](#smax---update-comment)
+- [Update record](#smax---update-record)
 
-#### Add comment
-Adds one or more attechments to a record.
-
-#### Create record
+#### SMAX - Add comment
 Adds a new comment to a record.
 
-#### Delete comment
-Deletes anm existing comment.
+#### SMAX - Create record
+Creates a new record.
 
-#### Delete record
-Deletes anm existing record.
+#### SMAX - Delete comment
+Deletes an existing comment.
 
-#### Find record
+#### SMAX - Delete record
+Deletes an existing record.
+
+#### SMAX - Find record
 Find a record by query.
 
-#### Find records
+#### SMAX - Find records
 Find records by query.
 
-#### Get record
+#### SMAX - Get record
 Get a record by ID.
 
-#### Update comment
+#### SMAX - Update comment
 Updates an existing comment.
 
-#### Update record
+#### SMAX - Update record
 Updates an existing record.
 
 [🔝 Back to top](#technologies)
