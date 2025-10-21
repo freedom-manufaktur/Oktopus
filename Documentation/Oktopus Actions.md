@@ -773,9 +773,10 @@ Get all VLANs.
 - [Create record](#create-record)
 - [Delete attachment](#delete-attachment)
 - [Delete record](#delete-record)
-- [Download attechment](#download-attechment)
-- [Download attechments](#download-attechments)
-- [Download various attechments](#download-various-attechments)
+- [Download attachment](#download-attachment)
+- [Download attachments](#download-attachments)
+- [Download various attachments](#download-various-attachments)
+- [Execute query](#ninox---execute-query)
 - [Find record](#find-record)
 - [Find records](#find-records)
 - [Get record](#get-record)
@@ -800,13 +801,16 @@ Deletes a specific attachment from a record.
 #### Delete record
 Delete a record.
 
-#### Download attechment
+#### Download attachment
 Downloads a specific attachment from a record.
 
-#### Download attechments
+#### Download attachments
 Downloads all attachments from a record.
 
-#### Download various attechments
+#### Download various attachments
+Downloads specific attachments from specific records.
+
+#### ninox - Execute query
 Downloads specific attachments from specific records.
 
 #### Find record
@@ -949,41 +953,41 @@ Updates a given cross selling entity of a specific product.
 
 ## <img src="Images/TechnologyIcons/SMAX.svg" width="24"> SMAX
 ### Actions
-- [Add comment](#add-comment)
-- [Create record](#create-record)
-- [Delete comment](#delete-comment)
-- [Delete record](#delete-record)
-- [Find record](#find-record)
-- [Find records](#find-records)
-- [Get record](#get-record)
-- [Update comment](#update-comment)
-- [Update record](#update-record)
+- [Add comment](#smax---add-comment)
+- [Create record](#smax---create-record)
+- [Delete comment](#smax---delete-comment)
+- [Delete record](#smax---delete-record)
+- [Find record](#smax---find-record)
+- [Find records](#smax---find-records)
+- [Get record](#smax---get-record)
+- [Update comment](#smax---update-comment)
+- [Update record](#smax---update-record)
 
-#### Add comment
-Adds one or more attechments to a record.
-
-#### Create record
+#### SMAX - Add comment
 Adds a new comment to a record.
 
-#### Delete comment
-Deletes anm existing comment.
+#### SMAX - Create record
+Creates a new record.
 
-#### Delete record
-Deletes anm existing record.
+#### SMAX - Delete comment
+Deletes an existing comment.
 
-#### Find record
+#### SMAX - Delete record
+Deletes an existing record.
+
+#### SMAX - Find record
 Find a record by query.
 
-#### Find records
+#### SMAX - Find records
 Find records by query.
 
-#### Get record
+#### SMAX - Get record
 Get a record by ID.
 
-#### Update comment
+#### SMAX - Update comment
 Updates an existing comment.
 
-#### Update record
+#### SMAX - Update record
 Updates an existing record.
 
 [🔝 Back to top](#technologies)
