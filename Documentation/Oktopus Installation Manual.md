@@ -136,4 +136,5 @@ Please read this list when upgrading an existing installation.
 > The full changelog can be found in the [whoosh Oktopus Download](https://freedommanufaktur.sharepoint.com/:f:/g/EjZZuA7_BmlNj52AO6_6lhwBjubo5u_hjfxS2FfauZYJHg?e=3zMX8j).
 
 # Need support?
-If you have any questions regarding the installation or configuration of *whoosh Oktopus*, contact us at [oktopus@freedom-manufaktur.com](mailto:oktopus@freedom-manufaktur.com) (freedom manufaktur).
+If you have any questions regarding the installation or configuration of *whoosh Oktopus*, contact us at
+- [oktopus@freedom-manufaktur.com](mailto:oktopus@freedom-manufaktur.com) (freedom manufaktur).
