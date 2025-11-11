@@ -1,6 +1,6 @@
 ﻿whoosh Oktopus Installation Manual
 ---
-Version: `5.26.0` - `2025-03-30` \
+Version: `6.7.1` - `2025-11-07` \
 Author: [oktopus@freedom-manufaktur.com](mailto:oktopus@freedom-manufaktur.com) \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Installation%20Manual.md)
 
@@ -47,7 +47,7 @@ There are different kinds of installation. You may choose the one best suiting y
    1. ASP.NET Core Runtime x64 Installer
    2. .NET Desktop Runtime x64 Installer
 
-3. Install `whoosh Oktopus Server Setup 5.26.0.exe`
+3. Install `whoosh Oktopus Server Setup 6.7.1.exe`
    > Note: This will automatically install .NET 9.0 if necessary
    
    ![Windows Setup](<Images/Installation/Windows Installation.png>)
@@ -74,17 +74,31 @@ There are different kinds of installation. You may choose the one best suiting y
     > Note: Make sure to use the correct domain and port number based on **your** configuration.
    
     You should be greeted with the message\
-    `whoosh Oktopus 5.26.0`
+    `whoosh Oktopus 6.7.1`
 
 ## Installation as Docker Container via Docker Compose
 
-1.  Download Docker Image (`.tar`) from [whoosh Oktopus Download](https://freedommanufaktur.sharepoint.com/:f:/g/EjZZuA7_BmlNj52AO6_6lhwBjubo5u_hjfxS2FfauZYJHg?e=3zMX8j).
+**Installation and Configuration**
 
-2.  [Contact us](mailto:oktopus@freedom-manufaktur.com) to help you with the installation.
+1.  Download the **whoosh-oktopus** Docker Image (`.tar`) from [whoosh Oktopus Download](https://freedommanufaktur.sharepoint.com/:f:/g/EjZZuA7_BmlNj52AO6_6lhwBjubo5u_hjfxS2FfauZYJHg?e=3zMX8j) and register it with your image repository.
+
+1. Download the Docker Compose YAML files from [whoosh Oktopus Docker Compose Download](<../Docker Compose>).
+
+1. Adjust the `compose.env` with the required settings.
+
+1. Use the command `docker compose --env-file .\compose.env up` to deploy the app.
+
+**Monitoring / Debugging**
+
+> The Docker Compose file contains a [healthcheck](<https://docs.docker.com/compose/compose-file/05-services/#healthcheck>) definition that includes basic configuration checks.
+
+Use your favorite Docker tools to check the status and logs of the app.
+For example in Docker Desktop \
+![Docker Compose Container Running](<Images/Installation/Docker Compose Running.png>)
 
 ## Installation as Kubernetes Deployment via HELM Chart
 
-1.  Download Docker Image (`.tar`) from [whoosh Oktopus Download](https://freedommanufaktur.sharepoint.com/:f:/g/EjZZuA7_BmlNj52AO6_6lhwBjubo5u_hjfxS2FfauZYJHg?e=3zMX8j).
+1.  Download the **whoosh-oktopus** Docker Image (`.tar`) from [whoosh Oktopus Download](https://freedommanufaktur.sharepoint.com/:f:/g/EjZZuA7_BmlNj52AO6_6lhwBjubo5u_hjfxS2FfauZYJHg?e=3zMX8j).
 
 2.  [Contact us](mailto:oktopus@freedom-manufaktur.com) to help you with the installation.
 
