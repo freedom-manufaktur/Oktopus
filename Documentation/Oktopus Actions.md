@@ -36,7 +36,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Oktopus](#-oktopus)
 - [PDF](#-pdf)
 - [Power BI](#-power-bi)
-- [ReyVentory Data Hub](#-reyventory-data-hub)
+- [RayVentory Data Hub](#-rayventory-data-hub)
 - [Shopware](#-shopware)
 - [SMAX](#-smax)
 - [Text](#-text)
@@ -897,7 +897,7 @@ Refreshes a dataset.
 [🔝 Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/RayVentory.svg" width="24"> ReyVentory Data Hub
+## <img src="Images/TechnologyIcons/RayVentory.svg" width="24"> RayVentory Data Hub
 ### Actions
 - [Get table data](#get-table-data)
 
