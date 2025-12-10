@@ -561,6 +561,7 @@ Executes an arbitrary query with any result.
 
 [🔝 Back to top](#technologies)
 
+
 ## <img src="Images/TechnologyIcons/lexoffice.svg" width="24"> Lexoffice
 ### Actions
 - [Create company](#lexware---create-company)
@@ -607,6 +608,7 @@ Get information about an invoice.
 Get information about a quotation.
 
 [🔝 Back to top](#technologies)
+
 
 ## <img src="Images/TechnologyIcons/Mail.svg" width="24"> Mail
 ### Actions
@@ -961,6 +963,7 @@ Gets all rows from table.
 
 [🔝 Back to top](#technologies)
 
+
 ## <img src="Images/TechnologyIcons/ServiceNow.svg" width="24"> ServiceNow
 ### Actions
 - [Create record](#servicenow---create-record)
@@ -1251,3 +1254,4 @@ Text: `Hello from my workflow.`\
 HTML: `<a href="https://freedom-manufaktur.com">Thanks Oktopus</a>`
 
 [🔝 Back to top](#technologies)
+
