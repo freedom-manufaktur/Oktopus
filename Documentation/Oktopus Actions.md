@@ -22,7 +22,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Jira](#-jira)
 - [JSON](#-json)
 - [LeanIX](#-leanix)
-- [LexOffice](#-lexoffice)
+- [Lexware Office](#-lexware-office)
 - [Mail](#-mail)
 - [Microsoft 365](#-microsoft-365)
 - [Microsoft 365 Contacts](#-microsoft-365-contacts)
