@@ -4,13 +4,12 @@ Version: `5.18.0` - `2024-10-15` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Register%20an%20App%20within%20Entra%20ID.md)
 
 ## Step 1 
-- Open the [`Microsoft Entra admin center`](https://entra.microsoft.com/#home) and log in with your credentials
+- Open the [Microsoft Entra admin center](https://entra.microsoft.com/#home) and log in with your credentials
   <img src="Images/EntraID/Entra_Home.png" width=2000px>
 
 ## Step 2
-- Now click on `Applications` on the left side
-- Click on `App registrations`
-  <img src="Images/EntraID/Entra_App%20registrations.png" width=2000px>
+- In the section **Entra ID** on the left side click on **App registrations**
+  ![Entra ID App registrations](<Images/EntraID/App registrations.png>)
 
 ## Step 3
 - Click on `New registration`

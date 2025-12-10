@@ -297,14 +297,9 @@ Upload a file (to a shared drive).
 ## <img src="Images/TechnologyIcons/Http.svg" width="24"> HTTP
 ### Actions
 - [Send HTTP request](#send-http-request)
-- [Send HTTP request (preview)](#send-http-request-preview)
 
 #### Send HTTP request
 Call any HTTP endpoint.
-
-#### Send HTTP request (preview)
-Call any HTTP endpoint multiple times.\
-Note: This is a preview step, wich is not production ready and may change in the future.
 
 [🔝 Back to top](#technologies)
 
@@ -505,6 +500,12 @@ Get specific issues.
 
 <a id="jira---get-project-roles"></a>
 
+#### Get Project
+Gets a project or project workflow scheme.
+##### Ideas
+- Determin if a project exists and is accessible, when working with multiple projects.
+- Determin the type of workflow used. This is especially helpful, when issue types have different workflows across different projects.
+
 #### Get Project Roles
 Gets all available project roles and their users.
 
@@ -531,7 +532,7 @@ Updates an existing issue.
 [🔝 Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Material-CodeJson.svg" width="24"> JSON
+## <img src="Images/TechnologyIcons/Json.svg" width="24"> JSON
 ### Actions
 - [Parse JSON](#parse-json)
 
@@ -551,7 +552,7 @@ Parses the given JSON and stores the resulting data.
 - [GraphQL query](#graphql-query)
 
 #### Get fact sheets
-Gets all fact sheets. You may choose specific types like 'Applicationl.
+Gets all fact sheets. You may choose specific types like 'Application'.
 
 #### Get metadata (language)
 Gets the metadata (e.g. about fact sheets) for a specific language. This is handy to translate field values.
@@ -562,50 +563,62 @@ Executes an arbitrary query with any result.
 [🔝 Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/lexoffice.svg" width="24"> Lexoffice
+## <img src="Images/TechnologyIcons/Lexware%20Office.svg" width="24"> Lexware Office
 ### Actions
-- [Create company](#lexware---create-company)
-- [Create person](#lexware---create-person)
-- [Create invoice](#lexware---create-invoice)
-- [Create quotation](#lexware---create-quotation)
-- [Get contact](#lexware---get-contact)
-- [Get invoice](#lexware---get-invoice)
-- [Get quotation](#lexware---get-quotation)
+- [Create company](#lexware-office---create-company)
+- [Create invoice](#lexware-office---create-invoice)
+- [Create person](#lexware-office---create-person)
+- [Create quotation](#lexware-office---create-quotation)
+- [Get contact](#lexware-office---get-contact)
+- [Get invoice](#lexware-office---get-invoice)
+- [Get quotation](#lexware-office---get-quotation)
 
-<a id="lexware---create-company"></a>
+<a id="lexware-office---create-company"></a>
 
 #### Create company
-Create a company contact.
+Creates a new company contact.
+##### Ideas
+- Use a CRM to manage your customers and automatically publish them to Lexware Office.
 
-<a id="lexware---create-person"></a>
-
-#### Create person
-Create a person contact.
-
-<a id="lexware---create-invoice"></a>
+<a id="lexware-office---create-invoice"></a>
 
 #### Create invoice
-Create an invoice.
+Creates a new invoice to be sent to a new or existing customer.
+##### Ideas
+- Use a CRM to manage your orders and automatically create an invoice for them.
 
-<a id="lexware---create-quotation"></a>
+<a id="lexware-office---create-person"></a>
+
+#### Create person
+Creates a new person contact.
+##### Ideas
+- Use a CRM to manage your customers and automatically publish them to Lexware Office.
+
+<a id="lexware-office---create-quotation"></a>
 
 #### Create quotation
-Create a quotation.
+Creates a new quotation to be sent to a new or existing customer.
+##### Ideas
+- Use a CRM to manage your orders and automatically create an quotation for them.
 
-<a id="lexware---get-contact"></a>
+<a id="lexware-office---get-contact"></a>
 
 #### Get contact
-Get information about a person or company.
+Gets an contact by ID.
 
-<a id="lexware---get-invoice"></a>
+<a id="lexware-office---get-invoice"></a>
 
 #### Get invoice
-Get information about an invoice.
+Gets an invoice by ID.
+##### Ideas
+- Get a previously created invoice and update your CRM with new status informations.
 
-<a id="lexware---get-quotation"></a>
+<a id="lexware-office---get-quotation"></a>
 
 #### Get quotation
-Get information about a quotation.
+Gets an quotation by ID.
+##### Ideas
+- Get a previously created quotation and update your CRM with new status informations.
 
 [🔝 Back to top](#technologies)
 
@@ -836,9 +849,10 @@ Get all VLANs.
 - [Create record](#create-record)
 - [Delete attachment](#delete-attachment)
 - [Delete record](#delete-record)
-- [Download attechment](#download-attechment)
-- [Download attechments](#download-attechments)
-- [Download various attechments](#download-various-attechments)
+- [Download attachment](#download-attachment)
+- [Download attachments](#download-attachments)
+- [Download various attachments](#download-various-attachments)
+- [Execute query](#ninox---execute-query)
 - [Find record](#find-record)
 - [Find records](#find-records)
 - [Get record](#get-record)
@@ -863,14 +877,19 @@ Deletes a specific attachment from a record.
 #### Delete record
 Delete a record.
 
-#### Download attechment
+#### Download attachment
 Downloads a specific attachment from a record.
 
-#### Download attechments
+#### Download attachments
 Downloads all attachments from a record.
 
-#### Download various attechments
+#### Download various attachments
 Downloads specific attachments from specific records.
+
+#### Ninox - Execute query
+Execute any query or global function.
+##### Ideas
+- Execute a global function, that gathers a large number of records (with calculated fields) and returns the result in one response. This can dramatically improve the query speed compared to calling Ninox one by one.
 
 #### Find record
 Finds a specific record within a table.
