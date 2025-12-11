@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus actions
 ===
-Version: `6.6.0` - `2025-10-21` \
+Version: `6.9.0` - `2025-12-10` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -37,11 +37,12 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [PDF](#-pdf)
 - [Power BI](#-power-bi)
 - [RayVentory Data Hub](#-rayventory-data-hub)
+- [ServiceNow](#-servicenow)
 - [Shopware](#-shopware)
 - [SMAX](#-smax)
 - [Text](#-text)
 - [Timer](#-timer)
-- [Timewax](#) - *Work in progress*
+- [Timewax](#-timewax)
 - [USU Service Manager (USM)](#-usu-service-manager-usm)
 - [Webhook](#-webhook)
 
@@ -237,7 +238,9 @@ Writes the given file variable or data to a file.
 ### Actions
 - [Get a User](#google-admin---get-a-user)
 
-#### Google Admin - Get a User
+<a id="google-admin---get-a-user"></a>
+
+#### Get a User
 Gets the information about a user.
 
 [🔝 Back to top](#technologies)
@@ -252,25 +255,37 @@ Gets the information about a user.
 - [Download file](#google-drive---download-file)
 - [Upload file](#google-drive---upload-file)
 
-#### Google Drive - Get drive
+<a id="google-drive---get-drive"></a>
+
+#### Get drive
 Gets a drive by name.
 
-#### Google Drive - Find drives
+<a id="google-drive---find-drives"></a>
+
+#### Find drives
 Finds all drives by query.
 
-#### Google Drive - Get file
+<a id="google-drive---get-file"></a>
+
+#### Get file
 Gets a file by name.
 
-#### Google Drive - Find files/folders
+<a id="google-drive---find-filesfolders"></a>
+
+#### Find files/folders
 Finds all files and folders by query.
 
-#### Google Drive - Download file
+<a id="google-drive---download-file"></a>
+
+#### Download file
 Download a file (from a shared drive).
 ##### Ideas
 - Download a template for a [Word - Mail Merge](#mail-merge) or an [Excel - Data import](#excel---data-import).
 - Download images to use as a signature in an email.
 
-#### Google Drive - Upload file
+<a id="google-drive---upload-file"></a>
+
+#### Upload file
 Upload a file (to a shared drive).
 ##### Ideas
 - After performing a [Word - Mail Merge](#mail-merge) upload the created document (e.g. invoice) to a Google Drive for archival.
@@ -411,56 +426,79 @@ Updates a Business Object.
 
 ## <img src="Images/TechnologyIcons/Jira%20Software.svg" width="24"> Jira
 ### Actions
-- [Add Attachment](#add-attachment)
-- [Add Comment](#add-comment)
-- [Add web link](#add-web-link)
-- [Create Issue](#create-issue)
-- [Delete Issue](#delete-issue)
-- [Do Transition](#do-transition)
-- [Find Issue (JQL)](#find-issue-jql)
-- [Find User](#find-user)
-- [Get Attachment](#get-attachment)
-- [Get Issue](#get-issue)
-- [Get Issues](#get-issues)
-- [Get Project](#get-project)
-- [Get Project Roles](#get-project-roles)
-- [Set Project Role users](#set-project-role-users)
-- [Trigger issue updated](#trigger-issue-updated)
-- [Update Comment](#update-comment)
-- [Update Issue](#update-issue)
+- [Add Attachment](#jira---add-attachment)
+- [Add Comment](#jira---add-comment)
+- [Add web link](#jira---add-web-link)
+- [Create Issue](#jira---create-issue)
+- [Delete Issue](#jira---delete-issue)
+- [Do Transition](#jira---do-transition)
+- [Find Issue (JQL)](#jira---find-issue-jql)
+- [Find User](#jira---find-user)
+- [Get Attachment](#jira---get-attachment)
+- [Get Issue](#jira---get-issue)
+- [Get Issues](#jira---get-issues)
+- [Get Project Roles](#jira---get-project-roles)
+- [Set Project Role users](#jira---set-project-role-users)
+- [Trigger issue updated](#jira---trigger-issue-updated)
+- [Update Comment](#jira---update-comment)
+- [Update Issue](#jira---update-issue)
+
+<a id="jira---add-attachment"></a>
 
 #### Add Attachment
 Adds a new attachment to an issue.
 
+<a id="jira---add-comment"></a>
+
 #### Add Comment
 Adds a new comment to an issue.
+
+<a id="jira---add-web-link"></a>
 
 #### Add web link
 Adds a new link to a specified URL.
 
+<a id="jira---create-issue"></a>
+
 #### Create Issue
 Creates a new issue.
+
+<a id="jira---delete-issue"></a>
 
 #### Delete Issue
 Deletes an existing issue.
 
+<a id="jira---do-transition"></a>
+
 #### Do Transition
 Transition an issue from one State to the next. Also allows multiple transitions at once.
+
+<a id="jira---find-issue-jql"></a>
 
 #### Find Issue (JQL)
 Get the first issue that matches the specified Jira query (JQL).
 
+<a id="jira---find-user"></a>
+
 #### Find User
 Finds a user by ID, email or name.
+
+<a id="jira---get-attachment"></a>
 
 #### Get Attachment
 Get a specific attachment.
 
+<a id="jira---get-issue"></a>
+
 #### Get Issue
 Get a specific issue.
 
+<a id="jira---get-issues"></a>
+
 #### Get Issues
 Get specific issues.
+
+<a id="jira---get-project-roles"></a>
 
 #### Get Project
 Gets a project or project workflow scheme.
@@ -471,14 +509,22 @@ Gets a project or project workflow scheme.
 #### Get Project Roles
 Gets all available project roles and their users.
 
+<a id="jira---set-project-role-users"></a>
+
 #### Set Project Role users
 Replaces all assigned users and groups with a new set of users/groups.
+
+<a id="jira---trigger-issue-updated"></a>
 
 #### Trigger issue updated
 Triggers an Oktopus workflow with 'Issue created/updated (Webhook) trigger.
 
+<a id="jira---update-comment"></a>
+
 #### Update Comment
 Updates an existing comment.
+
+<a id="jira---update-issue"></a>
 
 #### Update Issue
 Updates an existing issue.
@@ -508,10 +554,10 @@ Parses the given JSON and stores the resulting data.
 #### Get fact sheets
 Gets all fact sheets. You may choose specific types like 'Application'.
 
-### Get metadata (language)
+#### Get metadata (language)
 Gets the metadata (e.g. about fact sheets) for a specific language. This is handy to translate field values.
 
-### GraphQL query
+#### GraphQL query
 Executes an arbitrary query with any result.
 
 [🔝 Back to top](#technologies)
@@ -527,35 +573,49 @@ Executes an arbitrary query with any result.
 - [Get invoice](#lexware-office---get-invoice)
 - [Get quotation](#lexware-office---get-quotation)
 
-#### Lexware Office - Create company
+<a id="lexware-office---create-company"></a>
+
+#### Create company
 Creates a new company contact.
 ##### Ideas
 - Use a CRM to manage your customers and automatically publish them to Lexware Office.
 
-#### Lexware Office - Create invoice
+<a id="lexware-office---create-invoice"></a>
+
+#### Create invoice
 Creates a new invoice to be sent to a new or existing customer.
 ##### Ideas
 - Use a CRM to manage your orders and automatically create an invoice for them.
 
-#### Lexware Office - Create person
+<a id="lexware-office---create-person"></a>
+
+#### Create person
 Creates a new person contact.
 ##### Ideas
 - Use a CRM to manage your customers and automatically publish them to Lexware Office.
 
-#### Lexware Office - Create quotation
+<a id="lexware-office---create-quotation"></a>
+
+#### Create quotation
 Creates a new quotation to be sent to a new or existing customer.
 ##### Ideas
 - Use a CRM to manage your orders and automatically create an quotation for them.
 
-#### Lexware Office - Get contact
+<a id="lexware-office---get-contact"></a>
+
+#### Get contact
 Gets an contact by ID.
 
-#### Lexware Office - Get invoice
+<a id="lexware-office---get-invoice"></a>
+
+#### Get invoice
 Gets an invoice by ID.
 ##### Ideas
 - Get a previously created invoice and update your CRM with new status informations.
 
-#### Lexware Office - Get quotation
+<a id="lexware-office---get-quotation"></a>
+
+#### Get quotation
 Gets an quotation by ID.
 ##### Ideas
 - Get a previously created quotation and update your CRM with new status informations.
@@ -578,18 +638,24 @@ Parses an EML file into its individual parts.
 
 ## <img src="Images/TechnologyIcons/Microsoft%20Exchange.svg" width="24"> Microsoft 365
 ### Actions
-- [Delete mail](#delete-mail)
-- [Move mail](#move-mail)
-- [Send mail](#send-mail)
+- [Delete mail](#microsoft365---delete-mail)
+- [Move mail](#microsoft365---move-mail)
+- [Send mail](#microsoft365---send-mail)
 
 ### Entra ID App
 [How to register an App within Microsoft Entra ID](Register%20an%20App%20within%20Entra%20ID.md)
 
+<a id="microsoft365---delete-mail"></a>
+
 #### Delete mail
 Delete an email.
 
+<a id="microsoft365---move-mail"></a>
+
 #### Move mail
 Move an email to a different folder.
+
+<a id="microsoft365---send-mail"></a>
 
 #### Send mail
 Send a mail.
@@ -628,14 +694,18 @@ Update a contact of the current or a specific user.
 - [Data export](#excel---data-export)
 - [Data import](#excel---data-import)
 
-#### Excel - Data export
+<a id="excel---data-export"></a>
+
+#### Data export
 Take an Excel file and export all of the rows and columns from a sheet.
 ##### Ideas
 - You may then convert the data to `CSV` or `JSON` and upload it somewhere.
 - You may iterate over the list and upsert specific or all rows and columns to a Ticket system.
 - Import data from services without an API, but with an Excel export.
 
-#### Excel - Data import
+<a id="excel---data-import"></a>
+
+#### Data import
 Take an Excel template and import any amount of rows and columns into the speadsheet.
 ##### Ideas
 - Make use of formulas to do advanced calculations or charting on the imported data.
@@ -651,13 +721,19 @@ Take an Excel template and import any amount of rows and columns into the speads
 - [Download file](#onedrive---download-file)
 - [Upload file](#onedrive---upload-file)
 
-#### OneDrive - Delete file
+<a id="onedrive---delete-file"></a>
+
+#### Delete file
 Deletes a file from OneDrive.
 
-#### OneDrive - Download file
+<a id="onedrive---download-file"></a>
+
+#### Download file
 Downloads a file from OneDrive.
 
-#### OneDrive - Upload file
+<a id="onedrive---upload-file"></a>
+
+#### Upload file
 Uploads a file to OneDrive.
 
 [🔝 Back to top](#technologies)
@@ -907,6 +983,36 @@ Gets all rows from table.
 [🔝 Back to top](#technologies)
 
 
+## <img src="Images/TechnologyIcons/ServiceNow.svg" width="24"> ServiceNow
+### Actions
+- [Create record](#servicenow---create-record)
+- [Delete record](#servicenow---delete-record)
+- [Find records](#servicenow---find-records)
+- [Update record](#servicenow---update-record)
+
+<a id="servicenow---create-record"></a>
+
+#### Create record
+Create a record.
+
+<a id="servicenow---delete-record"></a>
+
+#### Delete record
+Delete a record.
+
+<a id="servicenow---find-records"></a>
+
+#### Find records
+Finds records based on a query.
+
+<a id="servicenow---update-record"></a>
+
+#### Update Record
+Update a record.
+
+[🔝 Back to top](#technologies)
+
+
 ## <img src="Images/TechnologyIcons/Shopware.svg" width="24"> Shopware
 ### Actions
 - [Create product](#create-product)
@@ -965,31 +1071,49 @@ Updates a given cross selling entity of a specific product.
 - [Update comment](#smax---update-comment)
 - [Update record](#smax---update-record)
 
-#### SMAX - Add comment
+<a id="smax---add-comment"></a>
+
+#### Add comment
+Adds one or more attechments to a record.
+
+<a id="smax---create-record"></a>
+
+#### Create record
 Adds a new comment to a record.
 
-#### SMAX - Create record
-Creates a new record.
+<a id="smax---delete-comment"></a>
 
-#### SMAX - Delete comment
-Deletes an existing comment.
+#### Delete comment
+Deletes anm existing comment.
 
-#### SMAX - Delete record
-Deletes an existing record.
+<a id="smax---delete-record"></a>
 
-#### SMAX - Find record
+#### Delete record
+Deletes anm existing record.
+
+<a id="smax---find-record"></a>
+
+#### Find record
 Find a record by query.
 
-#### SMAX - Find records
+<a id="smax---find-records"></a>
+
+#### Find records
 Find records by query.
 
-#### SMAX - Get record
+<a id="smax---get-record"></a>
+
+#### Get record
 Get a record by ID.
 
-#### SMAX - Update comment
+<a id="smax---update-comment"></a>
+
+#### Update comment
 Updates an existing comment.
 
-#### SMAX - Update record
+<a id="smax---update-record"></a>
+
+#### Update record
 Updates an existing record.
 
 [🔝 Back to top](#technologies)
@@ -1025,6 +1149,67 @@ Reads the content of a file variable.
 
 #### Split text
 Takes any input text and split it by any given separator.
+
+[🔝 Back to top](#technologies)
+
+
+## <img src="Images/TechnologyIcons/Timewax.svg" width="24"> Timewax
+### Actions
+- [Add project](#timewax---add-project)
+- [Add time entries](#timewax---add-time-entries)
+- [Find resources](#timewax---find-resources)
+- [Find time entries](#timewax---find-time-entries)
+- [Get project](#timewax---get-project)
+- [Get projects](#timewax---get-projects)
+- [Get resource](#timewax---get-resource)
+- [Get time entries](#timewax---get-time-entries)
+- [List resources](#timewax---list-resources)
+
+<a id="timewax---add-project"></a>
+
+#### Add project
+Adds a new project.
+
+<a id="timewax---add-time-entries"></a>
+
+#### Add time entries
+Add new time entries.
+
+<a id="timewax---find-resources"></a>
+
+#### Find resources
+Find resources by query.
+
+<a id="timewax---find-time-entries"></a>
+
+#### Find time entries
+Get a list of time entries from multiple resources.
+
+<a id="timewax---get-project"></a>
+
+#### Get project
+Get a specific project.
+
+<a id="timewax---get-projects"></a>
+
+#### Get projects
+Get a list of projects.
+
+<a id="timewax---get-resource"></a>
+
+#### Get resource
+Get a specific resource.
+
+<a id="timewax---get-time-entries"></a>
+
+#### Get time entries
+Get a list of time entries given a from and to date.
+
+<a id="timewax---list-resources"></a>
+
+#### List resources
+Get a list of resources.
+
 
 [🔝 Back to top](#technologies)
 
@@ -1088,3 +1273,4 @@ Text: `Hello from my workflow.`\
 HTML: `<a href="https://freedom-manufaktur.com">Thanks Oktopus</a>`
 
 [🔝 Back to top](#technologies)
+
