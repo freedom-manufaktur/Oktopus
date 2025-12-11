@@ -437,6 +437,7 @@ Updates a Business Object.
 - [Get Attachment](#jira---get-attachment)
 - [Get Issue](#jira---get-issue)
 - [Get Issues](#jira---get-issues)
+- [Get Project](#jira---get-project)
 - [Get Project Roles](#jira---get-project-roles)
 - [Set Project Role users](#jira---set-project-role-users)
 - [Trigger issue updated](#jira---trigger-issue-updated)
@@ -498,13 +499,15 @@ Get a specific issue.
 #### Get Issues
 Get specific issues.
 
-<a id="jira---get-project-roles"></a>
+<a id="jira---get-project"></a>
 
 #### Get Project
 Gets a project or project workflow scheme.
 ##### Ideas
 - Determin if a project exists and is accessible, when working with multiple projects.
 - Determin the type of workflow used. This is especially helpful, when issue types have different workflows across different projects.
+
+<a id="jira---get-project-roles"></a>
 
 #### Get Project Roles
 Gets all available project roles and their users.
@@ -1074,22 +1077,22 @@ Updates a given cross selling entity of a specific product.
 <a id="smax---add-comment"></a>
 
 #### Add comment
-Adds one or more attechments to a record.
+Adds a new comment to a record.
 
 <a id="smax---create-record"></a>
 
 #### Create record
-Adds a new comment to a record.
+Creates a new record.
 
 <a id="smax---delete-comment"></a>
 
 #### Delete comment
-Deletes anm existing comment.
+Deletes an existing comment.
 
 <a id="smax---delete-record"></a>
 
 #### Delete record
-Deletes anm existing record.
+Deletes an existing record.
 
 <a id="smax---find-record"></a>
 
@@ -1210,7 +1213,6 @@ Get a list of time entries given a from and to date.
 #### List resources
 Get a list of resources.
 
-
 [🔝 Back to top](#technologies)
 
 
@@ -1273,4 +1275,3 @@ Text: `Hello from my workflow.`\
 HTML: `<a href="https://freedom-manufaktur.com">Thanks Oktopus</a>`
 
 [🔝 Back to top](#technologies)
-
