@@ -1158,7 +1158,7 @@ Takes any input text and split it by any given separator.
 
 ## <img src="Images/TechnologyIcons/Timewax.svg" width="24"> Timewax (Preview)
 Interact with the Timewax resource planning software.
-> This technology in in preview and subject to change.
+> This technology is in preview and subject to change.
 
 ### Actions
 - [Add project](#timewax---add-project)
