@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus actions
 ===
-Version: `6.9.0` - `2025-12-10` \
+Version: `6.10.0` - `2026-01-09` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -42,7 +42,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [SMAX](#-smax)
 - [Text](#-text)
 - [Timer](#-timer)
-- [Timewax](#-timewax)
+- [Timewax](#-timewax-preview)
 - [USU Service Manager (USM)](#-usu-service-manager-usm)
 - [Webhook](#-webhook)
 
@@ -1156,7 +1156,10 @@ Takes any input text and split it by any given separator.
 [🔝 Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Timewax.svg" width="24"> Timewax
+## <img src="Images/TechnologyIcons/Timewax.svg" width="24"> Timewax (Preview)
+Interact with the Timewax resource planning software.
+> This technology in in preview and subject to change.
+
 ### Actions
 - [Add project](#timewax---add-project)
 - [Add time entries](#timewax---add-time-entries)
