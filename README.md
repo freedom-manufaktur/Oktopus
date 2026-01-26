@@ -7,6 +7,7 @@ https://freedom-manufaktur.com/whoosh-oktopus
 
 # Documentation
 - [Oktopus Installation](<Documentation/Oktopus Installation Manual.md>) 🚀 - Install Oktopus on your server or in your Docker environment.
+- [Oktopus Manual](<Documentation/Oktopus Manual.md>) 🧭 - How to use Oktopus in various aspects.
 - [Oktopus Triggers](<Documentation/Oktopus Triggers.md>) ⚡ - When to start a workflow?
 - [Oktopus Actions](<Documentation/Oktopus Actions.md>) ⚙️ - What to do within a workflow.
 - [Oktopus Functions](<Documentation/Oktopus Functions.md>) 📜 - Available scripting functions to manipulate data (in addition to [Scriban functions](https://github.com/scriban/scriban/blob/master/doc/builtins.md)).

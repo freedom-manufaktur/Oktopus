@@ -1,8 +1,8 @@
 ﻿whoosh Oktopus Installation Manual
 ---
-Version: `6.7.1` - `2025-11-07` \
+Version: `6.11.0` - `2026-01-26` \
 Author: [oktopus@freedom-manufaktur.com](mailto:oktopus@freedom-manufaktur.com) \
-Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Installation%20Manual.md)
+Link: [Documentation on GitHub](<https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus Installation Manual.md>)
 
 Table of contents
 ---
@@ -14,6 +14,7 @@ Table of contents
 - [Upgrade](#upgrade)
   - [Upgrade a Windows Installation](#upgrade-a-windows-installation)
   - [Upgrade a Docker instance](#upgrade-a-docker-instance)
+- [Start using Oktopus!](#start-using-oktopus)
 - [What's new?](#whats-new)
 - [Need support?](#need-support)
 <!--/TOC-->
@@ -43,18 +44,19 @@ There are different kinds of installation. You may choose the one best suiting y
 
 1. Download Installation from [whoosh Oktopus Download](https://freedommanufaktur.sharepoint.com/:f:/g/EjZZuA7_BmlNj52AO6_6lhwBjubo5u_hjfxS2FfauZYJHg?e=3zMX8j).
 
-2. *(Optional, when offline*) Download and install the most recent [.NET 9.0 Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+2. *(Optional, when offline*) Download and install the most recent [.NET 10.0 Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
    1. ASP.NET Core Runtime x64 Installer
    2. .NET Desktop Runtime x64 Installer
 
-3. Install `whoosh Oktopus Server Setup 6.7.1.exe`
-   > Note: This will automatically install .NET 9.0 if necessary
+3. Install `whoosh Oktopus Server Setup 6.11.0.exe`
+   > Note: This will automatically install .NET 10.0 if necessary
    
    ![Windows Setup](<Images/Installation/Windows Installation.png>)
 
 4. After the installation completes hit **Launch**. To open the *Server Settings* app.
 
 5. Run the *Server Settings* app as admin.
+      
    ![Server settings App without any environments](<Images/Installation/Server Settings empty.png>)
 
 6. Add a new *Oktopus environment*.
@@ -66,6 +68,7 @@ There are different kinds of installation. You may choose the one best suiting y
 7. Click *Settings* and configure your instance according to your needs.
    
 8. Start the environment.
+   
    ![Running environments](<Images/Installation/Server Settings environment running.png>)
 
 9.  (Optional, verify running) Open a browser and navigate to your Oktopus environment URL.\
@@ -74,7 +77,7 @@ There are different kinds of installation. You may choose the one best suiting y
     > Note: Make sure to use the correct domain and port number based on **your** configuration.
    
     You should be greeted with the message\
-    `whoosh Oktopus 6.7.1`
+    `whoosh Oktopus 6.11.0`
 
 ## Installation as Docker Container via Docker Compose
 
@@ -105,30 +108,37 @@ For example in Docker Desktop \
 # Upgrade
 
 ## Upgrade a Windows Installation
-1.  (Optional, when Offline) Download and install the most recent [.NET 9.0 Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+1. (Optional, when Offline) Download and install the most recent [.NET 10.0 Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
     1. ASP.NET Core Runtime x64 Installer
     2. .NET Desktop Runtime x64 Installer
 
-2.  Install `whoosh Oktopus Server Setup vNext.exe`
-    > Note: This will automatically install .NET 9.0 if necessary
+2. Install `whoosh Oktopus Server Setup vNext.exe`
+    > Note: This will automatically install .NET 10.0 if necessary
 
-3.  After the installation completes hit **Launch**. To open the *Server Settings* app.
+3. After the installation completes hit **Launch**. To open the *Server Settings* app.
 
-4.  Run the *Server Settings* app as admin.
-    ![Running environments](<Images/Installation/Server Settings environment running.png>)
+4. Run the *Server Settings* app as admin.
 
-5.  Click *Change version*, select the desired version number (defaults to the highest installed version) and confirm by clicking *Change version* again.
-    ![Change environment version](<Images/Installation/Server Settings environment change version.png>)
+   ![Running environments](<Images/Installation/Server Settings environment running.png>)
 
-6.  Your environment should now be updated.
-    > Note: This includes changes the the Oktopus database.\
-    Please read the `Oktopus changelog.md` to check for any breaking changes.
+5. Click *Change version*, select the desired version number (defaults to the highest installed version) and confirm by clicking *Change version* again.
 
-    > Note: The *whoosh Oktopus Workflow Studio* if often up- and downwards compatible with a different server version. We still **recommend** using *whoosh Oktopus Workflow Studio* with the same version as the server. Especially when there are breaking changes (see `Changelog.md`).
+   ![Change environment version](<Images/Installation/Server Settings environment change version.png>)
+
+6. Your environment should now be updated.
+   > Note: This includes changes the the Oktopus database.\
+   Please read the `Oktopus changelog.md` to check for any breaking changes.
+
+   > Note: The *whoosh Oktopus Workflow Studio* if often up- and downwards compatible with a different server version. We still **recommend** using *whoosh Oktopus Workflow Studio* with the same version as the server. Especially when there are breaking changes (see `Changelog.md`).
 
 ## Upgrade a Docker instance
 
 1.  Follow the respective Docker installation instructions, but use the newer image tag.
+
+# Start using Oktopus!
+You have successfully installed the *Oktopus Server* as basis for the *Oktopus Workflow Studio*, which you can use to configure your workflows.
+
+Please head over to the [Oktopus Manual](<Oktopus Manual.md>) and have fun automating things 🙂.
 
 # What's new?
 This section lists **important** changes to the documentation and Docker files.

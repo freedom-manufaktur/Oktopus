@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus actions
 ===
-Version: `6.9.0` - `2025-12-10` \
+Version: `6.11.0` - `2026-01-26` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -42,7 +42,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [SMAX](#-smax)
 - [Text](#-text)
 - [Timer](#-timer)
-- [Timewax](#-timewax)
+- [Timewax](#-timewax-preview)
 - [USU Service Manager (USM)](#-usu-service-manager-usm)
 - [Webhook](#-webhook)
 
@@ -568,13 +568,24 @@ Executes an arbitrary query with any result.
 
 ## <img src="Images/TechnologyIcons/Lexware%20Office.svg" width="24"> Lexware Office
 ### Actions
+- [Create article](#lexware-office---create-article)
 - [Create company](#lexware-office---create-company)
 - [Create invoice](#lexware-office---create-invoice)
 - [Create person](#lexware-office---create-person)
 - [Create quotation](#lexware-office---create-quotation)
+- [Download invoice](#lexware-office---download-invoice)
+- [Get article](#lexware-office---get-article)
 - [Get contact](#lexware-office---get-contact)
 - [Get invoice](#lexware-office---get-invoice)
 - [Get quotation](#lexware-office---get-quotation)
+- [Update article](#lexware-office---update-article)
+
+<a id="lexware-office---create-article"></a>
+
+#### Create article
+Creates a new article.
+##### Ideas
+- Use a CRM to manage your articles, automatically publish them to Lexware Office and use them to create invoices.
 
 <a id="lexware-office---create-company"></a>
 
@@ -604,10 +615,22 @@ Creates a new quotation to be sent to a new or existing customer.
 ##### Ideas
 - Use a CRM to manage your orders and automatically create an quotation for them.
 
+<a id="lexware-office---download-invoice"></a>
+
+#### Download invoice
+Downloads an existing invoice as PDF (including ZUGFeRD information).
+##### Ideas
+- Use a CRM to manage your orders and automatically create an quotation for them.
+
+<a id="lexware-office---get-article"></a>
+
+#### Get article
+Gets an article by ID.
+
 <a id="lexware-office---get-contact"></a>
 
 #### Get contact
-Gets an contact by ID.
+Gets a contact by ID.
 
 <a id="lexware-office---get-invoice"></a>
 
@@ -619,9 +642,16 @@ Gets an invoice by ID.
 <a id="lexware-office---get-quotation"></a>
 
 #### Get quotation
-Gets an quotation by ID.
+Gets a quotation by ID.
 ##### Ideas
 - Get a previously created quotation and update your CRM with new status informations.
+
+<a id="lexware-office---update-article"></a>
+
+#### Update article
+Updates an article by ID.
+##### Ideas
+- Update a previously created article based on updates in your CRM.
 
 [🔝 Back to top](#technologies)
 
@@ -722,6 +752,7 @@ Take an Excel template and import any amount of rows and columns into the speads
 ### Actions
 - [Delete file](#onedrive---delete-file)
 - [Download file](#onedrive---download-file)
+- [Get Files](#onedrive---get-files)
 - [Upload file](#onedrive---upload-file)
 
 <a id="onedrive---delete-file"></a>
@@ -733,6 +764,13 @@ Deletes a file from OneDrive.
 
 #### Download file
 Downloads a file from OneDrive.
+
+<a id="onedrive---get-files"></a>
+
+#### Get files
+Gets all files (recursively) from a OneDrive folder.
+##### Ideas
+- Enumerate the files in a specific folder (by convention) and create links to them within your CRM.
 
 <a id="onedrive---upload-file"></a>
 
@@ -1156,7 +1194,10 @@ Takes any input text and split it by any given separator.
 [🔝 Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Timewax.svg" width="24"> Timewax
+## <img src="Images/TechnologyIcons/Timewax.svg" width="24"> Timewax (Preview)
+Interact with the Timewax resource planning software.
+> This technology is in preview and subject to change.
+
 ### Actions
 - [Add project](#timewax---add-project)
 - [Add time entries](#timewax---add-time-entries)
@@ -1232,12 +1273,16 @@ Enter the time span between each execution (format `h:mm:ss`).
 
 ## <img src="Images/TechnologyIcons/USM.svg" width="24"> USU Service Manager (USM)
 ### Actions
+- [Call Generic Interface](#call-generic-interface)
 - [Change Object](#change-object)
 - [Create Object](#create-object)
 - [Create Ticket](#create-ticket)
 - [Find Objects](#find-objects)
 - [Get Object](#get-object)
 - [Get Object by field](#get-object-by-field)
+
+#### Call Generic Interface
+Call a specific Generic Interface action.
 
 #### Change Object
 Changes (updates) an existing Business Object.
@@ -1249,10 +1294,10 @@ Creates a new Business Object.
 Creates a new ticket (Incident, Problem, ...).
 
 #### Find Objects
-Finds a specific bbusiness object.
+Finds any number of business objects by condition.
 
 #### Get Object
-Fet a specific business object.
+Get a specific business object.
 
 #### Get Object by field
 Get the first business object by field.
