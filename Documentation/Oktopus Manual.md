@@ -22,26 +22,28 @@ This guide explains the day-to-day use of *whoosh Oktopus* and describes key adm
 Workflows can be imported and exported to support migrations, backups, or sharing between instances.
 
 ## Import
-1. In the *Workflow Studio*, choose *Import*.
-2. Upload the previously exported `.json` file.
-3. Review configurations (for example connections and credentials) and adjust them as necessary.
+1. In the *Workflow Studio* navigate to the *Workflows* page.
+2. Click the *Import workflow* button.
+3. Select the previously exported `.json` file(s).
+4. This will import all selected files as workflows.
+   > Note: If one of the workflows already exists (by name), you will be asked whether you want to overwrite the existing ones or rename them on import.
+5. Review workflow configuration. Workflows exports do **not** contain any sensitive connection credentials (only the name). If a connection with the same name already exists, it will be selected automatically, if not you must update all steps with missing connections.
 
 ## Export
-1. Open the *Workflow Studio* and select the workflow you want to export.
-2. Click *Export* and save the resulting `.json` file.
-
-Note: Imports may miss dependencies such as references to credentials or external services. Verify these after import and test the workflow in a safe environment.
+1. In the *Workflow Studio* navigate to the *Workflows* page.
+2. Select any number of workflows or workflow groups.
+3. Open the context menu und choose *Export*.
+4. Save the resulting `.json` file(s) in any folder of your choosing.
 
 # Activate user management
-In many installations, user management is disabled by default. To enable and configure it:
+When installing Oktopus for the first time, user management is disabled. Any user with access to the Oktopus Server endpoint can sign in as **anonymous user**. As one of the first steps your **should** enable user management and protect your Oktopus instance against unauthorized access.
 
-1. Sign in as an administrator to the *Server Settings*.
-2. Open the settings for the target environment and go to *Security / Users*.
-3. Enable *User management*.
-4. Create roles and assign permissions (for example `Administrator`, `Editor`, `Viewer`).
-5. Optional: Configure external identity providers (e.g. Microsoft Entra ID) under *Authentication*.
-
-Note: After enabling user management, create at least one administrator account to ensure access control.
+1. Sign in to the *Workflow Studio* as anonymous user.
+2. Navigate to the *Settings* page.
+3. Create a new user with the role of administrator.
+4. Click the **Sign in as administrator to enable** button. You should be signed out and back at the sign in page.
+5. Sign in as the user you have previously created.
+6. Click **Enable** in the user management section.
 
 # Manage Oktopus API key
 *Oktopus* provides an API for automation and integration with external systems. Manage API keys as follows:
