@@ -12,7 +12,7 @@ Table of contents
   - [Import](#import)
   - [Export](#export)
 - [Activate user management](#activate-user-management)
-- [Manage Oktopus API key](#manage-oktopus-api-key)
+- [Manage Oktopus Webhook API key](#manage-oktopus-webhook-api-key)
 <!--/TOC-->
 
 # Introduction
@@ -45,16 +45,14 @@ When installing Oktopus for the first time, user management is disabled. Any use
 5. Sign in as the user you have previously created.
 6. Click **Enable** in the user management section.
 
-# Manage Oktopus API key
-*Oktopus* provides an API for automation and integration with external systems. Manage API keys as follows:
+# Manage Oktopus Webhook API key
+*Oktopus* provides webhook triggers for workflows. By default these workflows are protected by an API key, to prevent unauthorized access.
 
-1. In the Workflow Studio or Server Settings, navigate to *API / Keys*.
-2. Create a new key and give it a descriptive name (e.g. `CI/CD Access`, `ServiceNow Integration`).
-3. Select the required permissions and set an expiration if needed.
-4. Copy the key securely and store it in a safe location. After closing the dialog the key is usually not fully visible again.
-5. Keys can be disabled or deleted at any time if needed.
-
-Security tip: Use short-lived keys for integrations and rotate keys regularly.
+1. Sign in to the *Workflow Studio* as **administrator**.
+2. Navigate to the *Settings* page.
+3. Click *Advanced settings*.
+4. View and change the **Webhook base URL** and **Webhook API key**.
 
 ---
+
 If you have further questions about using *whoosh Oktopus*, contact us at [oktopus@freedom-manufaktur.com](mailto:oktopus@freedom-manufaktur.com).
