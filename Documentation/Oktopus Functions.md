@@ -1,6 +1,6 @@
 ﻿Documentation and examples for whoosh Oktopus functions
 ---
-Version: `6.5.0` - `2025-08-13` \
+Version: `6.13.0` - `2026-02-04` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Functions.md)
 
 # Language
@@ -1154,9 +1154,9 @@ String functions available through the object 'string' in whoosh Oktopus.
 
 - [`string.DefaultIfEmpty`](#stringdefaultifempty)
 - [`string.DefaultIfWhitespace`](#stringdefaultifwhitespace)
-- [`string.getFileName`](#stringgetfilename)
-- [`string.hasContent`](#stringhascontent)
-- [`string.isNullOrEmpty`](#stringisnullorempty)
+- [`string.GetFileName`](#stringgetfilename)
+- [`string.HasContent`](#stringhascontent)
+- [`string.IsNullOrEmpty`](#stringisnullorempty)
 - [`string.Trim`](#stringtrim)
 - [`string.TrimToNull`](#stringtrimtonull)
 - [`string.TruncateSmart`](#stringtruncatesmart)
@@ -1232,18 +1232,21 @@ Returns `defaultText` if the input `text` is `null`, empty, or consists only of 
 [🔝 Back to top](#oktopus-built-in-functions)
 
 
-### `string.getFileName`
+### `string.GetFileName`
 ```
-string.getFileName <name> <extension> <fallbackName>?
+string.GetFileName <name> <extension>? <fallbackName>?
 ```
 
 #### Description
-Returns the file name of of the input `name` and `extension`. The optional `fallbackName` will be used if `name` contains invalid characters, like `/`, `\`, `<`, `>`, `|`, `:`, `*`, `?` or `"`.
+Returns the file name of the input `name` and `extension`. Invalid characters, like `/`, `\`, `<`, `>`, `|`, `:`, `*`, `?` or `"` will be removed.
+
+The optional `fallbackName` will be used if `name` consists only of invalid characters.
+Without a `fallbackName`, a new [UUID v7](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_7_(timestamp_and_random)) will be used.
 
 #### Arguments
 - `name`: The input string of the resulting file name
 - `extension`: The input string of the resulting file name extension
-- `fallbackName`: An optional string that is used instead of `name`
+- `fallbackName`: An optional string that is used if `name` is invalid
 
 #### Returns
 A new string of file name
@@ -1251,21 +1254,43 @@ A new string of file name
 #### Examples
 > **input**
 ```scriban
-{{ string.GetFileName "Test" "eml" "Email" }}
-{{ string.GetFileName "<>" "eml" "Email" }}
+{{string.GetFileName "Test.eml" }}
+{{string.GetFileName "Test" "eml" }}
+{{string.GetFileName "RE: Test / Check" "eml" "Email" }}
+{{string.GetFileName "<:>" "eml" "Email" }}
+
+{{string.GetFileName "<:>.json" }}
+{{string.GetFileName "<:>" "html" }}
+
+{{string.GetFileName "" "env" }}
+{{string.GetFileName ".env" }}
+
+{{string.GetFileName "<:>" }}
+{{string.GetFileName "<" ">" }}
 ```
 > **output**
 ```html
 Test.eml
+Test.eml
+RE Test  Check.eml
 Email.eml
+
+.json
+019c2a28e096701aa26bb2e6e006a221.html
+
+.env
+.env
+
+019c2a28e096701aa26bb2e6e006a221
+019c2a28e096701aa26bb2e6e006a221
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
 
-### `string.hasContent`
+### `string.HasContent`
 ```
-string.hasContent <value>
+string.HasContent <value>
 ```
 
 #### Description
@@ -1280,8 +1305,8 @@ Returns if an input `value` has content.
 #### Examples
 > **input**
 ```scriban
-{{ "Test" | string.hasContent }}
-{{ "" | string.hasContent }}
+{{ "Test" | string.HasContent }}
+{{ "" | string.HasContent }}
 ```
 > **output**
 ```html
@@ -1292,9 +1317,9 @@ false
 [🔝 Back to top](#oktopus-built-in-functions)
 
 
-### `string.isNullOrEmpty`
+### `string.IsNullOrEmpty`
 ```
-string.isNullOrEmpty <value>
+string.IsNullOrEmpty <value>
 ```
 
 #### Description
@@ -1309,8 +1334,8 @@ Returns if an input `value` is null or empty.
 #### Examples
 > **input**
 ```scriban
-{{ "" | string.isNullOrEmpty }}
-{{ "Test" | string.isNullOrEmpty }}
+{{ "" | string.IsNullOrEmpty }}
+{{ "Test" | string.IsNullOrEmpty }}
 ```
 > **output**
 ```html
