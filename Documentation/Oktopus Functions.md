@@ -1,6 +1,6 @@
 ﻿Documentation and examples for whoosh Oktopus functions
 ---
-Version: `6.13.0` - `2026-02-04` \
+Version: `6.15.0` - `2026-02-25` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Functions.md)
 
 # Language
@@ -861,13 +861,13 @@ Oktopus step functions available through the object 'step' in whoosh Oktopus. Th
 
 - [`step.errorMessage`](#steperrormessage)
 - [`step.item`](#stepitem)
-- [`step.retry`](#stepretry)
-- [`step.retryIn`](#stepretryin)
-- [`step.skip`](#stepskip)
-- [`step.skipIf`](#stepskipif)
-- [`step.skipIfEmpty`](#stepskipifempty)
-- [`step.skipIfNull`](#stepskipifnull)
-- [`step.skipIfWhitespace`](#stepskipIfWhitespace)
+- [`step.Retry`](#stepretry)
+- [`step.RetryIn`](#stepretryin)
+- [`step.Skip`](#stepskip)
+- [`step.SkipIf`](#stepskipif)
+- [`step.SkipIfEmpty`](#stepskipifempty)
+- [`step.SkipIfNull`](#stepskipifnull)
+- [`step.SkipIfWhitespace`](#stepskipIfWhitespace)
 - [`step.wait`](#stepwait)
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -889,7 +889,7 @@ Returns the error message of when a step fails. This is typically used under `Ad
 > **input**
 ```scriban
 {{ if (step.errorMessage | string.contains "temporarily unavailable")
-  step.retryIn (timespan.from_seconds 5)
+  step.RetryIn (timespan.from_seconds 5)
 end }}
 ```
 > **output**
@@ -928,9 +928,9 @@ Returns the item set in the current step context. This can be used in certain st
 [🔝 Back to top](#oktopus-built-in-functions)
 
 
-### `step.retry`
+### `step.Retry`
 ```
-step.retry
+step.Retry
 ```
 
 #### Description
@@ -943,7 +943,7 @@ Retries a step if it fails. This is typically used under `Advanced Settings` in 
 #### Examples
 > **input**
 ```scriban
-{{ step.retry }}
+{{ step.Retry }}
 ```
 > **output**
 ```html
@@ -953,13 +953,13 @@ Error handling script decided to retry step [...]
 [🔝 Back to top](#oktopus-built-in-functions)
 
 
-### `step.retryIn`
+### `step.RetryIn`
 ```
-step.retryIn <timespan>
+step.RetryIn <timespan>
 ```
 
 #### Description
-Waits for a given `timespan` ( set in milliseconds ) and then retries a step if it fails . This is typically used under `Advanced Settings` in the `Error handling script`.
+Waits for a given `timespan` (set in milliseconds) and then retries a step if it fails. This is typically used under `Advanced Settings` in the `Error handling script`.
 
 #### Arguments
 - `timespan`: The input timespan object
@@ -969,153 +969,168 @@ Waits for a given `timespan` ( set in milliseconds ) and then retries a step if 
 #### Examples
 > **input**
 ```scriban
-{{ step.retryIn (timespan.from_seconds 5) }}
+{{ step.RetryIn (timespan.from_seconds 5) }}
 ```
 > **output**
 ```html
-<input>(1,1): Waiting for 5000ms...
+<input>1,1: Waiting for 5000ms...
 Error handling script decided to retry step [...]
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
 
-### `step.skip`
+### `step.Skip`
 ```
-step.skip
+step.Skip <reason>?
 ```
 
 #### Description
-Skips the current step. This is typically used under `Advanced Settings` in the `Error handling script`.
+Skips the current step. An optional `reason` can be used to display a message why the step was skipped.
 
 #### Arguments
+- `reason`: An optional message
 
 #### Returns
 
 #### Examples
 > **input**
 ```scriban
-{{ step.skip }}
+{{ step.Skip }}
+{{ step.Skip "My reason." }}
 ```
 > **output**
 ```html
 Skipping step [...]
+Skipping step [...] 'My reason.'
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
 
-### `step.skipIf`
+### `step.SkipIf`
 ```
-step.skipIf <value>
+step.SkipIf <value> <reason>?
 ```
 
 #### Description
-Skips the current step if the input `value` evaluates to true.
+Skips the current step if the input `value` evaluates to true. An optional `reason` can be used to display a message why the step was skipped.
 
 #### Arguments
 - `value`: The input object
+- `reason`: An optional message
 
 #### Returns
 
 #### Examples
 > **input**
 ```scriban
-{{ step.skipIf true }}
-{{ step.skipIf false }}
-```
-> **output**
-```html
-Skipping step [...]
-Successfully executed step [...]
-```
-
-[🔝 Back to top](#oktopus-built-in-functions)
-
-
-### `step.skipIfEmpty`
-```
-step.skipIfEmpty <value>
-```
-
-#### Description
-Skips the current step if the input `value` is null or is an empty string.
-
-#### Arguments
-- `value`: The input object
-
-#### Returns
-
-#### Examples
-> **input**
-```scriban
-{{ step.skipIfEmpty null }}
-{{ step.skipIfEmpty "" }}
-{{ step.skipIfEmpty {} }}
-```
-> **output**
-```html
-Skipping step [...]
-Skipping step [...]
-Successfully executed step [...]
-```
-
-[🔝 Back to top](#oktopus-built-in-functions)
-
-
-### `step.skipIfNull`
-```
-step.skipIfNull <value>
-```
-
-#### Description
-Skips the current step if the input `value` is null.
-
-#### Arguments
-- `value`: The input object
-
-#### Returns
-
-#### Examples
-> **input**
-```scriban
-{{ step.skipIfNull null }}
-{{ step.skipIfNull {} }}
+{{ step.SkipIf true }}
+{{ step.SkipIf false }}
+{{ step.SkipIf Ticket.IsClosed "Ticket is closed." }}
 ```
 > **output**
 ```html
 Skipping step [...]
 Successfully executed step [...]
+Skipping step [...] 'Skipping because ticket is closed.'
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
 
-### `step.skipIfWhitespace`
+### `step.SkipIfEmpty`
 ```
-step.skipIfWhitespace <value>
+step.SkipIfEmpty <value> <reason>?
 ```
 
 #### Description
-Skips the current step if the input `value` is null, empty, or consists only of whitespace characters.
+Skips the current step if the input `value` is null or is an empty string. An optional `reason` can be used to display a message why the step was skipped.
 
 #### Arguments
 - `value`: The input object
+- `reason`: An optional message
 
 #### Returns
 
 #### Examples
 > **input**
 ```scriban
-{{ step.skipIfWhitespace null }}
-{{ step.skipIfWhitespace " " }}
-{{ step.skipIfWhitespace {} }}
+{{ step.SkipIfEmpty null }}
+{{ step.SkipIfEmpty "" }}
+{{ step.SkipIfEmpty {} }}
+{{ step.SkipIfEmpty Ticket.ExternalId "Not an external ticket." }}
 ```
 > **output**
 ```html
 Skipping step [...]
 Skipping step [...]
 Successfully executed step [...]
+Skipping step [...] 'Not an external ticket.'
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `step.SkipIfNull`
+```
+step.SkipIfNull <value> <reason>?
+```
+
+#### Description
+Skips the current step if the input `value` is null. An optional `reason` can be used to display a message why the step was skipped.
+
+#### Arguments
+- `value`: The input object
+- `reason`: An optional message
+
+#### Returns
+
+#### Examples
+> **input**
+```scriban
+{{ step.SkipIfNull null }}
+{{ step.SkipIfNull {} }}
+{{ step.SkipIfNull Ticket.ExternalId "Not an external ticket." }}
+```
+> **output**
+```html
+Skipping step [...]
+Successfully executed step [...]
+Skipping step [...] 'Not an external ticket.'
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `step.SkipIfWhitespace`
+```
+step.SkipIfWhitespace <value> <reason>?
+```
+
+#### Description
+Skips the current step if the input `value` is null, empty, or consists only of whitespace characters. An optional `reason` can be used to display a message why the step was skipped.
+
+#### Arguments
+- `value`: The input object
+- `reason`: An optional message
+
+#### Returns
+
+#### Examples
+> **input**
+```scriban
+{{ step.SkipIfWhitespace null }}
+{{ step.SkipIfWhitespace " " }}
+{{ step.SkipIfWhitespace {} }}
+{{ step.SkipIfWhitespace Ticket.ExternalId "Not an external ticket." }}
+```
+> **output**
+```html
+Skipping step [...]
+Skipping step [...]
+Successfully executed step [...]
+Skipping step [...] 'Not an external ticket.'
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -1839,10 +1854,10 @@ workflow.fail <reason>?
 ```
 
 #### Description
-Fails the current workflow. An optional `reason` string can be used to display a message why the workflow failed.
+Fails the current workflow. An optional `reason` can be used to display a message why the workflow failed.
 
 #### Arguments
-- `reason`: An optional message string
+- `reason`: An optional message
 
 #### Returns
 
@@ -1918,10 +1933,10 @@ workflow.stop <reason>?
 ```
 
 #### Description
-Stops the current workflow. An optional `reason` string can be used to display a message why the workflow stopped.
+Stops the current workflow. An optional `reason` can be used to display a message why the workflow stopped.
 
 #### Arguments
-- `reason`: An optional message string
+- `reason`: An optional message
 
 #### Returns
 
@@ -1946,11 +1961,11 @@ workflow.stopIf <value> <reason>?
 ```
 
 #### Description
-Stops the current workflow if the input `value` evaluates to true. An optional `reason` string can be used to display a message why the workflow stopped.
+Stops the current workflow if the input `value` evaluates to true. An optional `reason` can be used to display a message why the workflow stopped.
 
 #### Arguments
 - `value`: The input object
-- `reason`: An optional message string
+- `reason`: An optional message
 
 #### Returns
 
@@ -1977,11 +1992,11 @@ workflow.stopIfEmpty <value> <reason>?
 ```
 
 #### Description
-Stops the workflow if the input `value` is null or is an empty string. An optional `reason` string can be used to display a message why the workflow stopped.
+Stops the workflow if the input `value` is null or is an empty string. An optional `reason` can be used to display a message why the workflow stopped.
 
 #### Arguments
 - `value`: The input object
-- `reason`: An optional message string
+- `reason`: An optional message
 
 #### Returns
 
@@ -2008,11 +2023,11 @@ workflow.stopIfNull <value> <reason>?
 ```
 
 #### Description
-Stops the current workflow if the input `value` is null. An optional `reason` string can be used to display a message why the workflow stopped.
+Stops the current workflow if the input `value` is null. An optional `reason` can be used to display a message why the workflow stopped.
 
 #### Arguments
 - `value`: The input object
-- `reason`: An optional message string
+- `reason`: An optional message
 
 #### Returns
 
@@ -2039,11 +2054,11 @@ workflow.stopIfWhitespace <value> <reason>?
 ```
 
 #### Description
-Stops the current workflow if the input `value` is null, empty, or consists only of whitespace characters. An optional `reason` string can be used to display a message why the workflow stopped.
+Stops the current workflow if the input `value` is null, empty, or consists only of whitespace characters. An optional `reason` can be used to display a message why the workflow stopped.
 
 #### Arguments
 - `value`: The input object
-- `reason`: An optional message string
+- `reason`: An optional message
 
 #### Returns
 
