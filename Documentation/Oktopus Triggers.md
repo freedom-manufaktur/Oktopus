@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus triggers
 ===
-Version: `5.27.0` - `2025-04-14` \
+Version: `6.15.0` - `2026-02-26` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Triggers.md)
 
 # Technologies

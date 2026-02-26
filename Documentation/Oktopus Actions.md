@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus actions
 ===
-Version: `6.11.0` - `2026-01-26` \
+Version: `6.15.0` - `2026-02-26` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -37,6 +37,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [PDF](#-pdf)
 - [Power BI](#-power-bi)
 - [RayVentory Data Hub](#-rayventory-data-hub)
+- [SCIM](#-scim)
 - [ServiceNow](#-servicenow)
 - [Shopware](#-shopware)
 - [SMAX](#-smax)
@@ -1020,6 +1021,72 @@ Refreshes a dataset.
 
 #### Get table data
 Gets all rows from table.
+
+[🔝 Back to top](#technologies)
+
+
+## <img src="Images/TechnologyIcons/SCIM.svg" width="24"> SCIM
+### Actions
+- [Get user](#scim---get-user)
+- [Find users](#scim---find-users)
+- [Create user](#scim---create-user)
+- [Update user](#scim---update-user)
+- [Delete user](#scim---delete-user)
+- [Get group](#scim---get-group)
+- [Find groups](#scim---find-groups)
+- [Create group](#scim---create-group)
+- [Update group](#scim---update-group)
+- [Delete group](#scim---delete-group)
+
+<a id="scim---get-user"></a>
+
+#### Get user
+Get a user by ID.
+
+<a id="scim---find-users"></a>
+
+#### Find users
+Search for users using a filter.
+
+<a id="scim---create-user"></a>
+
+#### Create user
+Create a new user.
+
+<a id="scim---update-user"></a>
+
+#### Update user
+Update specific user attributes.
+
+<a id="scim---delete-user"></a>
+
+#### Delete user
+Delete a user by ID.
+
+<a id="scim---get-group"></a>
+
+#### Get group
+Get a group by ID.
+
+<a id="scim---find-groups"></a>
+
+#### Find groups
+Search for groups using a filter.
+
+<a id="scim---create-group"></a>
+
+#### Create group
+Create a new group.
+
+<a id="scim---update-group"></a>
+
+#### Update group
+Rename a group or add/remove members.
+
+<a id="scim---delete-group"></a>
+
+#### Delete group
+Delete a group by ID.
 
 [🔝 Back to top](#technologies)
 
