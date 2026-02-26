@@ -6,13 +6,13 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 # Language
 whoosh Oktopus uses [Scriban](https://github.com/scriban/scriban) as scripting/templating engine.\
 Check out the
-- [Scriban language syntax](https://github.com/scriban/scriban/blob/master/doc/language.md) in a templating context (within `{{` and `}}`)
-- [Scriban built-in functions](https://github.com/scriban/scriban/blob/master/doc/builtins.md), which proviede a broad set of base capabilities
+- [Scriban language syntax](https://scriban.github.io/docs/language/) in a templating context (within `{{` and `}}`)
+- [Scriban built-in functions](https://scriban.github.io/docs/builtins/), which proviede a broad set of base capabilities
 
 for further information.
 
 # Oktopus built-in functions
-This document describes the built-in functions provided by whoosh Oktopus (in addition to [Scriban built-in functions](https://github.com/scriban/scriban/blob/master/doc/builtins.md)).
+This document describes the built-in functions provided by whoosh Oktopus (in addition to [Scriban built-in functions](https://scriban.github.io/docs/builtins/)).
 
 - [`array` functions](#array-functions)
 - [`convert` functions](#convert-functions)
@@ -39,7 +39,7 @@ Array functions available through the object 'array' in whoosh Oktopus.
 [🔝 Back to top](#oktopus-built-in-functions)
 
 ### `array.distinct`
-Alias for [`array.uniq`](https://github.com/scriban/scriban/blob/master/doc/builtins.md#arrayuniq)
+Alias for [`array.uniq`](https://scriban.github.io/docs/builtins/array/#arrayuniq)
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
@@ -131,7 +131,7 @@ A new list with the element removed
 
 
 ### `array.unique`
-Alias for [`array.uniq`](https://github.com/scriban/scriban/blob/master/doc/builtins.md#arrayuniq)
+Alias for [`array.uniq`](https://scriban.github.io/docs/builtins/array/#arrayuniq)
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
@@ -1362,7 +1362,7 @@ false
 
 
 ### `string.Trim`
-Alias for [`string.strip`](https://github.com/scriban/scriban/blob/master/doc/builtins.md#stringstrip)
+Alias for [`string.strip`](https://scriban.github.io/docs/builtins/string/#stringstrip)
 ```
 string.Trim <text>
 ```
