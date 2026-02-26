@@ -4,7 +4,7 @@ Version: `6.15.0` - `2026-02-25` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Functions.md)
 
 # Language
-whoosh Oktopus uses [Scriban](https://github.com/scriban/scriban) as scripting/templating engine.\
+whoosh Oktopus uses [Scriban](https://scriban.github.io/) as scripting/templating engine.\
 Check out the
 - [Scriban language syntax](https://scriban.github.io/docs/language/) in a templating context (within `{{` and `}}`)
 - [Scriban built-in functions](https://scriban.github.io/docs/builtins/), which proviede a broad set of base capabilities
