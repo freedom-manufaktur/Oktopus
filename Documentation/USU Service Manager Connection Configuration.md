@@ -36,7 +36,7 @@ Table of contents
 
 5. Navigate to *Client mapping*, select **OKTOPUS - Oktopus Service** and make sure that a client (e.g. `01`) is mapped.
 
-   ![Client mapping](<Images/USM/User mananger Client mapping.png>)
+   ![Client mapping](<Images/USM/User manager Client mapping.png>)
 
 6. Assign a *Person* to the API User
    > This step is not required, but recommended as ticket creation typically requires a *Person*. We suggest naming the *Person* *Oktopus Service*, just like the user.
@@ -60,8 +60,8 @@ Table of contents
      - `CreateTicket` - Allows you to create a ticket (a convenient wrapper around `CreateObject`).
      - `GetObject` - Allows you to get any object.
      - `GetObjects` - Allows you to get multiple objects at once (search).
-     - `GetObjectTypes` - Optional: Allows Oktopus to get metadata, like a available object attributes, which is very helpful for development.
-     > Note: All web services are limited to the service accounts permissions (roles).
+     - `GetObjectTypes` - Optional: Allows Oktopus to get metadata, like available object attributes, which is very helpful for development.
+     > Note: All web services are limited to the service account's permissions (roles).
    - Open the *Users* tab and assign `OKTOPUS` as a user.
    
    ![Web service client create](<Images/USM/Web service client Create.png>)
@@ -70,7 +70,7 @@ Table of contents
 # Summary
 As a result of the previous chapters you should have the following information at your disposal:
 - Service Account Username (e.g. `OKTOPUS`)
-- Service Account Password ID (e.g. `kYMaLc9KPAk.HRRRJ9-74Kig9a!kxL`)
+- Service Account Password (e.g. `kYMaLc9KPAk.HRRRJ9-74Kig9a!kxL`)
 - Web service client Access token (e.g. `RTPu@pK-heYnN2AuGnNTP3RYdnU2Lj`)
 
 
