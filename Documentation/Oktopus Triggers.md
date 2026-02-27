@@ -144,7 +144,7 @@ settings.
 Triggers when a mail is present in a given mailbox (and is unread).
 ##### Ideas
 - Implement a mail-in workflow, which analyses the email to create a new ticket or assign it to an existing one.
-- Use image inlining and attachment separation to create tickets that capture the original spirit of the email, rather then text only.
+- Use image inlining and attachment separation to create tickets that capture the original spirit of the email, rather than text only.
 
 [🔝 Back to top](#technologies)
 

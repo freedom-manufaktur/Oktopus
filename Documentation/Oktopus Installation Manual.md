@@ -44,7 +44,7 @@ There are different kinds of installation. You may choose the one best suiting y
 
 1. Download Installation from [whoosh Oktopus Download](https://freedommanufaktur.sharepoint.com/:f:/g/EjZZuA7_BmlNj52AO6_6lhwBjubo5u_hjfxS2FfauZYJHg?e=3zMX8j).
 
-2. *(Optional, when offline*) Download and install the most recent [.NET 10.0 Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
+2. *(Optional, when offline)* Download and install the most recent [.NET 10.0 Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
    1. ASP.NET Core Runtime x64 Installer
    2. .NET Desktop Runtime x64 Installer
 

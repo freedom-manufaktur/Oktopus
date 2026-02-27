@@ -1153,7 +1153,7 @@ Waits for a given `timespan` ( set in milliseconds ). This is typically used und
 > **input**
 ```scriban
 {{ step.wait (timespan.from_seconds 5) }}
-{{ step.wait 5) }}
+{{ step.wait 5 # milliseconds }}
 ```
 > **output**
 ```html
