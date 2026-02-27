@@ -17,6 +17,7 @@ https://freedom-manufaktur.com/whoosh-oktopus
 - [How to register an Exchange Online App within Microsoft Entra ID](<Documentation/Register an Exchange Online App within Entra ID.md>) - For use when necessary.
 - [How to register a Google Workspace Service Account](<Documentation/Register a Google Workspace Service Account.md>) - For use when necessary.
 - [How to register a ServiceNow API Key](<Documentation/Register a ServiceNow API Key.md>) - For use when necessary.
+- [USU Service Manager Connection Configuration](<Documentation/USU Service Manager Connection Configuration.md>) - How to connect Oktopus to USU Service Manager (USM).
 
 # Downloads
 - [Docker Compose](<Docker Compose>) 🐋 - Scripts to run on [Docker](https://www.docker.com/) via [Docker Compose](https://docs.docker.com/compose/).
