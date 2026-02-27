@@ -59,25 +59,25 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Update User](#update-user)
 
 #### Add a principal to groups
-Add a User, Group or Computer to any number of groups.
+Adds a user, group or computer to any number of groups.
 
 #### Create User
-Create a new user account
+Creates a new user account.
 
 #### Delete principal
-Delete a User, Group or Computer.
+Deletes a user, group or computer.
 
 #### Find User
 Finds a user by name.
 
 #### Remove a principal from groups
-Remove a User, Group or Computer from any number of groups.
+Removes a user, group or computer from any number of groups.
 
 #### Reset user password
-Resets a users password.
+Resets a user's password.
 
 #### Update User
-Update a User with a selection of properties.
+Updates a user with a selection of properties.
 
 [🔝 Back to top](#technologies)
 
@@ -160,7 +160,7 @@ Get information about a document signing request (envelope).
 Get the audit events of a document signing request (envelope).
 
 #### Sign Document
-Notify People about a document signing request.
+Notifies people about a document signing request.
 
 [🔝 Back to top](#technologies)
 
@@ -221,7 +221,7 @@ Creates an archive file (typically .zip).
 Copies a file from one location to another.
 
 #### Delete file
-Delete a file.
+Deletes a file.
 
 #### Move file
 Moves a file from one location to another.
@@ -908,16 +908,16 @@ In following link u have information about the filters in get requests.
 https://docs.ninox.com/en/api/introduction/tables-fields-records
 
 #### Create or update record(s)
-Create or update (upsert) a Single record or many at once.
+Creates or updates (upserts) a single record or many at once.
 
 #### Create record
-Create a new record within a table.
+Creates a new record within a table.
 
 #### Delete attachment
 Deletes a specific attachment from a record.
 
 #### Delete record
-Delete a record.
+Deletes a record.
 
 #### Download attachment
 Downloads a specific attachment from a record.
@@ -929,9 +929,9 @@ Downloads all attachments from a record.
 Downloads specific attachments from specific records.
 
 #### Ninox - Execute query
-Execute any query or global function.
+Executes any query or global function.
 ##### Ideas
-- Execute a global function, that gathers a large number of records (with calculated fields) and returns the result in one response. This can dramatically improve the query speed compared to calling Ninox one by one.
+- Executes a global function, that gathers a large number of records (with calculated fields) and returns the result in one response. This can dramatically improve the query speed compared to calling Ninox one by one.
 
 #### Find record
 Finds a specific record within a table.
@@ -946,7 +946,7 @@ Gets a specific record by ID.
 Gets specific records by ID.
 
 #### Update record
-Update certain fields of a record.
+Updates certain fields of a record.
 
 #### Update attachment
 Uploads an attachment to a record.
@@ -962,7 +962,7 @@ Uploads attachments to a record.
 - [Evaluate script](#evaluate-script)
 
 #### Evaluate script
-Evaluate a more or less comples script which generates variables or influences the workflow state.
+Evaluates a more or less complex script which generates variables or influences the workflow state.
 
 [🔝 Back to top](#technologies)
 
@@ -995,7 +995,7 @@ Adds any number of new rows to a push dataset.
 Creates a new push dataset.
 
 #### Delete rows from push dataset
-Deletes all rows from a pusgh dataset.
+Deletes all rows from a push dataset.
 
 #### Execute Data Analysis Expression
 Executes a Data Analysis Expression (DAX).
@@ -1007,7 +1007,7 @@ Gets a specific dataset.
 Gets all available datasets (available to the connection account).
 
 #### Get push dataset tables
-Gets all tables inside a oush dataset. Push dataset are very limited in ther functionality.
+Gets all tables inside a push dataset. Push datasets are very limited in their functionality.
 
 #### Refresh dataset
 Refreshes a dataset.
@@ -1041,52 +1041,52 @@ Gets all rows from table.
 <a id="scim---get-user"></a>
 
 #### Get user
-Get a user by ID.
+Gets a user by ID.
 
 <a id="scim---find-users"></a>
 
 #### Find users
-Search for users using a filter.
+Finds users using a filter.
 
 <a id="scim---create-user"></a>
 
 #### Create user
-Create a new user.
+Creates a new user.
 
 <a id="scim---update-user"></a>
 
 #### Update user
-Update specific user attributes.
+Updates specific user attributes.
 
 <a id="scim---delete-user"></a>
 
 #### Delete user
-Delete a user by ID.
+Deletes a user by ID.
 
 <a id="scim---get-group"></a>
 
 #### Get group
-Get a group by ID.
+Gets a group by ID.
 
 <a id="scim---find-groups"></a>
 
 #### Find groups
-Search for groups using a filter.
+Finds groups using a filter.
 
 <a id="scim---create-group"></a>
 
 #### Create group
-Create a new group.
+Creates a new group.
 
 <a id="scim---update-group"></a>
 
 #### Update group
-Rename a group or add/remove members.
+Renames a group or adds/removes members.
 
 <a id="scim---delete-group"></a>
 
 #### Delete group
-Delete a group by ID.
+Deletes a group by ID.
 
 [🔝 Back to top](#technologies)
 
@@ -1101,12 +1101,12 @@ Delete a group by ID.
 <a id="servicenow---create-record"></a>
 
 #### Create record
-Create a record.
+Creates a new record.
 
 <a id="servicenow---delete-record"></a>
 
 #### Delete record
-Delete a record.
+Deletes a record.
 
 <a id="servicenow---find-records"></a>
 
@@ -1115,8 +1115,8 @@ Finds records based on a query.
 
 <a id="servicenow---update-record"></a>
 
-#### Update Record
-Update a record.
+#### Update record
+Updates an existing record.
 
 [🔝 Back to top](#technologies)
 
@@ -1147,7 +1147,7 @@ Deletes specific product from the shop.
 Deletes the cross selling entity for a given product.
 
 #### Get product
-Get a specific product.
+Gets a specific product.
 
 #### Get product cross selling
 Gets all cross selling entities of a specific product.
@@ -1202,17 +1202,17 @@ Deletes an existing record.
 <a id="smax---find-record"></a>
 
 #### Find record
-Find a record by query.
+Finds a record by query.
 
 <a id="smax---find-records"></a>
 
 #### Find records
-Find records by query.
+Finds records by query.
 
 <a id="smax---get-record"></a>
 
 #### Get record
-Get a record by ID.
+Gets a record by ID.
 
 <a id="smax---update-comment"></a>
 
@@ -1247,7 +1247,7 @@ Converts Base64 text into a file.
 Combine variables and static text into a new text document.
 
 #### Generate password
-Generates a random sewuence of characters with a given length and character set.
+Generates a random sequence of characters with a given length and character set.
 
 #### Map single value
 Takes any input text, mapped against a table with a specific output selected.
@@ -1284,42 +1284,42 @@ Adds a new project.
 <a id="timewax---add-time-entries"></a>
 
 #### Add time entries
-Add new time entries.
+Adds new time entries.
 
 <a id="timewax---find-resources"></a>
 
 #### Find resources
-Find resources by query.
+Finds resources by query.
 
 <a id="timewax---find-time-entries"></a>
 
 #### Find time entries
-Get a list of time entries from multiple resources.
+Finds a list of time entries from multiple resources.
 
 <a id="timewax---get-project"></a>
 
 #### Get project
-Get a specific project.
+Gets a specific project.
 
 <a id="timewax---get-projects"></a>
 
 #### Get projects
-Get a list of projects.
+Gets a list of projects.
 
 <a id="timewax---get-resource"></a>
 
 #### Get resource
-Get a specific resource.
+Gets a specific resource.
 
 <a id="timewax---get-time-entries"></a>
 
 #### Get time entries
-Get a list of time entries given a from and to date.
+Gets a list of time entries given a from and to date.
 
 <a id="timewax---list-resources"></a>
 
 #### List resources
-Get a list of resources.
+Gets a list of resources.
 
 [🔝 Back to top](#technologies)
 
@@ -1349,7 +1349,7 @@ Enter the time span between each execution (format `h:mm:ss`).
 - [Get Object by field](#get-object-by-field)
 
 #### Call Generic Interface
-Call a specific Generic Interface action.
+Calls a specific Generic Interface action.
 
 #### Change Object
 Changes (updates) an existing Business Object.
@@ -1364,10 +1364,10 @@ Creates a new ticket (Incident, Problem, ...).
 Finds any number of business objects by condition.
 
 #### Get Object
-Get a specific business object.
+Gets a specific business object.
 
 #### Get Object by field
-Get the first business object by field.
+Gets the first business object by field.
 
 [🔝 Back to top](#technologies)
 

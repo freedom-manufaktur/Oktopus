@@ -49,7 +49,7 @@ Table of contents
 7. Choose **JSON** and click **Create**.
    ![JSON Key](<Images/GoogleWorkspace/Google Cloud IAM Service Accounts - Details - Keys add JSON.png>)
 
-8. If you are presented with `Service account key creation is disabled` and error message `The organization policy constraint 'iam.disableServiceAccountKeyCreation' is enforced on your organization.` then please follow the instructions on how to [enable service account key creation](#enable-service-account-key-creation) and retry the key creation.
+8. If you are presented with `Service account key creation is disabled` and the error message `The organization policy constraint 'iam.disableServiceAccountKeyCreation' is enforced on your organization.`, then please follow the instructions on how to [enable service account key creation](#enable-service-account-key-creation) and retry the key creation.
 
 9. Save the downloaded `.json` file (e.g. `whoosh-oktopus-f56aaf1480f8.json`).
    ![Successful key creation](<Images/GoogleWorkspace/Google Cloud IAM Service Accounts - Details - Keys add JSON success.png>)

@@ -59,10 +59,10 @@ Triggers when a workflow failed with an error.
 - [Meeting response](#meeting-response)
 
 #### Email received
-Triggers whenever an email was received in the users inbox (unread).
+Triggers whenever an email was received in the user's inbox (unread).
 ##### Ideas
 - Implement a mail-in workflow, which analyses the email to create a new ticket or assign it to an existing one.
-- Use image inlining and attachment separation to create tickets that capture the original spirit of the email, rather then text only.
+- Use image inlining and attachment separation to create tickets that capture the original spirit of the email, rather than text only.
 
 #### Meeting accepted
 Triggers whenever a meeting accepted response was received in the users inbox (unread).
@@ -91,10 +91,10 @@ Triggers when a file is found in a certain directory.
 
 ## <img src="Images/TechnologyIcons/MailCloud.svg" width="24"> IMAP
 ### Triggers
-- [Mail recieved](#mail-recieved)
+- [Mail received](#mail-received)
 
-#### Mail recieved
-Triggers when receving an email.
+#### Mail received
+Triggers when receiving an email.
 
 [🔝 Back to top](#technologies)
 
@@ -130,7 +130,7 @@ Triggers whenever an issue was created or updated with webhook notification.
 Triggers whenever an issue was found by the specified Jira query (JQL).
 
 #### Jira Automation Webhook
-Triggers whenever a notification is sent to this Webhook. The content is determinded by your Jira Automation
+Triggers whenever a notification is sent to this Webhook. The content is determined by your Jira Automation
 settings.
 
 [🔝 Back to top](#technologies)
@@ -215,7 +215,7 @@ Triggers whenever a business object matches the given criteria.
 #### Receive Webhook
 Exposes an HTTP endpoint and waits for any calls to it (any kind of HTTP request).
 ##### Ideas
-- Many of the modern cloud based systems allow the configutation of Webhooks. Oktopus can catch them all and run any kind of workflow based on that.
+- Many of the modern cloud based systems allow the configuration of Webhooks. Oktopus can catch them all and run any kind of workflow based on that.
 - Oktopus can call itself and allow all kinds of advanced scenarios.
 
 [🔝 Back to top](#technologies)

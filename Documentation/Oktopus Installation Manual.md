@@ -8,7 +8,7 @@ Table of contents
 ---
 <!--TOC-->
 - [Installation](#installation)
-  - [Installallation as Windows Service](#installallation-as-windows-service)
+  - [Installation as Windows Service](#installation-as-windows-service)
   - [Installation as Docker Container via Docker Compose](#installation-as-docker-container-via-docker-compose)
   - [Installation as Kubernetes Deployment via HELM Chart](#installation-as-kubernetes-deployment-via-helm-chart)
 - [Upgrade](#upgrade)
@@ -40,7 +40,7 @@ There are different kinds of installation. You may choose the one best suiting y
    ⚠ Experience with Kubernetes and HELM Charts required
 
 
-## Installallation as Windows Service
+## Installation as Windows Service
 
 1. Download Installation from [whoosh Oktopus Download](https://freedommanufaktur.sharepoint.com/:f:/g/EjZZuA7_BmlNj52AO6_6lhwBjubo5u_hjfxS2FfauZYJHg?e=3zMX8j).
 
@@ -60,7 +60,7 @@ There are different kinds of installation. You may choose the one best suiting y
    ![Server settings App without any environments](<Images/Installation/Server Settings empty.png>)
 
 6. Add a new *Oktopus environment*.
-   > An *environment* represents an isolated instance of the *Oktopus Server*. Each environments runs as a Windows service, has its own configuration and can be updated separately.
+   > An *environment* represents an isolated instance of the *Oktopus Server*. Each environment runs as a Windows service, has its own configuration and can be updated separately.
    
    ![Add new environment](<Images/Installation/Server Settings new environment.png>)
    ![View added environment](<Images/Installation/Server Settings environment.png>)
@@ -126,17 +126,17 @@ For example in Docker Desktop \
    ![Change environment version](<Images/Installation/Server Settings environment change version.png>)
 
 6. Your environment should now be updated.
-   > Note: This includes changes the the Oktopus database.\
+   > Note: This includes changes to the Oktopus database.\
    Please read the `Oktopus changelog.md` to check for any breaking changes.
 
-   > Note: The *whoosh Oktopus Workflow Studio* if often up- and downwards compatible with a different server version. We still **recommend** using *whoosh Oktopus Workflow Studio* with the same version as the server. Especially when there are breaking changes (see `Changelog.md`).
+   > Note: The *whoosh Oktopus Workflow Studio* is often upward- and downward-compatible with a different server version. We still **recommend** using *whoosh Oktopus Workflow Studio* with the same version as the server, especially when there are breaking changes (see `Changelog.md`).
 
 ## Upgrade a Docker instance
 
 1.  Follow the respective Docker installation instructions, but use the newer image tag.
 
 # Start using Oktopus!
-You have successfully installed the *Oktopus Server* as basis for the *Oktopus Workflow Studio*, which you can use to configure your workflows.
+You have successfully installed the *Oktopus Server* as the basis for the *Oktopus Workflow Studio*, which you can use to configure your workflows.
 
 Please head over to the [Oktopus Manual](<Oktopus Manual.md>) and have fun automating things 🙂.
 

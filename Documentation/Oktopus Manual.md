@@ -36,7 +36,7 @@ Workflows can be imported and exported to support migrations, backups, or sharin
 4. Save the resulting `.json` file(s) in any folder of your choosing.
 
 # Activate user management
-When installing Oktopus for the first time, user management is disabled. Any user with access to the Oktopus Server endpoint can sign in as **anonymous user**. As one of the first steps your **should** enable user management and protect your Oktopus instance against unauthorized access.
+When installing Oktopus for the first time, user management is disabled. Any user with access to the Oktopus Server endpoint can sign in as **anonymous user**. As one of the first steps you **should** enable user management and protect your Oktopus instance against unauthorized access.
 
 1. Sign in to the *Workflow Studio* as anonymous user.
 2. Navigate to the *Settings* page.
