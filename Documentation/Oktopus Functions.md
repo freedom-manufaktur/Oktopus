@@ -7,7 +7,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 whoosh Oktopus uses [Scriban](https://scriban.github.io/) as scripting/templating engine.\
 Check out the
 - [Scriban language syntax](https://scriban.github.io/docs/language/) in a templating context (within `{{` and `}}`)
-- [Scriban built-in functions](https://scriban.github.io/docs/builtins/), which proviede a broad set of base capabilities
+- [Scriban built-in functions](https://scriban.github.io/docs/builtins/), which provide a broad set of base capabilities
 
 for further information.
 
@@ -186,7 +186,7 @@ convert.toBase64Url <value>
 ```
 
 #### Description
-Converts the input `value` to Base64URL. Base64URL converts the special characters `/`, `=` and `+` from Base64 so it can be used for URL adresses and filenames.
+Converts the input `value` to Base64URL. Base64URL converts the special characters `/`, `=` and `+` from Base64 so it can be used for URL addresses and filenames.
 
 #### Arguments
 - `value`: The input object
@@ -215,7 +215,7 @@ convert.toCsv <value> <header>?
 ```
 
 #### Description
-Converts the input `value` to a CSV. An optional `header` can be passed to specify the CSV header.
+Converts the input `value` to CSV. An optional `header` can be passed to specify the CSV header.
 If the `header` is not specified then the return will have no CSV header.
 
 #### Arguments
@@ -250,7 +250,7 @@ convert.toCsvRows <value> <header>?
 ```
 
 #### Description
-Converts the input `value` to a CSV rows. An optional `header` can be passed to specify the CSV header.
+Converts the input `value` to CSV rows. An optional `header` can be passed to specify the CSV header.
 If the `header` is not specified then the return will have no CSV header.
 
 #### Arguments
@@ -290,7 +290,7 @@ convert.toDecimal <value> <culture>?
 ```
 
 #### Description
-Converts the input `value` to a 128 bit decimal. An optional `culture` can be passed to specify the format of the `value`.
+Converts the input `value` to a 128-bit decimal. An optional `culture` can be passed to specify the format of the `value`.
 If the `culture` is not specified then the default will be used.
 
 #### Arguments
@@ -298,7 +298,7 @@ If the `culture` is not specified then the default will be used.
 - `culture`: An optional string of the culture format
 
 #### Returns
-The input `value` converted to a 128 bit decimal
+The input `value` converted to a 128-bit decimal
 
 #### Examples
 > **input**
@@ -1153,7 +1153,7 @@ Waits for a given `timespan` ( set in milliseconds ). This is typically used und
 > **input**
 ```scriban
 {{ step.wait (timespan.from_seconds 5) }}
-{{ step.wait 5) }}
+{{ step.wait 5 # milliseconds }}
 ```
 > **output**
 ```html

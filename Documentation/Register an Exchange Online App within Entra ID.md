@@ -51,7 +51,7 @@ As a result of this chapter you should have the following information at your di
 * Entra ID Tenant ID (e.g. `9776b2ed-e415-439d-9582-85719af85979`)
 * Entra ID Client Secret (e.g. `4lf[...]`)
 
-Now you have registered an application with all required informations.
+Now you have registered an application with all required information.
 
 ## Support
 For more information on the topic, please read the Microsoft documentation [Authenticate an EWS application by using OAuth](https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth).

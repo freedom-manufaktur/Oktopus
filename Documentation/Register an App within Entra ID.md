@@ -52,4 +52,4 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - Copy and save the `Value` of the secret key
   ![Entra ID Client Secret](<Images/EntraID/Entra ID Client Secret.png>)
 
-Now you have registered an application with all required informations.
+Now you have registered an application with all required information.
