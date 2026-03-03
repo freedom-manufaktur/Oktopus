@@ -37,6 +37,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [PDF](#-pdf)
 - [Power BI](#-power-bi)
 - [RayVentory Data Hub](#-rayventory-data-hub)
+- [Robaws](#-robaws)
 - [SCIM](#-scim)
 - [ServiceNow](#-servicenow)
 - [Shopware](#-shopware)
