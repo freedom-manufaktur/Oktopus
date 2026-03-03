@@ -1,0 +1,10 @@
+<svg width="113" height="113" version="1.1" viewBox="0 0 113 113" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="robawsGradient" x1="50" x2="150" y1="100" y2="100" gradientTransform="translate(-50,-37)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4a86c6" offset="0"/>
+<stop stop-color="#2eb8ac" offset="1"/>
+</linearGradient>
+</defs>
+<path d="m50 13a50 50 0 100 100 50 50 0 100-100m0 25a25 25 0 110 50 25 25 0 110-50" fill="url(#robawsGradient)" fill-rule="evenodd"/>
+<circle cx="95" cy="18" r="18" fill="#2eb8ac"/>
+</svg>
