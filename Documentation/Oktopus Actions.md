@@ -1025,6 +1025,204 @@ Gets all rows from table.
 [🔝 Back to top](#technologies)
 
 
+## <img src="Images/TechnologyIcons/Robaws.svg" width="24"> Robaws
+### Actions
+- [Get employee](#robaws---get-employee)
+- [Get employees](#robaws---get-employees)
+- [Create employee](#robaws---create-employee)
+- [Update employee](#robaws---update-employee)
+- [Delete employee](#robaws---delete-employee)
+- [Get client](#robaws---get-client)
+- [Get clients](#robaws---get-clients)
+- [Create client](#robaws---create-client)
+- [Update client](#robaws---update-client)
+- [Get client documents](#robaws---get-client-documents)
+- [Download document](#robaws---download-document)
+- [Delete client](#robaws---delete-client)
+- [Get supplier](#robaws---get-supplier)
+- [Get suppliers](#robaws---get-suppliers)
+- [Create supplier](#robaws---create-supplier)
+- [Update supplier](#robaws---update-supplier)
+- [Delete supplier](#robaws---delete-supplier)
+- [Get offer](#robaws---get-offer)
+- [Get offers](#robaws---get-offers)
+- [Create offer](#robaws---create-offer)
+- [Update offer](#robaws---update-offer)
+- [Delete offer](#robaws---delete-offer)
+- [Get invoice](#robaws---get-invoice)
+- [Get invoices](#robaws---get-invoices)
+- [Create invoice](#robaws---create-invoice)
+- [Update invoice](#robaws---update-invoice)
+- [Delete invoice](#robaws---delete-invoice)
+- [Get project](#robaws---get-project)
+- [Get projects](#robaws---get-projects)
+- [Create project](#robaws---create-project)
+- [Update project](#robaws---update-project)
+- [Delete project](#robaws---delete-project)
+
+<a id="robaws---get-employee"></a>
+
+#### Get employee
+Retrieves a single employee by ID.
+
+<a id="robaws---get-employees"></a>
+
+#### Get employees
+Retrieves a list of employees.
+
+<a id="robaws---create-employee"></a>
+
+#### Create employee
+Creates a new employee.
+
+<a id="robaws---update-employee"></a>
+
+#### Update employee
+Updates a single employee.
+
+<a id="robaws---delete-employee"></a>
+
+#### Delete employee
+Deletes a single employee by ID.
+
+<a id="robaws---get-client"></a>
+
+#### Get client
+Retrieves a single client by ID.
+
+<a id="robaws---get-clients"></a>
+
+#### Get clients
+Retrieves a list of clients.
+
+<a id="robaws---create-client"></a>
+
+#### Create client
+Creates a new client.
+
+<a id="robaws---update-client"></a>
+
+#### Update client
+Updates a single client.
+
+<a id="robaws---get-client-documents"></a>
+
+#### Get client documents
+Retrieve a list of documents attached to a client.
+
+<a id="robaws---download-document"></a>
+
+#### Download document
+Downloads a document file from Robaws.
+
+<a id="robaws---delete-client"></a>
+
+#### Delete client
+Deletes a single client by ID.
+
+<a id="robaws---get-supplier"></a>
+
+#### Get supplier
+Retrieves a single supplier by ID.
+
+<a id="robaws---get-suppliers"></a>
+
+#### Get suppliers
+Retrieves a list of suppliers.
+
+<a id="robaws---create-supplier"></a>
+
+#### Create supplier
+Creates a new supplier.
+
+<a id="robaws---update-supplier"></a>
+
+#### Update supplier
+Updates a single supplier.
+
+<a id="robaws---delete-supplier"></a>
+
+#### Delete supplier
+Deletes a single supplier by ID.
+
+<a id="robaws---get-offer"></a>
+
+#### Get offer
+Retrieves a single offer by ID.
+
+<a id="robaws---get-offers"></a>
+
+#### Get offers
+Retrieves a list of offers.
+
+<a id="robaws---create-offer"></a>
+
+#### Create offer
+Creates a new offer.
+
+<a id="robaws---update-offer"></a>
+
+#### Update offer
+Updates a single offer.
+
+<a id="robaws---delete-offer"></a>
+
+#### Delete offer
+Deletes a single offer by ID.
+
+<a id="robaws---get-invoice"></a>
+
+#### Get invoice
+Retrieves a single sales invoice by ID.
+
+<a id="robaws---get-invoices"></a>
+
+#### Get invoices
+Retrieves a list of sales invoices.
+
+<a id="robaws---create-invoice"></a>
+
+#### Create invoice
+Creates a new sales invoice.
+
+<a id="robaws---update-invoice"></a>
+
+#### Update invoice
+Updates an existing sales invoice.
+
+<a id="robaws---delete-invoice"></a>
+
+#### Delete invoice
+Deletes a sales invoice by ID.
+
+<a id="robaws---get-project"></a>
+
+#### Get project
+Retrieves a single project by ID.
+
+<a id="robaws---get-projects"></a>
+
+#### Get projects
+Retrieves a list of projects.
+
+<a id="robaws---create-project"></a>
+
+#### Create project
+Creates a new project.
+
+<a id="robaws---update-project"></a>
+
+#### Update project
+Updates an existing project.
+
+<a id="robaws---delete-project"></a>
+
+#### Delete project
+Deletes a project by ID.
+
+[🔝 Back to top](#technologies)
+
+
 ## <img src="Images/TechnologyIcons/SCIM.svg" width="24"> SCIM
 ### Actions
 - [Get user](#scim---get-user)
