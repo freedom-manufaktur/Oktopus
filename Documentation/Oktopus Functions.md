@@ -756,7 +756,7 @@ A new HTML string with the attributes removed
 
 ### `html.ToText`
 ```
-html.ToText <html> <format?>
+html.ToText <html> <format>?
 ```
 
 #### Description
@@ -765,7 +765,9 @@ Converts input `html` to text in the specified `format`.
 #### Arguments
 - `html`: The input HTML string
 - `format`: The target format
-  - `Default`: Returns plain text (attempting to use [Markdown](https://en.wikipedia.org/wiki/Markdown)).
+  - `Markdown` (default): Returns plain text (attempting to use [Markdown](https://en.wikipedia.org/wiki/Markdown)). Supports:
+    - Ordered lists
+    - Unordered lists
   - `Jira`: Returns [Jira Wiki Markup](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all). Supports:
     - Ordered lists
     - Unordered lists
