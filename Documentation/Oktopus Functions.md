@@ -1,6 +1,6 @@
 ﻿Documentation and examples for whoosh Oktopus functions
 ---
-Version: `6.15.0` - `2026-02-25` \
+Version: `6.17.0` - `2026-03-18` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Functions.md)
 
 # Language
@@ -636,8 +636,10 @@ Storing global variable 'MyGlobalVariable'='MyValue'
 HTML functions available through the object 'html' in whoosh Oktopus.
 
 - [`html.GetBody`](#htmlgetbody)
+- [`html.InlineImages`](#htmlinlineimages)
 - [`html.removeAllAttributes`](#htmlremoveallattributes)
 - [`html.removeAttributes`](#htmlremoveattributes)
+- [`html.ToText`](#htmltotext)
 
 [🔝 Back to top](#oktopus-built-in-functions)
 
@@ -666,6 +668,33 @@ A new HTML string with the body.
 ```html
 <p>Foo</p>
 <p>Bar</p>
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `html.InlineImages`
+```
+html.InlineImages <html>
+```
+
+#### Description
+Converts Oktopus *data URI* image references from the input `html` into Base64 data URIs.
+
+#### Arguments
+- `html`: The input HTML string
+
+#### Returns
+A new HTML string with Oktopus temporary image references inlined as Base64 data URIs
+
+#### Examples
+> **input**
+```scriban
+{{ html.InlineImages "<p>Hello <img src='data:image/bmp;oktopusTempFile,e0352c22abb8471fb282f8a0e84b26ec'/> (red pixel)</p>" }}
+```
+> **output**
+```html
+<html><head></head><body><p>Hello <img src="data:image/bmp;base64,Qk0eAAAAAAAAABoAAAAMAAAAAQABAAEAGAAAAP8A"> (red pixel)</p></body></html>
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -720,6 +749,43 @@ A new HTML string with the attributes removed
 > **output**
 ```html
 <html><head></head><body><p>FooBar</p></body></html>
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `html.ToText`
+```
+html.ToText <html> <format>?
+```
+
+#### Description
+Converts input `html` to text in the specified `format`.
+
+#### Arguments
+- `html`: The input HTML string
+- `format`: The target format
+  - `Markdown` (default): Returns plain text (attempting to use [Markdown](https://en.wikipedia.org/wiki/Markdown)). Supports:
+    - Ordered lists
+    - Unordered lists
+  - `Jira`: Returns [Jira Wiki Markup](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all). Supports:
+    - Ordered lists
+    - Unordered lists
+    - Images
+
+#### Returns
+A text representation of the input HTML in the specified `format`.
+
+#### Examples
+> **input**
+```scriban
+{{ html.ToText "<p>Hello <img src='https://localhost/world.png'/></p>" "Jira" }}
+{{ html.ToText "<p>Hello <img src='data:image/bmp;base64,Qk0eAAAAAAAAABoAAAAMAAAAAQABAAEAGAAAAP8A'/> (red pixel)</p>" "Jira" }}
+```
+> **output**
+```html
+Hello !https://localhost/world.png!
+Hello !data:image/bmp;base64,Qk0eAAAAAAAAABoAAAAMAAAAAQABAAEAGAAAAP8A! (red pixel)
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
