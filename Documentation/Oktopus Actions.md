@@ -959,7 +959,7 @@ Uploads attachments to a record.
 [🔝 Back to top](#technologies)
 
 
-## <img src="Images/TechnologyIcons/Robot.svg" width="24"> OpenAI / ChatGPT
+## <img src="Images/TechnologyIcons/OpenAI.svg" width="24"> OpenAI / ChatGPT
 ### Actions
 - [Send message](#openai--chatgpt---send-message)
 
