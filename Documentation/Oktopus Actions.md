@@ -1,6 +1,6 @@
 ﻿List of whoosh Oktopus actions
 ===
-Version: `6.17.0` - `2026-03-03` \
+Version: `6.18.0` - `2026-04-02` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Actions.md)
 
 # Technologies
@@ -33,6 +33,7 @@ Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/bl
 - [Microsoft Word](#-microsoft-word)
 - [NetBox](#-netbox)
 - [Ninox](#-ninox)
+- [OpenAI / ChatGPT](#-openai--chatgpt)
 - [Oktopus](#-oktopus)
 - [PDF](#-pdf)
 - [Power BI](#-power-bi)
@@ -958,6 +959,18 @@ Uploads attachments to a record.
 [🔝 Back to top](#technologies)
 
 
+## <img src="Images/TechnologyIcons/OpenAI.svg" width="24"> OpenAI / ChatGPT
+### Actions
+- [Send message](#openai--chatgpt---send-message)
+
+<a id="openai--chatgpt---send-message"></a>
+
+#### Send message
+Sends a message to ChatGPT. Files can be attached for additional context.
+
+[🔝 Back to top](#technologies)
+
+
 ## <img src="Images/TechnologyIcons/Oktopus%20Icon%20Orange.svg" width="24"> Oktopus
 ### Actions
 - [Evaluate script](#evaluate-script)
@@ -1027,6 +1040,8 @@ Gets all rows from table.
 
 
 ## <img src="Images/TechnologyIcons/Robaws.svg" width="24"> Robaws
+Preview: This technology is currently in preview and subject to change.
+
 ### Actions
 - [Get employee](#robaws---get-employee)
 - [Get employees](#robaws---get-employees)
@@ -1055,6 +1070,8 @@ Gets all rows from table.
 - [Create invoice](#robaws---create-invoice)
 - [Update invoice](#robaws---update-invoice)
 - [Delete invoice](#robaws---delete-invoice)
+- [Generate invoice PDF](#robaws---generate-invoice-pdf)
+- [Register invoice payment](#robaws---register-invoice-payment)
 - [Get project](#robaws---get-project)
 - [Get projects](#robaws---get-projects)
 - [Create project](#robaws---create-project)
@@ -1195,6 +1212,16 @@ Updates an existing sales invoice.
 
 #### Delete invoice
 Deletes a sales invoice by ID.
+
+<a id="robaws---generate-invoice-pdf"></a>
+
+#### Generate invoice PDF
+Generates a PDF for an invoice.
+
+<a id="robaws---register-invoice-payment"></a>
+
+#### Register invoice payment
+Registers a payment for an invoice.
 
 <a id="robaws---get-project"></a>
 
