@@ -1,6 +1,6 @@
 ﻿Documentation and examples for whoosh Oktopus functions
 ---
-Version: `6.17.0` - `2026-03-18` \
+Version: `6.23.0` - `2026-09-29` \
 Link: [Documentation on GitHub](https://github.com/freedom-manufaktur/Oktopus/blob/main/Documentation/Oktopus%20Functions.md)
 
 # Language
@@ -211,16 +211,19 @@ VGVzdA
 
 ### `convert.toCsv`
 ```
-convert.toCsv <value> <header>?
+convert.toCsv <value> <header>? <culture>? <separator>?
 ```
 
 #### Description
 Converts the input `value` to CSV. An optional `header` can be passed to specify the CSV header.
 If the `header` is not specified then the return will have no CSV header.
+The optional `culture` controls value formatting.
 
 #### Arguments
 - `value`: The input object
 - `header`: An optional string of comma-separated values that represent the CSV header
+- `culture`: An optional culture name, such as `de-DE`, used to format values and determine the default separator
+- `separator`: An optional separator to use instead of the culture's default separator
 
 #### Returns
 The input `value` converted to a CSV
@@ -229,16 +232,26 @@ The input `value` converted to a CSV
 > **input**
 ```scriban
 {{ convert.toCsv {Id:1,Text:"Foo"} }}
+
 {{ convert.toCsv {Id:1,Text:"Foo"} "Id,Text" }}
 {{ convert.toCsv [{Id:1,Text:"Foo"},{Id:2,Text:"Bar"}] "Id,Text" }}
+
+{{ convert.toCsv {Float:1.23,Text:"Foo"} }}
+{{ convert.toCsv {Float:1.23,Text:"Foo"} culture: "de-DE" }}
+{{ convert.toCsv {Float:1.23,Text:"Foo"} culture: "de-DE" separator: "|" }}
 ```
 > **output**
 ```html
 1,Foo
+
 Id,Text
 1,Foo
 Id,Text
 "{Id: 1, Text: ""Foo""}","{Id: 2, Text: ""Bar""}"
+
+1.23,Foo
+1,23;Foo
+1,23|Foo
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
@@ -246,16 +259,19 @@ Id,Text
 
 ### `convert.toCsvRows`
 ```
-convert.toCsvRows <value> <header>?
+convert.toCsvRows <value> <header>? <culture>? <separator>?
 ```
 
 #### Description
 Converts the input `value` to CSV rows. An optional `header` can be passed to specify the CSV header.
 If the `header` is not specified then the return will have no CSV header.
+The optional `culture` controls value formatting.
 
 #### Arguments
 - `value`: The input object
 - `header`: An optional string of comma-separated values that represent the CSV header
+- `culture`: An optional culture name, such as `de-DE`, used to format values and determine the default separator
+- `separator`: An optional separator to use instead of the culture's default separator
 
 #### Returns
 The input `value` converted to CSV rows
@@ -266,8 +282,11 @@ The input `value` converted to CSV rows
 {{ convert.toCsvRows {Id:1,Text:"Foo"} }}
 
 {{ convert.toCsvRows {Id:1,Text:"Foo"} "Id,Text" }}
-
 {{ convert.toCsvRows [{Id:1,Text:"Foo"},{Id:2,Text:"Bar"}] "Id,Text" }}
+
+{{ convert.toCsvRows {Float:1.23,Text:"Foo"} }}
+{{ convert.toCsvRows {Float:1.23,Text:"Foo"} culture: "de-DE" }}
+{{ convert.toCsvRows {Float:1.23,Text:"Foo"} culture: "de-DE" separator: "|" }}
 ```
 > **output**
 ```html
@@ -275,10 +294,13 @@ The input `value` converted to CSV rows
 
 Id,Text
 1,Foo
-
 Id,Text
 1,Foo
 2,Bar
+
+1.23,Foo
+1,23;Foo
+1,23|Foo
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
