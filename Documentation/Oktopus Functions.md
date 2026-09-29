@@ -20,6 +20,7 @@ This document describes the built-in functions provided by whoosh Oktopus (in ad
 - [`globalVariable` functions](#globalvariable-functions)
 - [`html` functions](#html-functions)
 - [`json` functions](#json-functions)
+- [`markdown` functions](#markdown-functions)
 - [`oktopus` functions](#oktopus-functions)
 - [`step` functions](#step-functions)
 - [`string` functions](#string-functions)
@@ -908,6 +909,42 @@ A new JSON string
 {
   "Foo": "Bar"
 }
+```
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+## `markdown` functions
+Markdown functions available through the object `markdown` in whoosh Oktopus.
+
+- [`markdown.ToHtml`](#markdowntohtml)
+
+[🔝 Back to top](#oktopus-built-in-functions)
+
+
+### `markdown.ToHtml`
+```
+markdown.ToHtml <markup> <format>
+```
+
+#### Description
+Converts input `markup` to HTML in the specified `format`.
+
+#### Arguments
+- `markup`: The input markup string
+- `format`: The source markup format. `Jira` is supported.
+
+#### Returns
+An HTML representation of the input `markup`.
+
+#### Examples
+> **input**
+```scriban
+{{ markdown.ToHtml "Hello !https://localhost/world.png!" "Jira" }}
+```
+> **output**
+```html
+<p>Hello <img src="https://localhost/world.png"></p>
 ```
 
 [🔝 Back to top](#oktopus-built-in-functions)
