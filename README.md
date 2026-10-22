@@ -13,6 +13,7 @@ https://freedom-manufaktur.com/whoosh-oktopus
 - [Oktopus Functions](<Documentation/Oktopus Functions.md>) 📜 - Available scripting functions to manipulate data (in addition to [Scriban functions](https://scriban.github.io/docs/builtins/)).
 
 ## Additional documentation
+- [Oktopus Font Installation Manual](<Documentation/Oktopus Font Installation Manual.md>) - How to add additional fonts for PDF rendering.
 - [How to register an App within Microsoft Entra ID](<Documentation/Register an App within Entra ID.md>) - For use when necessary.
 - [How to register an Exchange Online App within Microsoft Entra ID](<Documentation/Register an Exchange Online App within Entra ID.md>) - For use when necessary.
 - [How to register a Google Workspace Service Account](<Documentation/Register a Google Workspace Service Account.md>) - For use when necessary.
